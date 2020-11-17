@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону.</title>
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo visualy-hidden">
         <img src="img/logotype.svg" alt="Логотип City of Sedona">
       </a>
-      <nav>
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visualy-hidden">Открыть меню</span>
         </button>
@@ -45,59 +45,59 @@
           <img src="image/intro.svg" alt="Welcome to the gorgeous Sedona">
         </div>
         <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
-        <p class="main-page__whyItsCool">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="page-main__cool">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="city">
         <div class="city__wrapper">
-          <header class="city__advantages">
-            <div class="colored__city">
-              <h2 class="advantages__title">
+          <header class="city-advantages">
+            <div class="city-advantages__colored-background">
+              <h2 class="city-advantages__title">
                 Настоящий городок
               </h2>
-              <p class="advantages__number">-№1-</p>
-              <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            </div>    
+              <p class="city-advantages__number">-№1-</p>
+              <p class="city-advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
           </header>
-          <picture>
+          <picture class="city_iamge">
             <img src="/img/photo-city@1x.jpg 1x" alt="Фото города СЕДОНА">
           </picture>
           <div class="features">
             <div class="features__wrapper">
               <div class="features__item">
                 <picture><img src="img/icon-house.svg" alt="Домик"></picture>
-                <p class="description__title">Жилье</p>
-                <p class="description__features">
+                <p class="features__title">Жилье</p>
+                <p class="features__description">
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </div>
               <div class="features__item">
                 <picture><img src="img/icon-gift.svg" alt="Подарок"></picture>
-                <p class="description__title">СУВЕНИРЫ</з>
-                <p class="description__features">
+                <p class="features__title">СУВЕНИРЫ</з>
+                <p class="features__description">
                   Не только китайского, но и местного производства!
                 </p>
               </div>
               <div class="features__item">
                 <picture><img src="img/icon-burger.svg" alt="Гамбургер"></picture>
-                <p class="description__title">ЕДА</p>
-                <p class="description__features">
+                <p class="features__title">ЕДА</p>
+                <p class="features__description">
                   Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
                 </p>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
       </section>
       <section class="attractions">
         <div class="attractions__wrapper">
-          <header class="attractions__advantages">
-            <div class="colored__attractions">
-              <h2 class="advantages__title">
+          <header class="attractions__header">
+            <div class="attractions__colored-background">
+              <h2 class="attractions__title">
                 Там есть мост дьявола
               </h2>
-              <p class="advantages__number">-№2-</p>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>    
+              <p class="attractions__number">-№2-</p>
+              <p class="attractions__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
           </header>
           <picture>
             <img src="/img/photo-bridge@1x.jpg 1x" alt="Фото мост дьявола">
@@ -106,37 +106,37 @@
       </section>
       <section class="other-places">
         <div class="other-places__wrapper">
-          <div class="other-places__background"> 
-            <div class="items">         
+          <div class="other-places__background">
+            <div class="items">
               <h2 class="items__title">
                 Небольшая
               </h2>
               <p class="other-places__number">-№3-</p>
               <p class="other-places__description">ВСЕ интересные места находятся очень близко</p>
-              
-            </div> 
-            <div class="items">         
+
+            </div>
+            <div class="items">
               <h2 class="items__title">
                 Красивая дорога
               </h2>
               <p class="other-places__number">-№4-</p>
               <p class="other-places__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </div> 
-            <div class="items">         
+            </div>
+            <div class="items">
               <h2 class="items__title">
                 Мало туристов
               </h2>
               <p class="other-places__number">-№5-</p>
               <p class="other-places__description">Большинство едет в гранд каньон и толпится там</p>
-            </div>   
+            </div>
           </div>
       </section>
       <section class="hotel-search">
         <div class="hotel-search__wrappper">
-          <h2 class="hotel__search">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-          <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="search__form" type="button">Найти гостиницу</button>
-        </div>        
+          <h2 class="hotel-search__title">Заинтересовались?</h2>
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a href="search.html" class="button hotel-search__form">Найти гостиницу</a>
+        </div>
       </section>
       <section class="map">
         <div class="map__wrappper">
@@ -149,7 +149,7 @@
              <img src="img/map-marker.svg" alt="маркер">
            </picture>
          </div>
-        </div>        
+        </div>
       </section>
     </main>
     <footer class="page-footer">
