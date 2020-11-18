@@ -56,15 +56,15 @@
         <div class="person-information">
           <label class="person-information__lable" for="field-personal-name">Имя:</label><span>*</span>
           <input class="person-information__input" id="field-personal-name" name="person-information" type="text"
-            value="Петр">
+            value="Петр" required>
         </div>
         <div class="person-information">
           <label class="person-information__lable" for="field-personal-surname">Фамилия:</label><span>*</span>
           <input class="person-information__input" id="field-personal-surname" name="person-information" type="text"
-            value="Иванов">
+            value="Иванов" required>
         </div>
         <div class="person-information">
-          <label class="person-information__lable" for="field-personal-middlename">Отчество:</label><span>*</span>
+          <label class="person-information__lable" for="field-personal-middlename">Отчество:</label>
           <input class="person-information__input" id="field-personal-middlename" name="person-information" type="text"
             value="Александрович">
         </div>
@@ -74,15 +74,15 @@
           <div class="contacts-information">
             <label class="contacts-information__lable" for="field-contacts-phone">Контактный
               телефон:<span>*</span></label>
-            <input class="pontacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
-              value="Введите телефон">
+            <input class="pontacts-information__input" id="field-contacts-phone" name="contacts-information"type="tel"
+              value="Введите телефон" required>
             <img src="img/phone.jpg" alt="фото трубки" class="contacts-phone__image">
           </div>
           <div class="contacts-information">
             <label class="contacts-information__lable" for="field-contacts-email">Электронная
-              почта:<span>*</span><span>*</span></label>
+              почта:<span>*</span></label>
             <input class="pontacts-information__input" id="field-contacts-email" name="contacts-information"
-              type="email" value="Введите e-mail">
+              type="email" value="Введите e-mail" required>
             <img src="img/email.jpg" alt="фото письма" class="email__image">
           </div>
       </fieldset>
