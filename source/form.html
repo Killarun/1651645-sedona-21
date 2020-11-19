@@ -56,87 +56,87 @@
         <div class="person-information">
           <label class="person-information__lable" for="field-personal-name">Имя:</label><span>*</span>
           <input class="person-information__input" id="field-personal-name" name="person-information" type="text"
-            value="Петр" required>
+            placeholder="Петр" required>
         </div>
         <div class="person-information">
           <label class="person-information__lable" for="field-personal-surname">Фамилия:</label><span>*</span>
           <input class="person-information__input" id="field-personal-surname" name="person-information" type="text"
-            value="Иванов" required>
+            placeholder="Иванов" required>
         </div>
         <div class="person-information">
           <label class="person-information__lable" for="field-personal-middlename">Отчество:</label>
           <input class="person-information__input" id="field-personal-middlename" name="person-information" type="text"
-            value="Александрович">
+            placeholder="Александрович">
         </div>
       </fieldset>
       <fieldset>
         <legend>Контактная информация:</legend>
-          <div class="contacts-information">
-            <label class="contacts-information__lable" for="field-contacts-phone">Контактный
-              телефон:<span>*</span></label>
-            <input class="pontacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
-              value="Введите телефон" required>
-            <img src="img/phone.jpg" alt="фото трубки" class="contacts-phone__image">
-          </div>
-          <div class="contacts-information">
-            <label class="contacts-information__lable" for="field-contacts-email">Электронная
-              почта:<span>*</span></label>
-            <input class="pontacts-information__input" id="field-contacts-email" name="contacts-information"
-              type="email" value="Введите e-mail" required>
-            <img src="img/email.jpg" alt="фото письма" class="email__image">
-          </div>
+        <div class="contacts-information">
+          <label class="contacts-information__lable" for="field-contacts-phone">Контактный
+            телефон:<span>*</span></label>
+          <input class="pontacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
+            value="Введите телефон" required>
+          <img src="img/phone.jpg" alt="фото трубки" class="contacts-phone__image">
+        </div>
+        <div class="contacts-information">
+          <label class="contacts-information__lable" for="field-contacts-email">Электронная
+            почта:<span>*</span></label>
+          <input class="pontacts-information__input" id="field-contacts-email" name="contacts-information" type="email"
+            value="Введите e-mail" required>
+          <img src="img/email.jpg" alt="фото письма" class="email__image">
+        </div>
       </fieldset>
       <fieldset>
         <legend>
-            Ваше общее впечатление:
-          </legend>
-          <div class="impressions-select radio">
-            <input class="impressions-select__input" id="impressions-select-good" type="radio" name="impressions-select"
-              value="good">
-            <label class="impressions-select__lable" for="impressions-select-good">Скорее положительное</label>
-          </div>
-          <div class="impressions-select">
-            <input class="impressions-select__input" id="impressions-select-negative" type="radio"
-              name="impressions-select" value="bad">
-            <label class="impressions-select__lable" for="impressions-select-negative">Скорее отрицательное</label>
-          </div>
-          <div class="impressions-select">
-            <input class="impressions-select__input" id="impressions-select-soso" type="radio" name="impressions-select"
-              value="soso">
-            <label class="impressions-select__lable" for="impressions-select-soso">Затрудняюсь ответить</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>
-            Посещенные достопримечательности:
-          </legend>
-          <div class="landmarks">
-            <input class="landmarks__input" id="landmarks-davil" type="checkbox" name="landmarks" value="devils_bridge">
-            <label class="landmarks__lable" for="landmarks-davil">Мост Дьявола</label>
-          </div>
-          <div class="landmarks">
-            <input class="landmarks__input" id="landmarks-hill" type="checkbox" name="landmarks" value="bell_mountain">
-            <label class="landmarks__lable" for="landmarks-hill">Гора-Колокол</label>
-          </div>
-          <div class="landmarks">
-            <input class="landmarks__input" id="landmarks-park" type="checkbox" name="landmarks" value="slide-park">
-            <label class="landmarks__lable" for="landmarks-park">Слайд-парк</label>
-          </div>
-          <div class="landmarks">
-            <input class="landmarks__input" id="landmarks-rock" type="checkbox" name="landmarks" value="red_rock">
-            <label class="landmarks__lable" for="landmarks-rock">Красные скалы</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>
-            Опишите свои эмоции:
-          </legend>
-          <textarea class="emotions" name="personal-comment" id="field-personal-comment">Опишите подробно все свои восторги
-          </textarea>
-        </fieldset>
-        <div class="form-submit">
-          <input class="form-submit__button" type="submit" name="send-request" value="отправить заявку">
+          Ваше общее впечатление:
+        </legend>
+        <div class="impressions-select radio">
+          <input class="impressions-select__input" id="impressions-select-good" type="radio" name="impressions-select"
+            value="good">
+          <label class="impressions-select__lable" for="impressions-select-good">Скорее положительное</label>
         </div>
+        <div class="impressions-select">
+          <input class="impressions-select__input" id="impressions-select-negative" type="radio"
+            name="impressions-select" value="bad">
+          <label class="impressions-select__lable" for="impressions-select-negative">Скорее отрицательное</label>
+        </div>
+        <div class="impressions-select">
+          <input class="impressions-select__input" id="impressions-select-soso" type="radio" name="impressions-select"
+            value="soso">
+          <label class="impressions-select__lable" for="impressions-select-soso">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Посещенные достопримечательности:
+        </legend>
+        <div class="landmarks">
+          <input class="landmarks__input" id="landmarks-davil" type="checkbox" name="landmarks" value="devils_bridge">
+          <label class="landmarks__lable" for="landmarks-davil">Мост Дьявола</label>
+        </div>
+        <div class="landmarks">
+          <input class="landmarks__input" id="landmarks-hill" type="checkbox" name="landmarks" value="bell_mountain">
+          <label class="landmarks__lable" for="landmarks-hill">Гора-Колокол</label>
+        </div>
+        <div class="landmarks">
+          <input class="landmarks__input" id="landmarks-park" type="checkbox" name="landmarks" value="slide-park">
+          <label class="landmarks__lable" for="landmarks-park">Слайд-парк</label>
+        </div>
+        <div class="landmarks">
+          <input class="landmarks__input" id="landmarks-rock" type="checkbox" name="landmarks" value="red_rock">
+          <label class="landmarks__lable" for="landmarks-rock">Красные скалы</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Опишите свои эмоции:
+        </legend>
+        <textarea placeholder="Опишите подробно все свои восторги" class="emotions" name="personal-comment"
+          id="field-personal-comment"></textarea>
+      </fieldset>
+      <div class="form-submit">
+        <input class="form-submit__button" type="submit" name="send-request" value="отправить заявку">
+      </div>
     </form>
   </main>
 
