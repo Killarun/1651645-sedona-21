@@ -1,1 +1,13 @@
-@import "blocks/page.scss";
+@import "content.scss";
+@import "block/page-header.scss";
+@import "block/main-head.scss";
+@import "block/city.scss";
+@import "block/attractions.scss";
+@import "block/other-places.scss";
+@import "block/hotel-search.scss";
+@import "block/main-page.scss";
+
+body{
+  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+}

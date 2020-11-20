@@ -1,0 +1,40 @@
+.city__wrapper {
+  width: 100%;
+  // justify-content: center;
+  // display: flex;
+  // flex-wrap: wrap;
+}
+.city__header {
+  color: #ffffff;
+  text-align: center;
+}
+
+.city__colored-background {
+  background-color: #81b3d2;
+}
+
+.city__image {
+  width: 100%;;
+}
+
+.city__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+ }
+
+ .city__description {
+  font-size: 14px;
+  text-transform: uppercase;
+ }
+
+.city-features__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.city-features__description {
+  font-size: 14px;
+  text-transform: uppercase;
+}
