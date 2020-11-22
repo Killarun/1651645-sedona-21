@@ -4,13 +4,12 @@
 
 .city__header {
   background-color: $blue;
-  min-height: 211px;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 13px;
+  padding: 55px 13px 39px 13px;
 }
 
 .city__colored-background {
@@ -33,21 +32,29 @@
 .city__title {
   font-size: 18px;
   font-weight: bold;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
 .city__description {
   font-size: 14px;
+  line-height: 26px;
   text-transform: uppercase;
+}
+
+.city__number {
+  margin: 12px auto;
 }
 
 .city-features__title {
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .city-features__description {
   font-size: 14px;
+  line-height: 26px;
   text-transform: uppercase;
 }

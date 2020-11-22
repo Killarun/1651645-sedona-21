@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 26px;
+  padding: 26px 22px 0px 22px;
+  margin-bottom: 30px;
 }
 
 .other-places__items {
@@ -25,8 +26,12 @@
   text-transform: uppercase;
   width: 100%;
 }
+.other-places__number {
+  margin: 12px auto;
+}
 
 .other-places__description {
   font-size: 14px;
   text-transform: uppercase;
+  margin-bottom: 24px;
 }

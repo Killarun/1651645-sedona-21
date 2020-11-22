@@ -45,8 +45,8 @@
   text-decoration: none;
 }
 
-.main-nav__list a {
-  @media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
+  .main-nav__list a {
     color: #ffffff;
     font-weight: bold;
     font-size: 18px;

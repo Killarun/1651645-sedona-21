@@ -1,7 +1,7 @@
 .hotel-search {
   text-align: center;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 66.5px;
 }
 
 .hotel-search__title {
@@ -10,6 +10,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-bottom: 34px;
 }
 
 .hotel-search__text {
@@ -18,4 +19,9 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-bottom: 41.5px;
+}
+
+.hotel-search__form {
+background-color: $blue;
 }
