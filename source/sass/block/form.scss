@@ -1,0 +1,17 @@
+legend {
+ font-size: 18px;
+ font-weight: bold;
+ text-transform: uppercase;
+
+}
+fieldset {
+
+  border:0 none;
+
+}
+.reviews-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+}

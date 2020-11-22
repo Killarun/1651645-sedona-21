@@ -1,8 +1,9 @@
-.page-header {
-  width: 100%;
-  background-color: #ffff22;
+.page-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
 
+.page-footer__copyright {
+  align-items: center;
 }

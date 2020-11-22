@@ -1,0 +1,24 @@
+.main-intro {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+.main-intro__wrapper {
+  min-width: 285px;
+  text-align: center;
+
+}
+
+.main-intro__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-intro__description {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
