@@ -1,0 +1,13 @@
+.gallery-intro__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-intro__title {
+  font-size: $title;
+}
+
+.gallery-intro__description {
+  font-size: $description;
+}

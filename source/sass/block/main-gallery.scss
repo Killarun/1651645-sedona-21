@@ -1,0 +1,12 @@
+.omain-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-gallery-head {
+  background: url("/img/intro.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  min-height: 398px;
+  margin-bottom: 32px;
+}

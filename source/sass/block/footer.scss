@@ -6,8 +6,17 @@
 
 .page-footer__copyright {
   align-items: center;
+  display: flex;
 }
 
 .page-footer__tag {
-  margin-bottom: 40px;;
+  margin-bottom: 40px;
+}
+
+.copyright__text {
+  padding-right: 14px;
+}
+
+.social__list {
+  margin-bottom: 40px;
 }

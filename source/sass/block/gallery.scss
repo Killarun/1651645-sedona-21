@@ -1,0 +1,13 @@
+.gallery__wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.gallery-image__thumbnail {
+  min-width: 100%;
+  min-height: auto;
+  overflow: hidden;
+}

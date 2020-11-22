@@ -5,12 +5,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 26px 22px 0px 22px;
+  padding: 26px 22px 0 22px;
   margin-bottom: 30px;
 }
 
 .other-places__items {
-
   border-bottom: 1px solid $border-grey;
   margin-bottom: 25px;
 }
@@ -26,6 +25,7 @@
   text-transform: uppercase;
   width: 100%;
 }
+
 .other-places__number {
   margin: 12px auto;
 }
