@@ -1,9 +1,7 @@
-.city__wrapper {
+.city {
   width: 100%;
-  // justify-content: center;
-  // display: flex;
-  // flex-wrap: wrap;
 }
+
 .city__header {
   color: #ffffff;
   text-align: center;
@@ -14,19 +12,19 @@
 }
 
 .city__image {
-  width: 100%;;
+  width: 100%;
 }
 
 .city__title {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
- }
+}
 
- .city__description {
+.city__description {
   font-size: 14px;
   text-transform: uppercase;
- }
+}
 
 .city-features__title {
   font-size: 18px;

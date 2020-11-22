@@ -1,0 +1,14 @@
+.map {
+  width: 100%;
+}
+
+.map__image {
+  background: url("/img/map.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
