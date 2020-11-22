@@ -3,12 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  }
+  margin-bottom: 30px;
+}
 
 .main-intro__wrapper {
   min-width: 285px;
   text-align: center;
-
 }
 
 .main-intro__title {
@@ -21,4 +21,3 @@
   font-size: 14px;
   text-transform: uppercase;
 }
-

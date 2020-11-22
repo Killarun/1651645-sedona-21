@@ -1,16 +1,31 @@
 .other-places {
   background-color: #eeeeee;
   text-align: center;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 26px;
 }
 
-.items__title {
+.other-places__items {
+
+  border-bottom: 1px solid $border-grey;
+  margin-bottom: 25px;
+}
+
+.other-places__items:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.other-places__title {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  width: 100%;
 }
 
-.items__description {
+.other-places__description {
   font-size: 14px;
   text-transform: uppercase;
 }

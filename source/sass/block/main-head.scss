@@ -3,12 +3,14 @@
   background-size: cover;
   width: 100%;
   min-height: 398px;
+  margin-bottom: 32px;
 }
 
 .main-head__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 90px 0 85px;
 }
 
 .main-head__title {
@@ -24,8 +26,29 @@
   text-transform: uppercase;
   font-size: 14px;
 }
-.main-head--form{
+
+.main-head--form {
   background: url("/img/intro.png") no-repeat bottom;
   background-size: cover;
   min-height: 398px;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav__list a {
+  @media (max-width: $mobile-width-only) {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+  }
 }

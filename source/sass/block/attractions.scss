@@ -3,16 +3,30 @@
 }
 
 .attractions__header {
+  background-color: $blue;
+  min-height: 211px;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 13px;
 }
 
 .attractions__colored-background {
-  background-color: #81b3d2;
+  text-align: center;
+  width: 295px;
 }
 
-.attractions__image {
-  width: 100%;
+.attractions-picture {
+  min-width: 100%;
+  min-height: auto;
+  overflow: hidden;
+}
+.attractions-picture__image {
+  height: 260px;
+  position: relative;
+  left: -101px;
 }
 
 .attractions__title {
