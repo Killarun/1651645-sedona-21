@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="widht=device-width initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
   <title>Отправить отзыв</title>
+
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo visualy-hidden">
+    <a class="page-header__logo">
       <img src="img/logotype.svg" alt="Логотип City of Sedona">
     </a>
     <nav class="main-nav">
@@ -18,12 +21,12 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="/site-list__item">
-            <a href="/index.html">
+            <a href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="/catalog.html">
+            <a href="catalog.html">
               Фото и видео
             </a>
           </li>
@@ -33,7 +36,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#!">
+            <a href="https://htmlacademy.ru/">
               Html Academy
             </a>
           </li>
@@ -42,11 +45,18 @@
     </nav>
   </header>
   <main class="main-form">
-    <section class="main-head">
-      <div class="main-head__wrapper">
-        <img class="main-head__image" src="img/sedona.svg" alt="Welcome to the gorgeous Sedona">
-        <h1 class="main-head__title">Оставьте свой отзыв</h1>
-        <p class="main-head__description">Помогите нашим отелям стать лучше! оставьт отзыв о них, а так же о посещеных
+
+    <section class="main-other-head">
+      <h1 class="visualy-hidden">Отзывы о Sedona</h1>
+      <div class="main-other-head__wrapper">
+        <img class="main-other-head__image" src="img/sedona.svg" alt="Welcome to the gorgeous Sedona">
+
+      </div>
+    </section>
+    <section class="main-intro">
+      <div class="main-intro__wrapper">
+        <h2 class="main-intro__title">Оставьте свой отзыв</h2>
+        <p class="main-intro__description">Помогите нашим отелям стать лучше! оставьт отзыв о них, а так же о посещеных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -74,14 +84,14 @@
         <div class="contacts-information">
           <label class="contacts-information__lable" for="field-contacts-phone">Контактный
             телефон:<span>*</span></label>
-          <input class="pontacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
+          <input class="contacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
             value="Введите телефон" required>
           <img src="img/phone.jpg" alt="фото трубки" class="contacts-phone__image">
         </div>
         <div class="contacts-information">
           <label class="contacts-information__lable" for="field-contacts-email">Электронная
             почта:<span>*</span></label>
-          <input class="pontacts-information__input" id="field-contacts-email" name="contacts-information" type="email"
+          <input class="contacts-information__input" id="field-contacts-email" name="contacts-information" type="email"
             value="Введите e-mail" required>
           <img src="img/email.jpg" alt="фото письма" class="email__image">
         </div>
@@ -131,11 +141,14 @@
         <legend>
           Опишите свои эмоции:
         </legend>
-        <textarea placeholder="Опишите подробно все свои восторги" class="emotions" name="personal-comment"
+        <div class="emotions">
+          <textarea placeholder="Опишите подробно все свои восторги" class="emotions__field" name="personal-comment"
           id="field-personal-comment"></textarea>
+        </div>
+
       </fieldset>
       <div class="form-submit">
-        <input class="form-submit__button" type="submit" name="send-request" value="отправить заявку">
+        <input class="form-submit__button button" type="submit" name="send-request" value="отправить отзыв">
       </div>
     </form>
   </main>

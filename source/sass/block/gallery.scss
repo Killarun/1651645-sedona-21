@@ -1,0 +1,37 @@
+.gallery__wrapper {
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.gallery-image__thumbnail {
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.gallery-image__size {
+  margin-bottom: 11px;
+}
+
+.gallery-image__descripton {
+  margin-bottom: 23px;
+  border-bottom: 1px solid $border-gallery-grey;
+}
+
+.gallery-image__title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.gallery-image__author {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.gallery-image-like {
+  margin-bottom: 15px;
+}

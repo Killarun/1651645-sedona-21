@@ -1,0 +1,60 @@
+.main-head {
+  background: url("../img/intro.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 398px;
+  margin-bottom: 32px;
+}
+
+.main-head__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 90px 0 85px;
+}
+
+.main-head__title {
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.main-head__description {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-head--form {
+  background: url("../img/intro.jpg") no-repeat bottom;
+  background-size: cover;
+  min-height: 398px;
+}
+
+.main-gallery-head__wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__list a {
+    color: #f22fee;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

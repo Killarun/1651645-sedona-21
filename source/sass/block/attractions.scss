@@ -1,0 +1,47 @@
+.attractions {
+  width: 100%;
+}
+
+.attractions__header {
+  background-color: $blue;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 39px 16px 35px 15px;
+}
+
+.attractions__colored-background {
+  text-align: center;
+  width: 295px;
+}
+
+.attractions-picture {
+  min-width: 100%;
+  min-height: auto;
+  overflow: hidden;
+}
+
+.attractions-picture__image {
+  height: 260px;
+  position: relative;
+  left: -101px;
+}
+
+.attractions__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.attractions__number {
+  margin: 12px auto;
+}
+
+.attractions__description {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,60 @@
+.city {
+  width: 100%;
+}
+
+.city__header {
+  background-color: $blue;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 13px 39px 13px;
+}
+
+.city__colored-background {
+  text-align: center;
+  width: 295px;
+}
+
+.city-picture {
+  min-width: 100%;
+  min-height: auto;
+  overflow: hidden;
+}
+
+.city-picture__image {
+  height: 260px;
+  position: relative;
+  left: -101px;
+}
+
+.city__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.city__description {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.city__number {
+  margin: 12px auto;
+}
+
+.city-features__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.city-features__description {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
