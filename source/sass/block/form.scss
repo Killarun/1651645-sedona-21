@@ -2,14 +2,90 @@ legend {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 fieldset {
-  border: 0 none;
+  border: 0;
+  margin-bottom: 25px;
+  border-bottom: 1px solid $border-gallery-grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .reviews-form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0 20px;
+}
+
+.person-information__lable {
+  font-size: $description;
+  text-transform: uppercase;
+}
+
+.person-information__input {
+  font-size: $title;
+  width: 100%;
+  margin-left: 14px;
+}
+
+.person-information {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contacts-information {
+  margin-bottom: 25px;
+}
+
+.contacts-information__lable {
+  font-size: $description;
+  text-transform: uppercase;
+}
+
+.contacts-information__input {
+  font-size: $title;
+  font-weight: bold;
+}
+
+.impressions-select {
+  margin-bottom: 25px;
+}
+
+.impressions-select__lable {
+  font-size: $title;
+  font-weight: bold;
+}
+
+.landmarks {
+  margin-bottom: 25px;
+}
+
+.landmarks__lable {
+  font-size: $title;
+  font-weight: bold;
+}
+
+.emotions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.emotions__field {
+  width: 100%;
+  height: 160px;
+  background-color: #f2f2f2;
+  font-size: $title;
+  color: #000000;
+  padding: 10px;
+}
+
+.form-submit__button {
+  border: 0 none;
+  background-color: $blue;
 }
