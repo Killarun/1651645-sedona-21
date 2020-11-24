@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  height: 260px;
+
 }
 
 @media (max-width: $desktop-width) {
@@ -43,7 +43,11 @@
   text-align: center;
   background-color: $blue;
   color: #ffffff;
-  padding: 55px 13px 39px 13px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .city-picture {
@@ -51,25 +55,24 @@
 }
 
 .city-picture__image {
-  height: 260px;
-  position: relative;
-  left: -101px;
-  overflow: inherit;
+
+
 }
 
 @media (max-width: $tablet-width) {
   .city-picture__image {
-    left: 0;
-    overflow: hidden;
+    // left: 0;
+    // overflow: hidden;
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .city-picture__image {
-    height: 260px;
-    position: relative;
-    left: -101px;
 
+    // position: relative;
+    // left: -101px;
+    // overflow: hidden;
+    // min-width: 100%;
   }
 }
 
