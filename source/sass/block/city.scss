@@ -1,20 +1,17 @@
 .city {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .city__header {
-  background-color: $blue;
   color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   padding: 55px 13px 39px 13px;
 }
 
 .city__colored-background {
   text-align: center;
-  width: 295px;
+  background-color: $blue;
 }
 
 .city-picture {
@@ -24,9 +21,7 @@
 }
 
 .city-picture__image {
-  height: 260px;
-  position: relative;
-  left: -101px;
+  width: 100%;
 }
 
 .city__title {

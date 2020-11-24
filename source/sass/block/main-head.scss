@@ -6,7 +6,7 @@
   margin-bottom: 32px;
 }
 
-.main-head__wrapper {
+.main-head__image {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,24 +37,4 @@
   display: flex;
   justify-content: center;
   padding-top: 56px;
-}
-
-.main-nav__list {
-  list-style: none;
-}
-
-.main-nav__list a {
-  color: #000000;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-@media (max-width: $mobile-width-only) {
-  .main-nav__list a {
-    color: #f22fee;
-    font-weight: bold;
-    font-size: 18px;
-  }
 }
