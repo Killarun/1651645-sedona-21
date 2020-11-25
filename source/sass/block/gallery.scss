@@ -1,6 +1,7 @@
 .gallery__wrapper {
-  overflow: hidden;
-  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery-image__thumbnail {
