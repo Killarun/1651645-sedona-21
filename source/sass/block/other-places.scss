@@ -1,12 +1,33 @@
 .other-places {
   background-color: #eeeeee;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 26px 22px 0 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
   margin-bottom: 30px;
+}
+
+
+@media (max-width: $desktop-width) {
+  .other-places {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .other-places {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .other-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
 }
 
 .other-places__items {
@@ -35,3 +56,4 @@
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+

@@ -47,67 +47,69 @@
   </header>
   <main class="main-page">
     <div class="main-page__wrapper">
-    <section class="main-head">
-      <h1 class="visualy-hidden">Поиск гостиниц в Седоне</h1>
-      <div class="main-head__image">
-        <img src="img/intro.svg" alt="Welcome to the gorgeous Sedona">
-      </div>
-    </section>
-    <section class="main-intro">
-      <h2 class="main-intro__title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
-      <p class="main-intro__description">Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</p>
-    </section>
-    <section class="city">
-      <div class="city__header city__colored-background">
-        <h2 class="city__title">
-          Настоящий городок
-        </h2>
-        <span class="city__number">-№1-</span>
-        <p class="city__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-      </div>
-        <img class="city-picture city-picture__image" src="img/photo-city.jpg" alt="Фото города Седона">
-    </section>
-    <ul class="city-features">
-      <li class="city-features__item">
-        <img class="city-features__icon" src="img/icon-house.svg" alt="Домик">
-        <h3 class="city-features__title">Жилье</h3>
-        <p class="city-features__description">
-          Рекомендуем пожить в настоящем мотеле, все как в кино!
-        </p>
-      </li>
-      <li class="city-features__item">
-        <picture>
-          <img class="city-features__icon" src="img/icon-gift.svg" alt="Подарок">
-          <h3 class="city-features__title">Сувениры</h3>
-          <p class="city-features__description">
-            Не только китайского, но и местного производства!
-          </p>
-      </li>
-      <li class="city-features__item">
-        <img class="city-features__icon" src="img/icon-burger.svg" alt="Гамбургер">
-        <h3 class="city-features__title">Еда</h3>
-        <p class="city-features__description">
-          Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
-        </p>
-      </li>
-    </ul>
-    <section class="attractions">
-      <header class="attractions__header">
-        <div class="attractions__colored-background">
-          <h2 class="attractions__title">
-            Там есть мост дьявола
-          </h2>
-          <span class="attractions__number">-№2-</span>
-          <p class="attractions__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <section class="main-head">
+        <h1 class="visualy-hidden">Поиск гостиниц в Седоне</h1>
+        <div class="main-head__image">
+          <img src="img/intro.svg" alt="Welcome to the gorgeous Sedona">
         </div>
-      </header>
-      <div class="attractions-picture">
-        <picture>
-          <img class="attractions-picture__image" src="img/photo-bridge.jpg" alt="Фото мост дьявола">
+      </section>
+      <section class="main-intro">
+        <h2 class="main-intro__title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p class="main-intro__description">Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</p>
+      </section>
+      <section class="city">
+        <div class="city__header city__colored-background">
+          <h2 class="city__title">
+            Настоящий городок
+          </h2>
+          <span class="city__number">-№1-</span>
+          <p class="city__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <picture class="picture-image">
+          <source media="(min-width: 1200px)" srcset="img/photo-city.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-city.jpg">
+          <img class="city-picture city-picture__image" src="img/city-mobile.png" alt="Фото города Седона">
         </picture>
-      </div>
-    </section>
-    <ul class="other-places">
+      </section>
+      <ul class="city-features">
+        <li class="city-features__item">
+          <img class="city-features__icon" src="img/icon-house.svg" alt="Домик">
+          <h3 class="city-features__title">Жилье</h3>
+          <p class="city-features__description">
+            Рекомендуем пожить в настоящем мотеле, все как в кино!
+          </p>
+        </li>
+        <li class="city-features__item">
+          <picture>
+            <img class="city-features__icon" src="img/icon-gift.svg" alt="Подарок">
+            <h3 class="city-features__title">Сувениры</h3>
+            <p class="city-features__description">
+              Не только китайского, но и местного производства!
+            </p>
+        </li>
+        <li class="city-features__item">
+          <img class="city-features__icon" src="img/icon-burger.svg" alt="Гамбургер">
+          <h3 class="city-features__title">Еда</h3>
+          <p class="city-features__description">
+            Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+          </p>
+        </li>
+      </ul>
+      <section class="attractions">
+          <div class="attractions__header attractions__colored-background">
+            <h2 class="attractions__title">
+              Там есть мост дьявола
+            </h2>
+            <span class="attractions__number">-№2-</span>
+            <p class="attractions__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <picture class="attriction-picture-image">
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge.jpg">
+            <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.png" alt="Фото мост дьявола">
+      </picture>
+          </section>
+      <ul class="other-places">
         <li class="other-places__items">
           <h2 class="other-places__title">
             Небольшая
@@ -129,20 +131,20 @@
           <span class="other-places__number">-№5-</span>
           <p class="other-places__description">Большинство едет в гранд каньон и толпится там</p>
         </li>
-    </ul>
-    <section class="hotel-search">
-      <h2 class="hotel-search__title">Заинтересовались?</h2>
-      <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-        в седоне</p>
-      <a href="search.html" class="button hotel-search__form">Найти гостиницу</a>
-    </section>
-    <section class="map">
-      <h2 class="visualy-hidden">Карта аризоны</h2>
-      <div class="map__image">
-        <img class="map__map-marker" src="img/map-marker.png" alt="маркер">
-      </div>
-    </section>
-  </div>
+      </ul>
+      <section class="hotel-search">
+        <h2 class="hotel-search__title">Заинтересовались?</h2>
+        <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+          в седоне</p>
+        <a href="search.html" class="button hotel-search__form">Найти гостиницу</a>
+      </section>
+      <section class="map">
+        <h2 class="visualy-hidden">Карта аризоны</h2>
+        <div class="map__image">
+          <img class="map__map-marker" src="img/map-marker.png" alt="маркер">
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
