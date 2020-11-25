@@ -61,11 +61,13 @@
     order: -1;
   }
 }
+
 @media (max-width: $tablet-width) {
   .attriction-picture-image {
     order: -1;
   }
 }
+
 @media (max-width: $mobile-width-only) {
   .attriction-picture-image {
     order: 0;
@@ -101,4 +103,3 @@
   line-height: 26px;
   text-transform: uppercase;
 }
-
