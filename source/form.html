@@ -14,7 +14,7 @@
     <a class="page-header__logo">
       <img src="img/logotype.svg" alt="Логотип City of Sedona">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visualy-hidden">Открыть меню</span>
       </button>
@@ -64,12 +64,12 @@
       <fieldset>
         <legend>Представьтесь:</legend>
         <div class="person-information">
-          <label class="person-information__lable" for="field-personal-name">Имя:</label><span>*</span>
+          <label class="person-information__lable" for="field-personal-name">Имя*:</label>
           <input class="person-information__input" id="field-personal-name" name="person-information" type="text"
             placeholder="Петр" required>
         </div>
         <div class="person-information">
-          <label class="person-information__lable" for="field-personal-surname">Фамилия:</label><span>*</span>
+          <label class="person-information__lable" for="field-personal-surname">Фамилия*:</label>
           <input class="person-information__input" id="field-personal-surname" name="person-information" type="text"
             placeholder="Иванов" required>
         </div>
@@ -176,6 +176,22 @@
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
