@@ -9,12 +9,17 @@
 
 .page-header__logo {
   height: 85px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: $tablet-width)
+    {
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+     }
+
 }
 
-@media (max-width: $tablet-width) {
-  .page-header__logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
+

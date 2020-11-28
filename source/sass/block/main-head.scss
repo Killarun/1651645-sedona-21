@@ -4,6 +4,17 @@
   width: 100%;
   min-height: 398px;
   margin-bottom: 32px;
+
+  @media(max-width: $desktop-width) {
+    margin-bottom: 55px;
+
+  }
+  @media(max-width: $tablet-width) {
+    margin-bottom: 43.5px;
+  }
+  @media(max-width: $mobile-width-only){
+    margin-bottom: 32px;
+  }
 }
 
 .main-head__image {

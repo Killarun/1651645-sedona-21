@@ -24,4 +24,7 @@
 
 .hotel-search__form {
   background-color: $blue;
+  &:hover{
+    background-color:#669EC0;
+  }
 }

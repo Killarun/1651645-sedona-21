@@ -1,34 +1,34 @@
 .attractions {
   width: 100%;
-  display: flex;
+  display: grid;
   flex-wrap: nowrap;
-}
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 2fr 1fr;
 
-@media (max-width: $desktop-width) {
-  .attractions {
-    flex-wrap: nowrap;
-  }
-}
+// @media (max-width: $tablet-width){
+//   margin-bottom: 63px;
+// }
 
-@media (max-width: $tablet-width) {
-  .attractions {
-    flex-wrap: nowrap;
-  }
-}
+  @media (max-width: $mobile-width-only) {
 
-@media (max-width: $mobile-width-only) {
-  .attractions {
-    flex-wrap: wrap;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 .attractions__header {
-  flex-basis: 33.33%;
-}
+  display: grid;
+  align-items: center;
+  grid-template-rows: 84px 45px 81px;
 
-@media (max-width: $mobile-width-only) {
-  .attractions__header {
-    flex-basis: 100%;
+  @media (max-width: $tablet-width) {
+    grid-template-rows: 90px 61px 85px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-rows: 60px 61px 89px;
+    height: 211px;
   }
 }
 
@@ -36,17 +36,24 @@
   text-align: center;
   background-color: $blue;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
+
+//  {
+//   width: 100%;
+// }
 
 .attractions-picture {
-  flex-basis: 66.66%;
-}
-
-.attractions-picture__image {
   width: 100%;
+
+  @media (max-width: $tablet-width) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .attriction-picture-image {
@@ -59,18 +66,21 @@
 @media (max-width: $desktop-width) {
   .attriction-picture-image {
     order: -1;
+
   }
 }
 
 @media (max-width: $tablet-width) {
   .attriction-picture-image {
     order: -1;
+
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .attriction-picture-image {
     order: 0;
+    height: 260px;
   }
 }
 
@@ -79,6 +89,9 @@
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
+  @media(max-width: $mobile-width-only){
+    align-self: end;
+  }
 }
 
 .attractions__description {
