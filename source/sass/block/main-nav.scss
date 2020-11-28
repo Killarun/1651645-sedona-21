@@ -139,17 +139,20 @@
 .site-list {
   width: 100%;
   display: block;
+
   @media (min-width: $desktop-width) {
     width: 960px;
     display: flex;
     justify-content: space-between;
 
-}
-@media (min-width: $tablet-width) {
-  width: 680px;
-  display: flex;
-  justify-content: space-between;
-}
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   // @media (min-width: $mobile-width-only) {
 
   // }
