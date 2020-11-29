@@ -109,16 +109,27 @@ input::-webkit-input-placeholder {
 }
 .contacts-information{
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 58px;
+  grid-template-columns: 222px 58px;
 }
 .contacts-information__input{
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 2;
+  background-color: #F2F2F2;
+    border: 0;
 }
-.contacts-phone__image, .email__image{
+.contacts-phone__image, .contacts-email__image{
   grid-column-start: 2;
     grid-row-start: 2;
     background-color: $background-fields;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+.contacts-phone__image--phone{
+  background-image: url("../img/phone.svg");
+}
+.contacts-email__image--email{
+  background-image: url("../img/mail.svg");
 }
