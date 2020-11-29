@@ -11,16 +11,16 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logotype.svg" alt="Логотип City of Sedona">
-    </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="page-header__logo">
+        <img src="img/logotype.svg" alt="Логотип City of Sedona">
+      </a>
       <button class="main-nav__toggle" type="button">
-        <span class="visualy-hidden">Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="/site-list__item">
+          <li class="site-list__item">
             <a href="index.html">
               Главная
             </a>
@@ -41,16 +41,20 @@
             </a>
           </li>
         </ul>
+
       </div>
     </nav>
   </header>
   <main class="main-form">
 
     <section class="main-other-head">
-      <h1 class="visualy-hidden">Отзывы о Sedona</h1>
+      <h1 class="visually-hidden">Отзывы о Sedona</h1>
       <div class="main-other-head__wrapper">
         <img class="main-other-head__image" src="img/sedona.svg" alt="Welcome to the gorgeous Sedona">
-
+        <picture class="main-other-head-triangle">
+          <source media="(min-width: 1200px)" srcset="img/intro-triangle.svg">
+          <img src="img/intro-triangle-small.svg">
+        </picture>
       </div>
     </section>
     <section class="main-intro">
@@ -86,14 +90,14 @@
             телефон:<span>*</span></label>
           <input class="contacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
             value="Введите телефон" required>
-          <img src="img/phone.jpg" alt="фото трубки" class="contacts-phone__image">
+          <img src="img/phone.svg" alt="фото трубки" class="contacts-phone__image">
         </div>
         <div class="contacts-information">
           <label class="contacts-information__lable" for="field-contacts-email">Электронная
             почта:<span>*</span></label>
           <input class="contacts-information__input" id="field-contacts-email" name="contacts-information" type="email"
             value="Введите e-mail" required>
-          <img src="img/email.jpg" alt="фото письма" class="email__image">
+          <img src="img/mail.svg" alt="фото письма" class="email__image">
         </div>
       </fieldset>
       <fieldset>

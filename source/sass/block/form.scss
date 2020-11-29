@@ -107,3 +107,18 @@ input::-webkit-input-placeholder {
   border: 0 none;
   background-color: $blue;
 }
+.contacts-information{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+}
+.contacts-information__input{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.contacts-phone__image, .email__image{
+  grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: $background-fields;
+}

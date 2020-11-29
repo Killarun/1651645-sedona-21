@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+// .gallery-image {
+//   width: 100%;
+// }
 
 .gallery-image__thumbnail {
   overflow: hidden;
@@ -36,3 +39,5 @@
 .gallery-image-like {
   margin-bottom: 15px;
 }
+.gallery-image-like__like
+{    padding-right: 14px}
