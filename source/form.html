@@ -9,7 +9,7 @@
 
 </head>
 
-<body class="page-body">
+<body class="page_body">
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="page-header__logo">
@@ -65,7 +65,7 @@
       </div>
     </section>
     <form class="reviews-form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset>
+      <fieldset class="reviews-form__personal">
         <legend>Представьтесь:</legend>
         <div class="person-information">
           <label class="person-information__lable" for="field-personal-name">Имя*:</label>
@@ -83,24 +83,23 @@
             placeholder="Александрович">
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="reviews-form__contacts">
         <legend>Контактная информация:</legend>
         <div class="contacts-information">
-          <label class="contacts-information__lable" for="field-contacts-phone">Контактный
-            телефон*:</label>
+          <label class="contacts-information__lable" for="field-contacts-phone">Контактный телефон*:</label>
           <input class="contacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
-            value="Введите телефон" required>
-          <a href="" class="contacts-phone__image contacts-phone__image--phone"></a>
+          placeholder="Введите телефон" required>
+          <a class="contacts-phone__image contacts-phone__image--phone"></a>
         </div>
         <div class="contacts-information">
           <label class="contacts-information__lable" for="field-contacts-email">Электронная
             почта*:</label>
           <input class="contacts-information__input" id="field-contacts-email" name="contacts-information" type="email"
-            value="Введите e-mail" required>
-          <a href="" class="contacts-email__image contacts-email__image--email"></a>
+          placeholder="Введите e-mail" required>
+          <a class="contacts-email__image contacts-email__image--email"></a>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="reviews-form__impressions">
         <legend>
           Ваше общее впечатление:
         </legend>
@@ -120,33 +119,33 @@
           <label class="impressions-select__lable" for="impressions-select-soso">Затрудняюсь ответить</label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="reviews-form__landmarks">
         <legend>
           Посещенные достопримечательности:
         </legend>
-        <div class="landmarks">
-          <input class="landmarks__input" id="landmarks-davil" type="checkbox" name="landmarks" value="devils_bridge">
-          <label class="landmarks__lable" for="landmarks-davil">Мост Дьявола</label>
+        <div class="landmarks-select">
+          <input class="landmarks-select__input" id="landmarks-davil" type="checkbox" name="landmarks" value="devils_bridge">
+          <label class="landmarks-select__lable" for="landmarks-davil">Мост Дьявола</label>
         </div>
         <div class="landmarks">
-          <input class="landmarks__input" id="landmarks-hill" type="checkbox" name="landmarks" value="bell_mountain">
-          <label class="landmarks__lable" for="landmarks-hill">Гора-Колокол</label>
+          <input class="landmarks-select__input" id="landmarks-hill" type="checkbox" name="landmarks" value="bell_mountain">
+          <label class="landmarks-select__lable" for="landmarks-hill">Гора-Колокол</label>
         </div>
         <div class="landmarks">
-          <input class="landmarks__input" id="landmarks-park" type="checkbox" name="landmarks" value="slide-park">
-          <label class="landmarks__lable" for="landmarks-park">Слайд-парк</label>
+          <input class="landmarks-select__input" id="landmarks-park" type="checkbox" name="landmarks" value="slide-park">
+          <label class="landmarks-select__lable" for="landmarks-park">Слайд-парк</label>
         </div>
         <div class="landmarks">
-          <input class="landmarks__input" id="landmarks-rock" type="checkbox" name="landmarks" value="red_rock">
-          <label class="landmarks__lable" for="landmarks-rock">Красные скалы</label>
+          <input class="landmarks-select__input" id="landmarks-rock" type="checkbox" name="landmarks" value="red_rock">
+          <label class="landmarks-select__lable" for="landmarks-rock">Красные скалы</label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="reviews-form__emotions">
         <legend>
           Опишите свои эмоции:
         </legend>
-        <div class="emotions">
-          <textarea placeholder="Опишите подробно все свои восторги" class="emotions__field" name="personal-comment"
+        <div class="emotions-text">
+          <textarea placeholder="Опишите подробно все свои восторги" class="emotions-text__field" name="personal-comment"
           id="field-personal-comment"></textarea>
         </div>
 
