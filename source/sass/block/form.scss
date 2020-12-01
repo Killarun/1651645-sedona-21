@@ -27,7 +27,8 @@ input::-webkit-input-placeholder {
 .reviews-form {
   @media (max-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 324px 324px;
+    justify-content: center;
     grid-template-rows: repeat(4, 1fr);
   }
 
@@ -67,6 +68,8 @@ input::-webkit-input-placeholder {
     grid-column-start: 1;
   }
 }
+
+
 
 .reviews-form__impressions {
   @media (max-width: $tablet-width) {
@@ -190,6 +193,10 @@ input::-webkit-input-placeholder {
 .form-submit__button {
   border: 0 none;
   background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    padding: 14.5px 70px 17.5px 70px;
+  }
 }
 
 .contacts-information {

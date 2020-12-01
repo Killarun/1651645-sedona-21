@@ -29,6 +29,10 @@
 .hotel-search__form {
   background-color: $blue;
   border: 0;
+  @media (min-width: $tablet-width)
+  {
+    padding: 14.5px 136px 17.5px 136px;
+  }
 
   &:hover {
     background-color: $blue-hover;
