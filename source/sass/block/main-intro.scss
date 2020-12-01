@@ -1,25 +1,19 @@
 .main-intro {
-  min-width: 285px;
-  max-width: 70.75%;
-  text-align: center;
-  margin: 0 auto 41px auto;
+  margin: 0 auto 30px auto;
+  height: unset;
 
-  @media (max-width: $tablet-width) {
-    margin: 0 auto 52px auto;
-  }
-  @media (max-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 auto 41px auto;
     height: 110px;
-}
+  }
 
-  @media(max-width: $mobile-width-only) {
-    margin: 0 auto 30px auto;
-    height: unset;
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 52px auto;
   }
 }
 
 .main-intro__wrapper {
-  min-width: 285px;
+  padding: 0 25px;
   text-align: center;
 }
 

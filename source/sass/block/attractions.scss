@@ -1,34 +1,30 @@
 .attractions {
   width: 100%;
   display: grid;
-  flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
 
-// @media (max-width: $tablet-width){
-//   margin-bottom: 63px;
-// }
-
-  @media (max-width: $mobile-width-only) {
-
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
 
 .attractions__header {
   display: grid;
   align-items: center;
-  grid-template-rows: 84px 45px 81px;
+  grid-template-rows: 1fr 0.7fr 1fr;
 
-  @media (max-width: $tablet-width) {
-    grid-template-rows: 90px 61px 85px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    grid-template-rows: 60px 61px 89px;
-    height: 211px;
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 1fr 0.5fr 1fr;
+    padding: 0 35px;
   }
 }
 
@@ -61,56 +57,34 @@
   overflow: hidden;
   width: 100%;
   order: -1;
-}
 
-@media (max-width: $desktop-width) {
-  .attriction-picture-image {
+  @media (max-width: $desktop-width) {
     order: -1;
-
   }
-}
 
-@media (max-width: $tablet-width) {
-  .attriction-picture-image {
+  @media (max-width: $tablet-width) {
     order: -1;
-
   }
-}
 
-@media (max-width: $mobile-width-only) {
-  .attriction-picture-image {
+  @media (max-width: $mobile-width-only) {
     order: 0;
     height: 260px;
   }
 }
 
 .attractions__title {
-
-
-  @media (min-width: $tablet-width) {
-    align-self: end;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-    text-transform: uppercase;
-  }
-  @media (max-width: $mobile-width-only) {
-    align-self: end;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-    text-transform: uppercase;
-  }
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  align-self: end;
 }
 
 .attractions__description {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-}
-
-.attractions__number {
-  margin: 12px auto;
+  align-self: start;
 }
 
 .attractions-features__title {

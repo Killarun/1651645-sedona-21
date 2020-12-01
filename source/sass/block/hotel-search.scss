@@ -4,6 +4,10 @@
   margin-bottom: 66.5px;
 }
 
+.hotel-search__wrapper {
+  padding: 0 20px;
+}
+
 .hotel-search__title {
   font-style: normal;
   font-weight: bold;
@@ -24,7 +28,20 @@
 
 .hotel-search__form {
   background-color: $blue;
-  &:hover{
-    background-color:#669EC0;
+  border: 0;
+
+  &:hover {
+    background-color: $blue-hover;
   }
+
+  &:active:focus {
+    background-color: $blue-down;
+    color: rgba(255, 255, 255, 0.3);
+    border: 0;
+  }
+
+  &:disabled {
+    background-color: $border-gallery-grey;
+  }
+
 }
