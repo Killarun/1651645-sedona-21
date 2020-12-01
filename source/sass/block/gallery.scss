@@ -2,25 +2,103 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
+
 
 .gallery-image__thumbnail {
   overflow: hidden;
   object-fit: cover;
   object-position: 0 0;
+  width: 100%;
 }
 
 .gallery-image__size {
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.gellery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+
+    & li:nth-child(3) div.gallery-image__descripton {
+      background-color: #eaeaea;
+    }
+    & li:first-child {
+      width: 100%;
+    }
+  }
+
+
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 267px;
+    align-items: stretch;
+
+    &.gellery-list li:nth-child(1) {
+      grid-column-start: -1;
+      grid-column-end: 1;
+    }
+
+    &.gellery-list li:nth-child(2) {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    &.gellery-list li:nth-child(3) {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    &.gellery-list li:nth-child(4) {
+      grid-column-start: 3;
+      grid-row-start: 2;
+    }
+    & li:nth-child(3) div.gallery-image__descripton {
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }
+
 }
 
 .gallery-image__descripton {
   margin-bottom: 23px;
   border-bottom: 1px solid $border-gallery-grey;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 0;
+    position: relative;
+    top: -7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    top: -86px;
+    left: 0;
+    color: #ffffff;;
   }
 }
 
@@ -44,11 +122,12 @@
   @media (min-width: $tablet-width) {
     grid-column: 1;
   }
-  }
+}
 
 
 .gallery-image-like {
   margin-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     grid-column: 2/2;
     justify-self: center;
@@ -58,8 +137,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
   }
+}
 
 
 .gallery-image-like__like {

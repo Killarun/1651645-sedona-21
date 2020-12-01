@@ -1,15 +1,24 @@
-.gallery-inro {
+.gallery-intro {
   margin-bottom: 22px;
   border-bottom: solid 1px $border-gallery-grey;
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
 }
 
 .gallery-intro__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // margin: 0 20px;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    flex-wrap: wrap;
+    justify-items: center;
+    text-align: center;
+    padding: 0 60px;
+  }
 }
 
 .gallery-intro__title {
