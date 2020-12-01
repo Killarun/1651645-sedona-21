@@ -85,12 +85,21 @@
 }
 
 .attractions__title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  text-transform: uppercase;
-  @media(max-width: $mobile-width-only){
+
+
+  @media (min-width: $tablet-width) {
     align-self: end;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  @media (max-width: $mobile-width-only) {
+    align-self: end;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
   }
 }
 

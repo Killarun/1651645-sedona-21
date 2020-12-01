@@ -1,4 +1,4 @@
-.page-header {
+.page__header {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -7,7 +7,7 @@
 }
 
 
-.page-header__logo {
+.logo {
   height: 85px;
   position: absolute;
   left: 50%;

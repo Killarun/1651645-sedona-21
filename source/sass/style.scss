@@ -2,6 +2,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
+@import "global/page.scss";
 @import "block/page-header.scss";
 @import "block/main-head.scss";
 @import "block/main-nav.scss";
@@ -17,10 +18,3 @@
 @import "block/map.scss";
 @import "block/form.scss";
 @import "block/footer.scss";
-
-body {
-  background-color: #ffffff;
-  font-family: "PT Sans", sans-serif;
-  max-width: 1200px;
-    margin: 0 auto;
-}
