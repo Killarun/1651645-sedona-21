@@ -1,0 +1,15 @@
+.copyright__text {
+  padding-right: 14px;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  &:hover .copyright__image-path,
+  &:focus .copyright__image-path {
+    fill: $blue-hover;
+  }
+
+  &:active .copyright__image-path {
+    fill: $blue-hover;
+  }
+}
