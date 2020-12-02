@@ -8,6 +8,7 @@ legend {
 
 fieldset {
   border: 0;
+  margin: 0;
 }
 
 input::-webkit-input-placeholder {
@@ -42,10 +43,10 @@ input::-webkit-input-placeholder {
 
 .reviews-form__personal {
   @media (max-width: $tablet-width) {
-    order: 3;
-    grid-row-start: 2;
-    grid-column-start: -1;
-    grid-column-end: 1;
+    order: 1;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -57,9 +58,13 @@ input::-webkit-input-placeholder {
 
 .reviews-form__contacts {
   @media (max-width: $tablet-width) {
-    order: 2;
-    grid-row-start: 1;
-    grid-column-start: 2;
+    order: 4;
+    grid-row-start: -2;
+    grid-row-end: 2;
+    grid-column-start: -1;
+    grid-column-end: 1;
+    align-self: stretch;
+
   }
 
   @media (max-width: $mobile-width-only) {
@@ -76,6 +81,7 @@ input::-webkit-input-placeholder {
     order: 1;
     grid-row-start: 1;
     grid-column-start: 1;
+    justify-self: flex-start;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -203,6 +209,10 @@ input::-webkit-input-placeholder {
   display: grid;
   grid-template-rows: 1fr 58px;
   grid-template-columns: 222px 58px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 4fr 3.223em;
+  }
 }
 
 .contacts-phone__image,
