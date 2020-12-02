@@ -1,0 +1,26 @@
+.contacts-information__lable {
+  font-size: $description;
+  text-transform: uppercase;
+}
+
+
+.contacts-information {
+  display: grid;
+  grid-template-rows: 1fr 58px;
+  grid-template-columns: 222px 58px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 4fr 3.223em;
+  }
+}
+
+.contacts-information__input {
+  font-size: $title;
+  font-weight: bold;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #f2f2f2;
+  border: 0;
+}

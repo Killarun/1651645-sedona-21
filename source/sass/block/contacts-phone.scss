@@ -1,0 +1,16 @@
+.contacts-phone__image, {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-color: $background-fields;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.contacts-phone__image--phone {
+  background-image: url("../img/phone.svg");
+}
+
+.contacts-email__image--email {
+  background-image: url("../img/mail.svg");
+}

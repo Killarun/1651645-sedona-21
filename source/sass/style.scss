@@ -2,6 +2,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
+/*Blocks*/
 @import "block/page.scss";
 @import "block/main-head.scss";
 @import "block/main-nav.scss";
@@ -25,6 +26,14 @@
 @import "block/hotel-search.scss";
 @import "block/map.scss";
 @import "block/reviews-form.scss";
+@import "block/person-information.scss";
+@import "block/contacts-information.scss";
+@import "block/impressions-select.scss";
+@import "block/landmarks-select.scss";
+@import "block/emotions-text.scss";
+@import "block/contacts-phone.scss";
+@import "block/contacts-email.scss";
 @import "block/social.scss";
+@import "block/form-submit.scss";
 @import "block/copyright.scss";
 @import "block/page-footer.scss";
