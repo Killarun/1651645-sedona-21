@@ -24,12 +24,9 @@
   align-items: center;
   grid-template-rows: 1fr 0.7fr 1fr;
 
-
-  @media (min-width: $desktop-width) {}
-
   @media (min-width: $tablet-width) {
     grid-template-rows: 1fr 0.5fr 1fr;
-    padding: 0px 35px;
+    padding: 0 35px;
   }
 }
 
@@ -132,7 +129,6 @@
     display: grid;
     grid-template-columns: repeat(3, 33%);
   }
-
 }
 
 .city-features li:nth-child(1) img {
@@ -166,7 +162,7 @@
 }
 
 .city-features li:nth-child(2) {
-  @media (minx-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     order: 3;
   }
 
@@ -214,5 +210,4 @@
   @media (min-width: $desktop-width) {
     align-items: center;
   }
-
 }

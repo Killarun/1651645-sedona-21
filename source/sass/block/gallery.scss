@@ -34,19 +34,17 @@
   flex-wrap: wrap;
   justify-content: center;
 
-
   @media (min-width: $tablet-width) {
     justify-content: start;
 
     & li:nth-child(3) div.gallery-image__descripton {
       background-color: #eaeaea;
     }
+
     & li:first-child {
       width: 100%;
     }
   }
-
-
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -73,11 +71,11 @@
       grid-column-start: 3;
       grid-row-start: 2;
     }
+
     & li:nth-child(3) div.gallery-image__descripton {
       background-color: rgba(0, 0, 0, 0.35);
     }
   }
-
 }
 
 .gallery-image__descripton {
@@ -98,7 +96,7 @@
     margin: 0;
     top: -86px;
     left: 0;
-    color: #ffffff;;
+    color: #ffffff;
   }
 }
 

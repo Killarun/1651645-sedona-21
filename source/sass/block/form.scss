@@ -47,6 +47,7 @@ input::-webkit-input-placeholder {
     grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 2;
+    justify-self: end;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -64,7 +65,6 @@ input::-webkit-input-placeholder {
     grid-column-start: -1;
     grid-column-end: 1;
     align-self: stretch;
-
   }
 
   @media (max-width: $mobile-width-only) {
@@ -73,8 +73,6 @@ input::-webkit-input-placeholder {
     grid-column-start: 1;
   }
 }
-
-
 
 .reviews-form__impressions {
   @media (max-width: $tablet-width) {
