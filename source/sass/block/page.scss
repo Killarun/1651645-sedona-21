@@ -14,11 +14,29 @@
 // Page Header
 
 .page__header {
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #ffffff;
+  outline-offset: -2px;
 }
 
 // Page footer
 
 .page__footer {
   margin-top: auto;
+}
+
+
+.header__logo {
+  height: 85px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

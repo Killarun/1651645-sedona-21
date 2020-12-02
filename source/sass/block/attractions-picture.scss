@@ -1,0 +1,33 @@
+.attractions-picture {
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.attriction-picture-image {
+  height: 260px;
+  overflow: hidden;
+  width: 100%;
+  order: -1;
+
+  @media (max-width: $desktop-width) {
+    order: -1;
+  }
+
+  @media (max-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    order: 0;
+    height: 260px;
+  }
+}

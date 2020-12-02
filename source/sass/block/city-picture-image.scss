@@ -1,0 +1,26 @@
+.city-picture__image {
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    height: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: auto;
+  }
+}
+
+.city-picture-image {
+  height: 260px;
+  overflow: hidden;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: 260px;
+  }
+}
