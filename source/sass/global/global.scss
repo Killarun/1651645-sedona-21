@@ -37,3 +37,23 @@ br {
     display: none;
   }
 }
+
+.hide__mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.hide__pc {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
