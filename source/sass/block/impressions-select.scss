@@ -1,10 +1,19 @@
 .impressions-select__lable {
   font-size: $title;
   font-weight: bold;
-  position: relative;
-  top: -18px;
+  // position: relative;
+  // top: -18px;
 }
 
 .impressions-select {
   margin-bottom: 25px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 26px;
+}
+
+.impressions-select__input {
+  height: 48px;
+  width: 48px;
 }

@@ -129,6 +129,7 @@
 
   &:active:focus {
     color: rgba(0, 0, 0, 0.3);
+    background-color: #5496bd;
   }
 }
 
@@ -150,7 +151,6 @@
     width: 680px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
   }
 }
 
