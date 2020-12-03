@@ -31,7 +31,18 @@
       grid-row-start: 1;
       grid-column-start: 1;
       justify-self: flex-start;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 393px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 292px;
+        width: 1px;
+        background-color: #e5e5e5;
     }
+      }
+
 
     & div.reviews-form__wrapper:nth-child(2) {
       grid-row-start: 2;
