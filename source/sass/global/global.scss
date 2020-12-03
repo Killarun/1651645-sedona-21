@@ -39,21 +39,20 @@ br {
 }
 
 .hide__mobile {
+  display: none;
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (max-width: $mobile-width-only) {
     display: block;
   }
+
 }
 
 .hide__pc {
+
   @media (min-width: $tablet-width) {
-    display: block;
+    display: none;
   }
 
   @media (max-width: $mobile-width-only) {
-    display: none;
+    display: block;
   }
 }

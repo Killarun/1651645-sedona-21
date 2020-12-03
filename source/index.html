@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="page" >
+<html lang="ru" class="page">
 
 <head>
   <meta charset="utf-8">
@@ -11,8 +11,12 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="header__logo hide__mobile">
-        <img src="img/logotype.svg" alt="Логотип City of Sedona">
+      <a class="header__logo hide__pc">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="hide__pc" src="img/logotype.svg" alt="Логотип City of Sedona">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -29,9 +33,13 @@
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item hide__pc">
-            <a class="header__logo">
-              <img src="img/logotype.svg" alt="Логотип City of Sedona">
+          <li class="site-list__item hide__mobile">
+            <a class="header__logo hide__mobile">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                <img class="hide__mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
+              </picture>
             </a>
           </li>
           <li class="site-list__item">
@@ -59,8 +67,8 @@
       </section>
       <section class="main-intro">
         <div class="main-intro__wrapper">
-        <h2 class="main-intro__title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p class="main-intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h2 class="main-intro__title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
+          <p class="main-intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
       <section class="city">
@@ -87,11 +95,11 @@
         </li>
         <li class="city-features__item">
 
-            <img class="city-features__icon" src="img/icon-gift.svg" width="32" height="37 alt="Подарок">
-            <h3 class="city-features__title">Сувениры</h3>
-            <p class="city-features__description">
-              Не только китайского, но и<br> местного производства!
-            </p>
+          <img class="city-features__icon" src="img/icon-gift.svg" width="32" height="37 alt=" Подарок">
+          <h3 class="city-features__title">Сувениры</h3>
+          <p class="city-features__description">
+            Не только китайского, но и<br> местного производства!
+          </p>
         </li>
         <li class="city-features__item">
           <img class="city-features__icon" src="img/icon-burger.svg" width="40" height="35" alt="Гамбургер">
@@ -102,19 +110,20 @@
         </li>
       </ul>
       <section class="attractions">
-          <div class="attractions__header attractions__colored-background">
-            <h2 class="attractions__title">
-              Там есть<br> мост дьявола
-            </h2>
-            <span class="attractions__number">-№2-</span>
-            <p class="attractions__description">Да, по нему можно<br> пройти! Если вы <br>осмелитесь, конечно</p>
-          </div>
-          <picture class="attriction-picture-image">
-            <source media="(min-width: 1200px)" srcset="img/photo-bridge.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge.jpg">
-            <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.png" alt="Фото мост дьявола">
-      </picture>
-          </section>
+        <div class="attractions__header attractions__colored-background">
+          <h2 class="attractions__title">
+            Там есть<br> мост дьявола
+          </h2>
+          <span class="attractions__number">-№2-</span>
+          <p class="attractions__description">Да, по нему можно<br> пройти! Если вы <br>осмелитесь, конечно</p>
+        </div>
+        <picture class="attriction-picture-image">
+          <source media="(min-width: 1200px)" srcset="img/photo-bridge.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-bridge.jpg">
+          <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.png"
+            alt="Фото мост дьявола">
+        </picture>
+      </section>
       <ul class="other-places">
         <li class="other-places__items">
           <h2 class="other-places__title">
@@ -140,11 +149,12 @@
       </ul>
       <section class="hotel-search">
         <div class="hotel-search__wrapper">
-        <h2 class="hotel-search__title">Заинтересовались?</h2>
-        <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
-          в седоне</p>
-        <button href="search.html" class="button hotel-search__form">Найти гостиницу</button>
-      </div>
+          <h2 class="hotel-search__title">Заинтересовались?</h2>
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+            гостиниц
+            в седоне</p>
+          <button href="search.html" class="button hotel-search__form">Найти гостиницу</button>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта аризоны</h2>
@@ -174,9 +184,11 @@
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
-            <path class="copyright__image-path" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            <path class="copyright__image-path"
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="black" />
           </svg>
-          </a>
+        </a>
       </div>
     </div>
   </footer>
@@ -186,7 +198,7 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
@@ -195,6 +207,7 @@
         navMain.classList.remove('main-nav--opened');
       }
     });
+
   </script>
 </body>
 
