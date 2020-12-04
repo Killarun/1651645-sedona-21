@@ -30,13 +30,14 @@
 
 .header__logo {
   height: 85px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  order: 2;
+  display: grid;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    order: 2;
+    display: grid;
+    justify-content: center;
+    height: 0;
   }
 }

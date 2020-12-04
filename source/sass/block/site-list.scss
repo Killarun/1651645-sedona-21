@@ -37,6 +37,7 @@
     width: 680px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,5 +45,12 @@
     display: grid;
     justify-content: space-between;
     justify-items: center;
+  }
+}
+
+.site-list__item {
+  align-self: center;
+  &:nth-child(3){
+    align-self: start;
   }
 }

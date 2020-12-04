@@ -5,6 +5,11 @@
   min-height: 398px;
   margin-bottom: 32px;
 
+  &::before {
+    background: url("../img/intro-triangle.png");
+    background-size: cover;
+  }
+
   @media (max-width: $desktop-width) {
     margin-bottom: 55px;
   }

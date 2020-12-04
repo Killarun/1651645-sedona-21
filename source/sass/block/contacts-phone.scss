@@ -6,16 +6,16 @@
   background-repeat: no-repeat;
   font-size: 0;
 
+  &--phone {
+    background-image: url("../img/phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/mail.svg");
+  }
+
   @media (min-width: $desktop-width) {
     grid-column-start: 3;
     grid-row-start: 1;
   }
-}
-
-.contacts-phone__image--phone {
-  background-image: url("../img/phone.svg");
-}
-
-.contacts-email__image--email {
-  background-image: url("../img/mail.svg");
 }
