@@ -40,14 +40,13 @@ br {
 
 .hide__mobile {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
-
 }
 
 .hide__pc {
-
   @media (min-width: $tablet-width) {
     display: none;
   }
