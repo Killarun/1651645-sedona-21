@@ -73,7 +73,7 @@
     <section class="main-intro">
       <div class="main-intro__wrapper">
         <h2 class="main-intro__title">Оставьте свой отзыв</h2>
-        <p class="main-intro__description">Помогите нашим отелям стать лучше! оставьт отзыв о них, а так же о посещеных
+        <p class="main-intro__description">Помогите нашим отелям стать лучше! оставьт отзыв о них,<br> а так же о посещеных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -104,7 +104,7 @@
         <fieldset class="reviews-form__contacts">
           <legend class="reviews-form__legend">Контактная информация:</legend>
           <div class="contacts-information">
-            <label class="contacts-information__lable" for="field-contacts-phone">Контактный телефон*:</label>
+            <label class="contacts-information__lable" for="field-contacts-phone"><span class="contacts-information__span">Контактный &nbsp;</span>телефон*:</label>
             <input class="contacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
               placeholder="Введите телефон" required>
             <a class="contacts-phone__image contacts-phone__image--phone"></a>
@@ -183,6 +183,7 @@
     </div>
       <div class="form-submit">
         <input class="form-submit__button button" type="submit" name="send-request" value="отправить отзыв">
+        <p class="forum-submit__rule">* — обязательные поля</p>
       </div>
     </form>
   </main>

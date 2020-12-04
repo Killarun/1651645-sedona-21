@@ -9,6 +9,11 @@
     grid-template-columns: 1fr 4fr;
     gap: 29px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 83px;
+  }
 }
 
 .landmarks-select__lable {

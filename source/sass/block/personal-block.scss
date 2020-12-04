@@ -1,4 +1,9 @@
 .personal-block {
-  display: grid;
-  grid-template-columns: 1fr;
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
