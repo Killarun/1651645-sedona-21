@@ -50,7 +50,8 @@
 
 .site-list__item {
   align-self: center;
-  &:nth-child(3){
+
+  &:nth-child(3) {
     align-self: start;
   }
 }

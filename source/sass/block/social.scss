@@ -21,12 +21,15 @@
   &:active:focus {
     background-color: $blue-down;
   }
+
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
   }
+
   &--facebook {
     background-image: url("../img/icon-facebook.svg");
   }
+
   &--youtube {
     background-image: url("../img/icon-youtube.svg");
   }

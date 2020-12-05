@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   font-size: 0;
 
+  &--email {
+    background-image: url("../img/mail.svg");
+  }
+
   @media (min-width: $desktop-width) {
     grid-column-start: 3;
     grid-row-start: 1;

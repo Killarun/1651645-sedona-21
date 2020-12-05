@@ -26,18 +26,3 @@
 .page__footer {
   margin-top: auto;
 }
-
-
-.header__logo {
-  height: 85px;
-  order: 2;
-  display: grid;
-  justify-content: center;
-
-  @media (min-width: $tablet-width) {
-    order: 2;
-    display: grid;
-    justify-content: center;
-    height: 0;
-  }
-}
