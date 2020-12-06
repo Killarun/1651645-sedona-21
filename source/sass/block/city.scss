@@ -34,6 +34,13 @@
   text-align: center;
   background-color: $blue;
   color: #ffffff;
+  background-image: url("../img/white.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .city__title {

@@ -1,25 +1,27 @@
 .main-head {
-  background: url("../img/intro.jpg") no-repeat center;
-  background-size: cover;
-  width: 100%;
+  background-image: url("../img/intro-triangle.png"), url("../img/intro.jpg");
+  background-position: bottom center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
   min-height: 398px;
   margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &::before {
-    background: url("../img/intro-triangle.png");
-    background-size: cover;
-  }
 
-  @media (max-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 55px;
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/intro.jpg");
+    background-position: bottom center;
+    min-height: 518px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 43.5px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 32px;
+    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/intro.jpg");
+    background-position: bottom center;
+    min-height: 518px;
   }
 }
 

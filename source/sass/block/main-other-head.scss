@@ -1,21 +1,29 @@
 .main-other-head {
-  background: url("../img/intro.jpg") no-repeat bottom;
-  background-size: 280%;
-  background-position-y: bottom;
-  background-position-x: center;
-  width: 100%;
-  min-height: 159px;
-  margin-bottom: 31px;
-}
-
-.main-other-head__wrapper {
+  background-image: url("../img/intro-triangle.png"), url("../img/back-other.png");
+  background-position: bottom center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+  min-height: 157px;
+  margin-bottom: 32px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 52px 0 65px;
-}
+  align-items: center;
 
-.main-other-head__triangle {
-  position: absolute;
-  top: 159px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-other-tablet.png");
+    background-position: bottom center;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    min-height: 290px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-other-tablet.png");
+    background-position: bottom center;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    min-height: 290px;
+    margin-bottom: 32px;
+  }
 }

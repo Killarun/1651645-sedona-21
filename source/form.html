@@ -12,11 +12,11 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="header__logo hide__pc">
+      <a class="header__logo hide-pc">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-        <img class="hide__pc" src="img/logotype.svg" alt="Логотип City of Sedona">
+        <img class="hide-pc" src="img/logotype.svg" alt="Логотип City of Sedona">
       </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -34,12 +34,12 @@
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item hide__mobile">
-            <a class="header__logo hide__mobile">
+          <li class="site-list__item hide-mobile">
+            <a class="header__logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-                    <img class="hide__mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
+                    <img class="hide-mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
               </picture>
             </a>
           </li>
@@ -62,13 +62,11 @@
 
     <section class="main-other-head">
       <h1 class="visually-hidden">Отзывы о Sedona</h1>
-      <div class="main-other-head__wrapper">
-        <img class="main-other-head__image" src="img/sedona.svg" alt="Welcome to the gorgeous Sedona">
-        <picture class="main-other-head__triangle">
-          <source media="(min-width: 1200px)" srcset="img/intro-triangle.svg">
-          <img src="img/intro-triangle-small.svg">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/sedona-logo-tablet.svg">
+          <img class="main-other-head__image" src="img/sedona.svg" alt="Welcome to the gorgeous Sedona">
         </picture>
-      </div>
     </section>
     <section class="main-intro">
       <div class="main-intro__wrapper">
@@ -80,7 +78,7 @@
     <form class="reviews-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="reviews-form__wrapper-personal">
         <fieldset class="reviews-form__personal">
-          <legend class="reviews-form__legend">Представьтесь:</legend>
+          <legend class="reviews-form__legend reviews-form__legend--personal">Представьтесь:</legend>
           <div class="personal-block">
             <div class="person-information">
               <label class="person-information__lable" for="field-personal-name">Имя*:</label>
@@ -102,26 +100,26 @@
       </div>
       <div class="reviews-form__wrapper-contacts">
         <fieldset class="reviews-form__contacts">
-          <legend class="reviews-form__legend">Контактная информация:</legend>
+          <legend class="reviews-form__legend reviews-form__legend--contacts">Контактная информация:</legend>
           <div class="contacts-information">
             <label class="contacts-information__lable" for="field-contacts-phone"><span class="contacts-information__span">Контактный &nbsp;</span>телефон*:</label>
             <input class="contacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
               placeholder="Введите телефон" required>
-            <a class="contacts-phone__image contacts-phone__image--phone"></a>
+            <a class="contacts-information__image contacts-information__image--phone"></a>
           </div>
           <div class="contacts-information">
             <label class="contacts-information__lable" for="field-contacts-email">Электронная
               почта*:</label>
             <input class="contacts-information__input" id="field-contacts-email" name="contacts-information"
               type="email" placeholder="Введите e-mail" required>
-            <a class="contacts-email__image contacts-email__image--email"></a>
+            <a class="contacts-information__image contacts-information__image--email"></a>
           </div>
 
         </fieldset>
       </div>
       <div class="reviews-form__wrapper-impressions">
         <fieldset class="reviews-form__impressions">
-          <legend class="reviews-form__legend">
+          <legend class="reviews-form__legend reviews-form__legend--impressions">
             Ваше общее впечатление:
           </legend>
           <div class="impressions-select">
@@ -143,7 +141,7 @@
       </div>
       <div class="reviews-form__wrapper-landmarks">
         <fieldset class="reviews-form__landmarks">
-          <legend class="reviews-form__legend">
+          <legend class="reviews-form__legend reviews-form__legend--landmarks">
             Посещенные<br> достопримечательности:
           </legend>
           <div class="landmarks-select">
@@ -171,7 +169,7 @@
       </div>
       <div class="reviews-form__wrapper-emotions">
       <fieldset class="reviews-form__emotions">
-        <legend class="reviews-form__legend">
+        <legend class="reviews-form__legend reviews-form__legend--emotions">
           Опишите свои эмоции:
         </legend>
         <div class="emotions-text">

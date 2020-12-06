@@ -38,7 +38,7 @@ br {
   }
 }
 
-.hide__mobile {
+.hide-mobile {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -46,7 +46,7 @@ br {
   }
 }
 
-.hide__pc {
+.hide-pc {
   @media (min-width: $tablet-width) {
     display: none;
   }

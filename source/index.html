@@ -11,11 +11,11 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="header__logo hide__pc">
+      <a class="header__logo hide-pc">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="hide__pc" src="img/logotype.svg" alt="Логотип City of Sedona">
+          <img class="hide-pc" src="img/logotype.svg" alt="Логотип City of Sedona">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -33,12 +33,12 @@
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item hide__mobile">
-            <a class="header__logo hide__mobile">
+          <li class="site-list__item hide-mobile">
+            <a class="header__logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-                <img class="hide__mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
+                <img class="hide-mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
               </picture>
             </a>
           </li>
@@ -62,7 +62,12 @@
       <section class="main-head">
         <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
         <div class="main-head__image">
-          <img src="img/intro.svg" alt="Welcome to the gorgeous Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/intro-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/intro-tablet.svg">
+            <img src="img/intro.svg" alt="Welcome to the gorgeous Sedona">
+          </picture>
+
         </div>
       </section>
       <section class="main-intro">

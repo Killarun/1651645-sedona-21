@@ -11,11 +11,11 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="header__logo hide__pc">
+      <a class="header__logo hide-pc">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="hide__pc" src="img/logotype.svg" alt="Логотип City of Sedona">
+          <img class="hide-pc" src="img/logotype.svg" alt="Логотип City of Sedona">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -33,12 +33,12 @@
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item hide__mobile">
-            <a class="header__logo hide__mobile">
+          <li class="site-list__item hide-mobile">
+            <a class="header__logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-                <img class="hide__mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
+                <img class="hide-mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
               </picture>
             </a>
           </li>
@@ -60,14 +60,12 @@
   <main class="page__main main-gallery">
     <h1 class="visually-hidden">Галерея путешествия Sedona</h1>
     <section class="main-other-head">
-      <div class="main-other-head__wrapper">
-        <img class="main-other-head__image" src="img/sedona.svg" alt="Welcome to the gorgeous Sedona">
-
-        <picture class="main-other-head__triangle">
-          <source media="(min-width: 1200px)" srcset="img/intro-triangle.svg">
-          <img src="img/intro-triangle-small.svg">
+      <h1 class="visually-hidden">Отзывы о Sedona</h1>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/sedona-logo-tablet.svg">
+          <img class="main-other-head__image" src="img/sedona.svg" alt="Welcome to the gorgeous Sedona">
         </picture>
-      </div>
     </section>
     <section class="gallery-intro">
       <div class="gallery-intro__wrapper">
@@ -182,7 +180,7 @@
         <div class="presentation-video">
 
         </div>
-        <div class="presentation-tools hide__pc">
+        <div class="presentation-tools hide-pc">
           <div class="presentation-tools__panel">
             <input class="presentation-tools__bar" type="range" min="1" max="10" step="1">
           </div>
@@ -192,7 +190,7 @@
             <input class="presentation-tools__fullscreen" type="image" src="img/fullscreen.svg" alt="fullscreen">
           </div>
         </div>
-        <div class="presentation-tools hide__mobile">
+        <div class="presentation-tools hide-mobile">
           <div class="presentation-tools__panel">
             <input class="presentation-tools__bar" type="range" min="1" max="10" step="1">
             <input class="presentation-tools__replay" type="image" src="img/replay.svg" alt="replay">
