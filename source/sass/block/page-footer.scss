@@ -1,0 +1,29 @@
+.page-footer__wrapper {
+  padding: 0 20px;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 60px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 120px;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__copyright {
+  align-items: center;
+  display: flex;
+}
+
+.page-footer__tag {
+
+  text-align: center;
+}

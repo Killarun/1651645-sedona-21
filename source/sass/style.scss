@@ -2,22 +2,41 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
-@import "block/page-header.scss";
+/*Blocks*/
+@import "block/page.scss";
 @import "block/main-head.scss";
-@import "block/main-other.scss";
-@import "block/gallery-inro.scss";
+@import "block/main-nav.scss";
+@import "block/main-other-head.scss";
+@import "block/gallery-intro.scss";
+@import "block/gallery-image.scss";
+@import "block/gallery-image-like.scss";
+@import "block/gellery-list.scss";
 @import "block/gallery.scss";
 @import "block/presentation.scss";
+@import "block/presentation-video.scss";
+@import "block/main-gallery-head.scss";
 @import "block/main-intro.scss";
 @import "block/city.scss";
+@import "block/city-picture.scss";
+@import "block/header.scss";
+@import "block/city-features.scss";
 @import "block/attractions.scss";
+@import "block/attractions-picture.scss";
+@import "block/attriction-picture-image.scss";
+@import "block/attractions-features.scss";
 @import "block/other-places.scss";
 @import "block/hotel-search.scss";
 @import "block/map.scss";
-@import "block/form.scss";
-@import "block/footer.scss";
-
-body {
-  background-color: #ffffff;
-  font-family: "PT Sans", sans-serif;
-}
+@import "block/site-list.scss";
+@import "block/personal-block.scss";
+@import "block/reviews-form.scss";
+@import "block/person-information.scss";
+@import "block/contacts-information.scss";
+@import "block/impressions-select.scss";
+@import "block/landmarks-select.scss";
+@import "block/emotions-text.scss";
+@import "block/social.scss";
+@import "block/presentation-tools.scss";
+@import "block/form-submit.scss";
+@import "block/copyright.scss";
+@import "block/page-footer.scss";

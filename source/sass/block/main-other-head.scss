@@ -1,0 +1,33 @@
+.main-other-head {
+  background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
+  background-position: bottom center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+  min-height: 157px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop.jpg");
+    background-position: bottom center;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    min-height: 290px;
+    margin-bottom: 32px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop.jpg");
+    background-position: bottom center;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    min-height: 290px;
+    margin-bottom: 32px;
+  }
+}

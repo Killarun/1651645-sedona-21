@@ -1,0 +1,13 @@
+.attractions-picture {
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: auto;
+    width: 100%;
+  }
+}

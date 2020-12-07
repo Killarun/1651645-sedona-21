@@ -1,0 +1,30 @@
+.form-submit {
+  text-align: center;
+  margin-bottom: 80px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: -1;
+    grid-column-end: 1;
+    display: grid;
+  }
+}
+
+.form-submit__button {
+  border: 0 none;
+  background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+  }
+}
+
+.form-submit__rule {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-column-start: 2;
+    align-self: center;
+    justify-self: end;
+  }
+}

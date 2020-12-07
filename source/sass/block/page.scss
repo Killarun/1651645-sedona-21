@@ -1,0 +1,28 @@
+// Page Body
+
+.page__body {
+  min-width: 320px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: $page-background;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Page Header
+
+.page__header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #ffffff;
+  outline-offset: -2px;
+}
+
+// Page footer
+
+.page__footer {
+  margin-top: auto;
+}

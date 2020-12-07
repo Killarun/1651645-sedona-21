@@ -1,13 +1,19 @@
 .main-intro {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  height: unset;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 41px auto;
+    height: 110px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 52px auto;
+  }
 }
 
 .main-intro__wrapper {
-  min-width: 285px;
+  padding: 0 25px;
   text-align: center;
 }
 

@@ -1,0 +1,19 @@
+.attriction-picture-image {
+  height: 260px;
+  overflow: hidden;
+  width: 100%;
+  order: -1;
+
+  @media (max-width: $desktop-width) {
+    order: -1;
+  }
+
+  @media (max-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    order: 0;
+    height: 260px;
+  }
+}

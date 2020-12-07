@@ -1,0 +1,29 @@
+.landmarks-select {
+  margin-bottom: 25px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 26px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 4fr;
+    gap: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 83px;
+  }
+}
+
+.landmarks-select__lable {
+  font-size: $title;
+  font-weight: bold;
+  // position: relative;
+  // top: -18px;
+}
+
+.landmarks-select__input {
+  height: 48px;
+  width: 48px;
+}
