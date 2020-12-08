@@ -54,6 +54,11 @@
   border: 0;
   padding: 18px 0 14px 22px;
 
+  &::placeholder {
+    color: #000000;
+    font-weight: bold;
+  }
+
   @media (min-width: $desktop-width) {
     grid-row-start: 1;
     grid-column-start: 2;

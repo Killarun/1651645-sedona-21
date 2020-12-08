@@ -10,4 +10,9 @@
   font-size: $title;
   color: #000000;
   padding: 10px;
+
+  &::placeholder {
+    color: #000000;
+    font-weight: bold;
+  }
 }

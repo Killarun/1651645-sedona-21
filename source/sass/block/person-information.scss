@@ -16,6 +16,11 @@
 
     background-color: #ffffff;
   }
+
+  &::placeholder {
+    color: #000000;
+    font-weight: bold;
+  }
 }
 
 .person-information {
