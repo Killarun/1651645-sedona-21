@@ -49,18 +49,18 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: 3px;
+  right: -7px;
   left: auto;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 17px;
+    top: 23px;
+    left: 8px;
     width: 30px;
-    height: 2px;
+    height: 4px;
     background-color: #ffffff;
   }
 

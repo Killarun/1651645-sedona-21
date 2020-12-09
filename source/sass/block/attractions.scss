@@ -3,7 +3,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.74fr 1fr;
   grid-template-columns: 1fr;
 
   @media (min-width: $desktop-width) {
@@ -39,12 +39,28 @@
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
-  align-self: end;
+  align-self: center;
+  position: relative;
+  top: 17px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .attractions__description {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
   align-self: start;
+  position: relative;
+  top: -6px;
+}
+
+.attractions__number{
+  font-size: 14px;
+  align-self: start;
+  position: relative;
+  top: 3px;
 }

@@ -3,9 +3,9 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.87fr 0.5fr;
   grid-template-columns: 1fr;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 2fr;
@@ -39,7 +39,7 @@
   text-align: center;
   background-color: $blue;
   color: #ffffff;
-  background-image: url("../img/white.png");
+  background-image: url("../img/white.svg");
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -54,6 +54,9 @@
   line-height: 26px;
   text-transform: uppercase;
   align-self: end;
+  position: relative;
+  top: 15px;
+
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
@@ -63,11 +66,28 @@
 
 .city__description {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
-  align-self: start;
+  align-self: stretch;
+  position: relative;
+  top: 4px;
+
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
   }
+}
+
+.city__number {
+  font-size: 14px;
+  line-height: 21px;
+  position: relative;
+    top: 6px;
+
+  @media (min-width: $desktop-width) {
+
+    position: relative;
+    top: -4px;
+  }
+
 }

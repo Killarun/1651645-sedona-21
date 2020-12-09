@@ -1,11 +1,13 @@
 .site-list a {
+
+
   @media (max-width: $mobile-width-only) {
     position: relative;
     display: block;
-    padding: 12px 21px;
+    padding: 16px 21px;
     padding-bottom: 13px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 25px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;

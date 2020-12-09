@@ -31,7 +31,13 @@ img {
 }
 
 br {
+  @media (min-width: $tablet-width){
+    display: none;
+  }
+@media (min-width: $desktop-width) {
   display: block;
+
+}
 
   @media (max-width: $mobile-width-only) {
     display: none;

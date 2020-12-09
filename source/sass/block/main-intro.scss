@@ -1,5 +1,5 @@
 .main-intro {
-  margin: 0 auto 30px auto;
+  margin: 0 auto 12px auto;
   height: unset;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +23,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin-bottom: 30px;
+  white-space: break-spaces;
+
+
   @media (min-width: $desktop-width) {
     font-size: 21px;
     margin-bottom: 30px;
