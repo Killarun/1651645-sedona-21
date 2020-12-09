@@ -39,9 +39,8 @@
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
-  align-self: center;
-  position: relative;
-  top: 17px;
+  align-self: end;
+  padding-bottom: 5px;
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
@@ -54,13 +53,11 @@
   line-height: 21px;
   text-transform: uppercase;
   align-self: start;
-  position: relative;
-  top: -6px;
+  margin-top: -6px;
 }
 
 .attractions__number{
   font-size: 14px;
   align-self: start;
-  position: relative;
-  top: 3px;
+  padding-top: 3px;
 }

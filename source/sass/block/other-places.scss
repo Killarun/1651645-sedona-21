@@ -3,11 +3,12 @@
   text-align: center;
   display: grid;
   text-transform: uppercase;
-  padding: 25px 20px;
-  margin-bottom: 33px;
+  padding: 25px 20px 0 20px;
+  margin-bottom: 31px;
 
   li:nth-child(3) p {
     border: none;
+    padding: 0 15px 0 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -28,7 +29,7 @@
 .other-places__items {
   display: grid;
   padding-bottom: 25px;
-  grid-template-rows: 0.7fr 0.8fr 1fr;
+  grid-template-rows: 0.5fr 0.3fr 0.5fr;
 
 
   @media (min-width: $tablet-width) {
@@ -42,6 +43,7 @@
 
 .other-places__title {
   font-size: 18px;
+  padding-bottom: 8px;
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
@@ -50,27 +52,24 @@
 
 .other-places__description {
   font-size: 14px;
+  line-height: 21px;
 
   @media (min-width: $desktop-width) {
-    font-size: 14px;
-    line-height: 21px;
-    position: relative;
-    top: 4px;
-    left: -2px;
+
+
   }
   @media (max-width: $mobile-width-only) {
     border-bottom: solid 1px $border-grey;
-    padding-bottom: 25px;
+    padding: 0 15px 24px 14px;
   }
 }
 
 .other-places__number {
   font-size: 14px;
+  padding-bottom: 16px;
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    left: -1px;
-    top: -3px;
+
     align-self: center;
   }
 }

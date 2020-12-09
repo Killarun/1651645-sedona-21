@@ -31,12 +31,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 10px;
 
-  @media (max-width: $mobile-width-only){
-    position: relative;
-    top: 6px;
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 8px;
   }
-
 }
 
 

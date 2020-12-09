@@ -1,8 +1,5 @@
 .site-list a {
-
-
   @media (max-width: $mobile-width-only) {
-    position: relative;
     display: block;
     padding: 16px 21px;
     padding-bottom: 13px;
@@ -44,10 +41,11 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    width: 680px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-items: start;
+    justify-items: center;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,5 +61,12 @@
 
   &:nth-child(3) {
     align-self: start;
+  }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 1px;
+
+    &:nth-child(4) {
+      padding-left: 7px;
+    }
   }
 }
