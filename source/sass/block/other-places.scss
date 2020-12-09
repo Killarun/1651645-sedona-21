@@ -10,15 +10,20 @@
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 42px 30px 62px;
-  }
+
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 40px 30px;
     gap: 40px 40px;
     margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    padding: 43px 22px 51px 23px;
+    gap: 40px 45px;
+    margin-bottom: 56px;
   }
 }
 
@@ -37,6 +42,10 @@
 
 .other-places__title {
   font-size: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .other-places__description {

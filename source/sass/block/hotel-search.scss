@@ -2,6 +2,10 @@
   text-align: center;
   width: 100%;
   margin-bottom: 66.5px;
+
+  @media (min-width: $description) {
+    margin-bottom: 81.5px;
+  }
 }
 
 .hotel-search__wrapper {
@@ -15,6 +19,10 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .hotel-search__text {
@@ -24,6 +32,10 @@
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 41.5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58.5px;
+  }
 }
 
 .hotel-search__form {

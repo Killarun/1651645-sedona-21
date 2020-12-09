@@ -15,12 +15,12 @@
   overflow: hidden;
   width: 100%;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     height: 100%;
     object-fit: cover;
   }
 
-  @media (max-width: $mobile-width-only) {
-    height: 260px;
+  @media (min-width: $mobile-width-only) {
+    height: 255px;
   }
 }

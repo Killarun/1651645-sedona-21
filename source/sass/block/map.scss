@@ -1,6 +1,10 @@
 .map {
   width: 100%;
   margin-bottom: 38.5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30.5px;
+  }
 }
 
 .map__image {

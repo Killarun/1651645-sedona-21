@@ -49,9 +49,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    width: 1200px;
     display: grid;
-    justify-content: space-between;
+
     justify-items: center;
   }
 }

@@ -2,13 +2,13 @@
   margin: 0 auto 30px auto;
   height: unset;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 52px auto;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 auto 41px auto;
     height: 110px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto 52px auto;
   }
 }
 
@@ -24,6 +24,10 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 17px;
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
 }
 
 .main-intro__description {

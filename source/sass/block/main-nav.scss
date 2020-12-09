@@ -3,6 +3,10 @@
   min-height: 56px;
   background-color: #ffffff;
   display: grid;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .main-nav__toggle {
@@ -105,7 +109,7 @@
 
   @media (min-width: $desktop-width) {
     .main-nav__wrapper {
-      width: 960px;
+      width: 1200px;
     }
   }
 }
