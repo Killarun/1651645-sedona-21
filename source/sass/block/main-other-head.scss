@@ -3,8 +3,8 @@
   background-position: bottom center;
   background-size: 100%, cover;
   background-repeat: no-repeat;
-  min-height: 157px;
-  margin-bottom: 32px;
+  min-height: 158px;
+  margin-bottom: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,4 +30,9 @@
     min-height: 290px;
     margin-bottom: 32px;
   }
+}
+
+.main-other-head__image {
+  padding-bottom: 6px;
+  padding-right: 1px;
 }

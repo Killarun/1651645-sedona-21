@@ -50,7 +50,7 @@ br {
 }
 
 .hide-tab {
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }

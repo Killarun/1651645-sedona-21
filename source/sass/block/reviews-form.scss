@@ -4,7 +4,9 @@
   text-transform: uppercase;
   margin-bottom: 25px;
   text-align: center;
-
+  &--personal{
+    margin-bottom: 19px;
+  }
   @media (min-width: $tablet-width) {
     font-size: 21px;
 
