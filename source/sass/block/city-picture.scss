@@ -1,13 +1,15 @@
 .city-picture__image {
   width: 100%;
 
+  @media (max-width: $mobile-width-only) {
+    height: auto;
+  }
+
   @media (max-width: $tablet-width) {
     height: 100%;
   }
 
-  @media (max-width: $mobile-width-only) {
-    height: auto;
-  }
+
 }
 
 .city-picture {
@@ -18,6 +20,10 @@
   @media (min-width: $tablet-width) {
        height: 258px;
     object-fit: cover;
+  }
+
+  @media(min-width: $desktop-width) {
+    height: 256px;
   }
 
 }

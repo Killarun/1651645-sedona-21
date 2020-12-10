@@ -7,14 +7,16 @@
   padding-top: 7px;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     align-self: center;
     justify-self: center;
      padding-right: 5px;
     padding-top: 3px;
   }
 
-  @media (min-width: $mobile-width-only) {
+  @media (min-width: $desktop-width) {
     font-size: 21px;
+    padding: 13px 0 0;
   }
 }
 
@@ -36,6 +38,7 @@
     align-self: baseline;
     justify-self: center;
     line-height: 21px;
+    padding: 11px 1px 0 0;
   }
 }
 
@@ -47,7 +50,7 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 59px;
+    margin-bottom: 33px;
     display: grid;
     grid-template-columns: 197px 159px 196px;
     gap: 78px;
@@ -58,7 +61,7 @@
     grid-template-columns: repeat(3, 33%);
     margin-bottom: 48px;
     padding: 0;
-    gap: 0 5px;
+    gap: 0 10px;
   }
 
 }
@@ -72,7 +75,8 @@
 
 
   @media (min-width: $desktop-width) {
-    top: -4px;
+    padding-right: 2px;
+    margin-top: -7px;
 
   }
 
@@ -86,14 +90,16 @@
 
 .city-features li:nth-child(3) img {
    @media (min-width: $tablet-width) {
-    width: 76px;
-    padding-right: 6px;
-    padding-top: 4px;
+    width: 77px;
+    padding-right: 7px;
+    padding-top: 5px;
+}
 
-  }
+
 
   @media (min-width: $desktop-width) {
     width: 77px;
+     padding: 0;
 
   }
 
@@ -114,7 +120,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    margin-top: -8px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -187,5 +193,7 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     grid-template-rows: 1fr 0.9fr 1fr;
+    margin-top: 4px;
+    padding-left: 0;
   }
 }

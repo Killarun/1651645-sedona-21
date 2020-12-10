@@ -13,14 +13,30 @@
   <style>
     @media (min-width: 1200px) {
       html {
-        background: url("img/form-desk.png");
+        background: url("img/form-desktop.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        background: url("img/form-tablet.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background: url("img/form-mobile.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
     }
 
     body {
-      opacity: 1;
+      opacity: 0.5;
     }
 
   </style>
