@@ -1,6 +1,6 @@
 .form-submit {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: -1;
@@ -12,6 +12,7 @@
 .form-submit__button {
   border: 0 none;
   background-color: $blue;
+  padding: 18px 50px 14px 47px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;

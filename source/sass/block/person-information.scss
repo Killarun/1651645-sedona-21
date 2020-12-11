@@ -4,7 +4,8 @@
   background-color: $input-bacground;
   border: none;
   height: 58px;
-  padding-left: 16px;
+  padding-left: 22px;
+  padding-top: 1px;
 
   &:hover {
     background-color: $border-gallery-grey;
@@ -25,8 +26,13 @@
 
 .person-information {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   gap: 0 14px;
+
+  &:nth-child(3) {
+    gap: 0 16px;
+    margin-bottom: 24px;
+  }
 
   @media (min-width: $desktop-width) {
     gap: 0 13.44px;

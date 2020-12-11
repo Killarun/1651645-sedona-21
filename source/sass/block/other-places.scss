@@ -38,6 +38,9 @@
   }
   @media (min-width: $desktop-width) {
     grid-template-rows: 1fr 0.5fr 1fr;
+    &:nth-child(2) span {
+      padding-bottom: 20px;
+    }
   }
 
 }

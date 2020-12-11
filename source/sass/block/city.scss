@@ -39,9 +39,22 @@
   text-align: center;
   background-color: $blue;
   color: #ffffff;
-  background-image: url("../img/white.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      background-image: url("../img/white.svg");
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-size: 100%, cover;
+      height: 15vh;
+      background-repeat: no-repeat;
+    }
+  }
+
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -64,7 +77,6 @@
     font-size: 21px;
     line-height: 25px;
     padding-bottom: 0;
-
   }
 }
 
@@ -82,7 +94,6 @@
   @media (min-width: $desktop-width) {
     line-height: 21px;
     margin-top: -1px;
-
   }
 }
 
@@ -98,7 +109,5 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 14px;
-
   }
-
 }
