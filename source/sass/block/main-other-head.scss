@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
 
+  &--catalog {
+    margin-bottom: 32px;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop.jpg");
     background-position: bottom center;

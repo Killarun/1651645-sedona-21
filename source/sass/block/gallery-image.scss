@@ -1,3 +1,4 @@
+
 .gallery-image__thumbnail {
   overflow: hidden;
   object-fit: cover;
@@ -6,7 +7,7 @@
 }
 
 .gallery-image__size {
-  margin-bottom: 11px;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -15,25 +16,36 @@
 
 .gallery-image__descripton {
   margin-bottom: 23px;
+  position: relative;
   border-bottom: 1px solid $border-gallery-grey;
-  background-color: #ffffff;
 
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    border: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 320px;
 
-    background-color: #f2f2f2;
-    padding-left: 20px;
-    height: 80px;
-  }
+    transform: translateX(-6%);
+    border-bottom: 1px solid #e5e5e5;
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    top: -86px;
-    left: 0;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.35);
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      border: 0;
+
+      background-color: #f2f2f2;
+      padding-left: 20px;
+      height: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      top: -86px;
+      left: 0;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.35);
+    }
   }
 }
 
@@ -41,7 +53,7 @@
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: -1px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1;
@@ -54,7 +66,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1;
