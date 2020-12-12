@@ -10,7 +10,7 @@
     font-size: 21px;
     align-self: center;
     justify-self: center;
-     padding-right: 5px;
+    padding-right: 5px;
     padding-top: 3px;
   }
 
@@ -63,7 +63,6 @@
     padding: 0;
     gap: 0 5px;
   }
-
 }
 
 .city-features li:nth-child(1) img {
@@ -71,43 +70,37 @@
     width: 75px;
     padding-right: 7px;
     padding-top: 3px;
-}
+  }
 
 
   @media (min-width: $desktop-width) {
     padding-right: 2px;
     margin-top: -7px;
-
   }
 
   @media (max-width: $mobile-width-only) {
     width: 39px;
     padding-left: 11px;
     margin-top: -2px;
-
-}
   }
+}
 
 .city-features li:nth-child(3) img {
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 77px;
     padding-right: 7px;
     padding-top: 5px;
-}
-
-
+  }
 
   @media (min-width: $desktop-width) {
     width: 77px;
-     padding: 0;
-
+    padding: 0;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 40px;
     padding-left: 7px;
     padding-top: 5px;
-
   }
 }
 
@@ -126,40 +119,22 @@
   @media (max-width: $mobile-width-only) {
     width: 32px;
     padding-left: 12px;
-
   }
 }
 
 .city-features li:nth-child(2) {
-  @media (min-width: $desktop-width) {
-    order: 3;
+  @media (max-width: $mobile-width-only) {
+    order: 2;
   }
 
   @media (min-width: $tablet-width) {
     order: 3;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    order: 2;
   }
 }
 
 .city-features li:nth-child(3) {
-
   @media (min-width: $desktop-width) {
     order: 2;
-  }
-
-  @media (min-width: $tablet-width) {
-    order: 2;
-    // & h3 {
-    //   padding-bottom: 2px;
-    // }
-    // & p {
-    //   margin-top: -2px;
-    //   padding-left: 2px;
-    // }
-
   }
 
   @media (max-width: $mobile-width-only) {
@@ -175,7 +150,7 @@
   text-align: left;
   width: 100%;
   margin-bottom: 15px;
-    gap: 14.3px 0;
+  gap: 14.3px 0;
 
 
   @media (min-width: $tablet-width) {

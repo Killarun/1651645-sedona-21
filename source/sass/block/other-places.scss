@@ -36,13 +36,14 @@
 
     padding-bottom: 2px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-rows: 1fr 0.5fr 1fr;
+
     &:nth-child(2) span {
       padding-bottom: 20px;
     }
   }
-
 }
 
 .other-places__title {
@@ -54,6 +55,7 @@
     line-height: 26px;
     padding: 3px 27px 9px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 21px;
   }
@@ -63,9 +65,7 @@
   font-size: 14px;
   line-height: 21px;
   border-bottom: solid 1px $border-grey;
-    padding: 0 15px 24px 14px;
-
-
+  padding: 0 15px 24px 14px;
 
   @media (min-width: $tablet-width) {
     padding: 1px 3px 0 1px;
@@ -80,9 +80,11 @@
 .other-places__number {
   font-size: 14px;
   padding-bottom: 16px;
-@media (min-width: $tablet-width) {
-  padding-bottom: 21px;
-}
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 21px;
+  }
+
   @media (min-width: $desktop-width) {
 
     align-self: center;

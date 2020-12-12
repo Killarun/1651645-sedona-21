@@ -40,10 +40,15 @@
     }
 
     &--contacts {
-      margin-bottom: 20px;
+      margin: 0 auto 20px auto;
     }
+
     &--landmarks {
-      margin-bottom: 59px;
+      margin: 0 auto 59px auto;
+    }
+
+    &--emotions {
+      margin: 0 auto 54px auto;
     }
   }
 
@@ -104,7 +109,6 @@
 }
 
 .reviews-form__wrapper {
-
   &-personal,
   &-contacts,
   &-landmarks {
@@ -170,6 +174,8 @@
       border: none;
       align-self: baseline;
       position: relative;
+      margin-bottom: 32px;
+
 
       &::before {
         content: "";
@@ -199,6 +205,29 @@
       grid-column-start: -1;
       grid-column-end: 1;
       border: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 9px;
+        transform: translateX(0%);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 9px;
+        transform: translateX(0%);
+      }
     }
   }
 
@@ -212,6 +241,7 @@
     }
 
     &-landmarks {
+      margin-bottom: 81px;
 
       &::before,
       &::after {

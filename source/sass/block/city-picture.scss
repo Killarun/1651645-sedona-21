@@ -8,8 +8,6 @@
   @media (max-width: $tablet-width) {
     height: 100%;
   }
-
-
 }
 
 .city-picture {
@@ -18,12 +16,11 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-       height: 258px;
+    height: 258px;
     object-fit: cover;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     height: 256px;
   }
-
 }

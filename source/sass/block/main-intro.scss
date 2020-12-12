@@ -8,7 +8,6 @@
     &--form {
       margin-bottom: 87px;
     }
-
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +26,6 @@
 
 .main-intro__wrapper-form {
   padding: 0 20px;
-
 }
 
 .main-intro__title {
@@ -41,17 +39,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    padding: 1px 53px 0 50px;;
+    padding: 1px 53px 0 50px;
   }
-
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
     margin-bottom: 30px;
   }
 }
-
-
 
 .main-intro__description {
   font-size: 14px;
@@ -81,7 +76,8 @@
     padding-left: 50px;
     margin-bottom: 33px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-left: 51px;
   }

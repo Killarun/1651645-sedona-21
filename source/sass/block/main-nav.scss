@@ -4,14 +4,15 @@
   background-color: #ffffff;
   display: grid;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
-}
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
-}
   }
+}
 
 
 .main-nav__toggle {
@@ -104,7 +105,6 @@
   .main-nav__wrapper {
     display: grid;
     width: 100%;
-
   }
 
   .main-nav__toggle {

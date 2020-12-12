@@ -5,6 +5,12 @@
   gap: 7px;
   padding-bottom: 6px;
   padding-right: 3px;
+
+  @media (min-width: $desktop-width) {
+    gap: 7px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+  }
 }
 
 .social__link {
