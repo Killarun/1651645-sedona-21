@@ -14,12 +14,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop.jpg");
+    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-tablet.jpg");
     background-position: bottom center;
     background-size: 100%, cover;
     background-repeat: no-repeat;
     min-height: 290px;
     margin-bottom: 61px;
+
+    &--catalog {
+
+      margin-bottom: 63px;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop@2x.jpg");
@@ -33,6 +38,29 @@
     background-repeat: no-repeat;
     min-height: 301px;
     margin-bottom: 113px;
+
+    &--catalog {
+      background-image: url("../img/back-desktop.jpg");
+      background-position: 0px -68px;
+      background-size: 100%, contain;
+      background-repeat: no-repeat;
+      min-height: 280px;
+      margin-bottom: 121px;
+      position: static;
+
+      &::after {
+
+        content: "";
+        background-image: url("../img/intro-triangle-desktop.svg");
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-size: 100%, cover;
+        height: 21vh;
+        background-repeat: no-repeat;
+      }
+    }
   }
 }
 
@@ -43,5 +71,9 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
     padding-right: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
+    padding-right: 2px;
   }
 }
