@@ -5,6 +5,10 @@
 .presentation__info {
   margin-bottom: 36px;
   padding: 0 21px 0 23px;
+
+   @media (min-width: $tablet-width) {
+     margin-bottom: 80px;
+   }
 }
 
 .presentation__wrapper {
@@ -28,6 +32,12 @@
   font-size: $title;
   margin-bottom: 27px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-right: 3px;
+    margin-bottom: 33px;
+  }
 }
 
 .presentation__description {
@@ -36,4 +46,8 @@
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 3px;
+  }
 }

@@ -35,7 +35,8 @@
     border: 0;
 
     background-color: #f2f2f2;
-    padding-left: 20px;
+    margin-top: -7px;
+    padding: 16px 19px 14px 20px;
 
   }
 
@@ -58,7 +59,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1;
     align-self: end;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    margin-top: -3px;
 
   }
 }

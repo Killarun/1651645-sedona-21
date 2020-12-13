@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2/2;
-    justify-self: center;
+    justify-self: end;
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -15,11 +15,26 @@
 }
 
 .gallery-image-like__like {
-  padding-right: 14px;
+  width: 23px;
+    height: 21px;
+    margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
 }
 
 .gallery-image-like__count {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 31px;
+  //   width: 2;
+  //   background-image: url("img/like-icon.svg");
+  // }
 }

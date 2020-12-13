@@ -73,7 +73,12 @@
     padding-right: 0;
   }
   @media (min-width: $desktop-width) {
-    padding-bottom: 24px;
+    padding-bottom: 13px;
     padding-right: 2px;
+
+     &--catalog {
+      padding-bottom: 24px;
+      padding-right: 2px;
+     }
   }
 }
