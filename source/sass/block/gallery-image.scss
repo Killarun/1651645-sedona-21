@@ -37,6 +37,8 @@
     background-color: #f2f2f2;
     margin-top: -7px;
     padding: 16px 19px 14px 20px;
+
+
   }
 
   @media (min-width: $desktop-width) {
@@ -72,5 +74,15 @@
   @media (min-width: $tablet-width) {
     grid-column: 1;
     margin-bottom: 0;
+  }
+}
+
+.gallery-image {
+  @media (min-width: $tablet-width) {
+    &:nth-child(1) div.gallery-image-like {
+      justify-self: end;
+      padding-bottom: 4px;
+      margin-right: 2px;
+    }
   }
 }
