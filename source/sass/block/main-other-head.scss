@@ -43,8 +43,7 @@
       background-position: 1px 222px, 0 -67px;
       min-height: 278px;
       margin-bottom: 123px;
-     }
-
+    }
   }
 }
 
@@ -56,13 +55,14 @@
     padding-bottom: 15px;
     padding-right: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 13px;
     padding-right: 2px;
 
-     &--catalog {
+    &--catalog {
       padding-bottom: 21px;
       padding-right: 2px;
-     }
+    }
   }
 }
