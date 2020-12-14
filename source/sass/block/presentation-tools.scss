@@ -85,6 +85,11 @@
     grid-row-start: 1;
     justify-self: center;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
+    padding-right: 8px;
+  }
 }
 
 .presentation-tools__fullscreen {
@@ -95,5 +100,10 @@
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    padding-right: 21px;
   }
 }

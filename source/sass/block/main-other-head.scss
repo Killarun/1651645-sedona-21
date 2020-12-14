@@ -40,27 +40,11 @@
     margin-bottom: 113px;
 
     &--catalog {
-      background-image: url("../img/back-desktop.jpg");
-      background-position: 0px -68px;
-      background-size: 100%, contain;
-      background-repeat: no-repeat;
-      min-height: 280px;
-      margin-bottom: 121px;
-      position: static;
+      background-position: 1px 222px, 0 -67px;
+      min-height: 278px;
+      margin-bottom: 123px;
+     }
 
-      &::after {
-
-        content: "";
-        background-image: url("../img/intro-triangle-desktop.svg");
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        background-size: 100%, cover;
-        height: 21vh;
-        background-repeat: no-repeat;
-      }
-    }
   }
 }
 
@@ -77,7 +61,7 @@
     padding-right: 2px;
 
      &--catalog {
-      padding-bottom: 24px;
+      padding-bottom: 21px;
       padding-right: 2px;
      }
   }

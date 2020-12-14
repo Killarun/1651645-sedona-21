@@ -13,14 +13,22 @@
     margin: 0;
   }
 }
-
+.gallery-image-like__like:nth-child(1) {
+  padding-left: 1px;
+}
+.gallery-image-like__like:nth-child(2) {
+  padding-left: 1px;
+}
 .gallery-image-like__like {
   width: 23px;
-    height: 21px;
-    margin-right: 14px;
+  height: 21px;
+  margin-right: 14px;
 
   @media (min-width: $tablet-width) {
     padding-right: 10px;
+    margin: 0;
+
+
   }
 }
 

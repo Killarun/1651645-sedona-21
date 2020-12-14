@@ -1,14 +1,26 @@
 .presentation {
-  margin-bottom: 81px;
+  margin-bottom: 78px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 115px;
+  }
 }
 
 .presentation__info {
   margin-bottom: 36px;
   padding: 0 21px 0 23px;
 
-   @media (min-width: $tablet-width) {
-     margin-bottom: 80px;
-   }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+  }
 }
 
 .presentation__wrapper {
