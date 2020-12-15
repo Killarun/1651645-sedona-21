@@ -70,25 +70,34 @@
   justify-self: start;
   padding-left: 2px;
   padding-bottom: 3px;
+  fill: #5c6870;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
+    fill: #ffffff;
+    padding-right: 2px;
+    padding-left: 0;
   }
 }
 
 .presentation-tools__subtitles {
   grid-column-start: 3;
   justify-self: end;
+  fill: #5c6870;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
-    justify-self: center;
+    justify-self: end;
+    fill: #ffffff;
+    padding-right: 6px;
+    padding-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
     justify-self: end;
-    padding-right: 8px;
+    padding-right: 7px;
+    fill: #ffffff;
   }
 }
 
@@ -96,14 +105,20 @@
   grid-column-start: 4;
   justify-self: end;
   padding-right: 1px;
+  fill: #5c6870;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
+    fill: #ffffff;
+    padding-right: 15px;
+    padding-bottom: 2px;
   }
+
 
   @media (min-width: $desktop-width) {
     justify-self: center;
     padding-right: 21px;
+    fill: #ffffff;
   }
 }
