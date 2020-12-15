@@ -21,7 +21,7 @@
   right: 0;
   z-index: 2;
   display: block;
-  width: 52px;
+  width: 60px;
   height: 48px;
   background-color: #ffffff;
   cursor: pointer;
@@ -37,12 +37,14 @@
   &::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 17px;
     left: 17px;
     width: 23px;
     height: 4px;
-    background-color: $blue;
-    box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
+    background-color: #81b3d2;
+    box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+}
+}
   }
 
   &:active,
