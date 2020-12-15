@@ -6,10 +6,39 @@
   <meta name="viewport" content="widht=device-width initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>Отправить отзыв</title>
-
 </head>
 
 <body class="page__body">
+  <style>
+    @media (min-width: 1200px) {
+      html {
+        background: url("img/form-desktop.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        background: url("img/form-tablet.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background: url("img/form-mobile.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+
+  </style>
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="header__logo hide-pc">
@@ -68,10 +97,10 @@
           <img class="main-other-head__image" src="img/sedona-mobile.svg" alt="Welcome to the gorgeous Sedona">
         </picture>
     </section>
-    <section class="main-intro">
-      <div class="main-intro__wrapper">
-        <h2 class="main-intro__title">Оставьте свой отзыв</h2>
-        <p class="main-intro__description">Помогите нашим отелям стать лучше! оставьт отзыв о них,<br> а так же о посещеных
+    <section class="main-intro main-intro--form">
+      <div class="main-intro__wrapper main-intro__wrapper-form">
+        <h2 class="main-intro__title main-intro__form-title">Оставьте свой отзыв</h2>
+        <p class="main-intro__description main-intro__form-description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -102,7 +131,7 @@
         <fieldset class="reviews-form__contacts">
           <legend class="reviews-form__legend reviews-form__legend--contacts">Контактная информация:</legend>
           <div class="contacts-information">
-            <label class="contacts-information__lable" for="field-contacts-phone"><span class="contacts-information__span">Контактный &nbsp;</span>телефон*:</label>
+            <label class="contacts-information__lable" for="field-contacts-phone"><span class="contacts-information__span">Контактный</span> телефон*:</label>
             <input class="contacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
               placeholder="Введите телефон" required>
             <a class="contacts-information__image contacts-information__image--phone"></a>
@@ -122,21 +151,29 @@
           <legend class="reviews-form__legend reviews-form__legend--impressions">
             Ваше общее впечатление:
           </legend>
+          <div>
           <div class="impressions-select">
-            <input class="impressions-select__input" id="impressions-select-good" type="radio" name="impressions-select"
+            <label class="impressions-select__lable" >
+            <input class="impressions-select__input" type="radio" name="impressions-select"
               value="good">
-            <label class="impressions-select__lable" for="impressions-select-good">Скорее положительное</label>
+              <span class="impressions-select__radio"></span>
+            Скорее положительное</label>
           </div>
           <div class="impressions-select">
-            <input class="impressions-select__input" id="impressions-select-negative" type="radio"
+            <label class="impressions-select__lable">
+            <input class="impressions-select__input" type="radio"
               name="impressions-select" value="bad">
-            <label class="impressions-select__lable" for="impressions-select-negative">Скорее отрицательное</label>
+              <span class="impressions-select__radio"></span>
+            Скорее отрицательное</label>
           </div>
           <div class="impressions-select">
-            <input class="impressions-select__input" id="impressions-select-soso" type="radio" name="impressions-select"
+            <label class="impressions-select__lable">
+            <input class="impressions-select__input" type="radio" name="impressions-select"
               value="soso">
-            <label class="impressions-select__lable" for="impressions-select-soso">Затрудняюсь ответить</label>
+              <span class="impressions-select__radio"></span>
+              Затрудняюсь ответить</label>
           </div>
+        </div>
         </fieldset>
       </div>
       <div class="reviews-form__wrapper-landmarks">
@@ -144,27 +181,36 @@
           <legend class="reviews-form__legend reviews-form__legend--landmarks">
             Посещенные<br> достопримечательности:
           </legend>
+        <div class="landmarks-select-wrapper">
           <div class="landmarks-select">
-            <input class="landmarks-select__input" id="landmarks-davil" type="checkbox" name="landmarks"
+            <label class="landmarks-select__lable">
+            <input class="landmarks-select__input" type="checkbox" name="landmarks"
               value="devils_bridge">
-            <label class="landmarks-select__lable" for="landmarks-davil">Мост Дьявола</label>
+              <span class="landmarks-select__check-box"></span>
+            Мост Дьявола</label>
           </div>
           <div class="landmarks-select">
-            <input class="landmarks-select__input" id="landmarks-hill" type="checkbox" name="landmarks"
+            <label class="landmarks-select__lable">
+            <input class="landmarks-select__input" type="checkbox" name="landmarks"
               value="bell_mountain">
-            <label class="landmarks-select__lable" for="landmarks-hill">Гора-Колокол</label>
+              <span class="landmarks-select__check-box"></span>
+            Гора-Колокол</label>
           </div>
           <div class="landmarks-select">
-            <input class="landmarks-select__input" id="landmarks-park" type="checkbox" name="landmarks"
+            <label class="landmarks-select__lable">
+            <input class="landmarks-select__input" type="checkbox" name="landmarks"
               value="slide-park">
-            <label class="landmarks-select__lable" for="landmarks-park">Слайд-парк</label>
+              <span class="landmarks-select__check-box"></span>
+            Слайд-парк</label>
           </div>
           <div class="landmarks-select">
-            <input class="landmarks-select__input" id="landmarks-rock" type="checkbox" name="landmarks"
+            <label class="landmarks-select__lable">
+            <input class="landmarks-select__input" type="checkbox" name="landmarks"
               value="red_rock">
-            <label class="landmarks-select__lable" for="landmarks-rock">Красные скалы</label>
+              <span class="landmarks-select__check-box"></span>
+            Красные скалы</label>
           </div>
-
+        </div>
         </fieldset>
       </div>
       <div class="reviews-form__wrapper-emotions">
@@ -173,7 +219,7 @@
           Опишите свои эмоции:
         </legend>
         <div class="emotions-text">
-          <textarea placeholder="Опишите подробно все свои восторги" class="emotions-text__field"
+          <textarea rows="5" placeholder="Опишите подробно все свои восторги" class="emotions-text__field"
             name="personal-comment" id="field-personal-comment"></textarea>
         </div>
 

@@ -27,7 +27,7 @@
 
 .presentation-tools__panel-buttoms {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr;
   grid-template-rows: 66px;
   align-items: center;
   position: relative;
@@ -49,8 +49,8 @@
     appearance: none;
     background-color: #ffffff;
     border-radius: 50%;
-    width: 13px;
-    height: 13px;
+    width: 9px;
+    height: 9px;
   }
 
   @media (min-width: $tablet-width) {
@@ -68,29 +68,57 @@
 .presentation-tools__replay {
   grid-column-start: 1;
   justify-self: start;
+  padding-left: 2px;
+  padding-bottom: 3px;
+  fill: #5c6870;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
+    fill: #ffffff;
+    padding-right: 2px;
+    padding-left: 0;
   }
 }
 
 .presentation-tools__subtitles {
   grid-column-start: 3;
   justify-self: end;
+  fill: #5c6870;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
-    justify-self: center;
+    justify-self: end;
+    fill: #ffffff;
+    padding-right: 6px;
+    padding-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
+    padding-right: 7px;
+    fill: #ffffff;
   }
 }
 
 .presentation-tools__fullscreen {
   grid-column-start: 4;
   justify-self: end;
+  padding-right: 1px;
+  fill: #5c6870;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
+    fill: #ffffff;
+    padding-right: 15px;
+    padding-bottom: 2px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    padding-right: 21px;
+    fill: #ffffff;
   }
 }

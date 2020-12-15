@@ -9,13 +9,43 @@
 </head>
 
 <body class="page__body">
+  <style>
+    @media (min-width: 1200px) {
+      html {
+        background: url("img/desktop.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      html {
+        background: url("img/tablet.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background: url("img/mobile.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+
+  </style>
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="header__logo hide-pc">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="hide-pc" src="img/logotype-mobile.svg"  alt="Логотип City of Sedona">
+          <img class="hide-pc" src="img/logotype-mobile.svg" alt="Логотип City of Sedona">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -64,7 +94,7 @@
         <div class="main-head__image">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/intro-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/intro-tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/intro-tablet.svg">
             <img src="img/intro.svg" alt="Welcome to the gorgeous Sedona">
           </picture>
 
@@ -72,7 +102,7 @@
       </section>
       <section class="main-intro">
         <div class="main-intro__wrapper">
-          <h2 class="main-intro__title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
+          <h2 class="main-intro__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
           <p class="main-intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
@@ -81,13 +111,20 @@
           <h2 class="city__title">
             Настоящий<br> городок
           </h2>
-          <span class="city__number">-№1-</span>
+          <span class="city__number">— №1 —</span>
           <p class="city__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <picture class="city-picture">
+          <source type="image/webp" media="(min-width: 1200px)"
+          srcset="img/webp/photo-city-desktop.webp 1x, img/webp/photo-city-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/webp/photo-city-tablet.webp 1x, img/webp/photo-city-tablet@2x.webp 2x">
+        <source type="image/webp" src="img/webp/city-mobile.webp 1x" srcset="img/webp/city-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-          <img class="city-picture__image" src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x" alt="Фото города Седона">
+          <img class="city-picture__image" src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x"
+            alt="Фото города Седона">
         </picture>
       </section>
       <ul class="city-features">
@@ -95,7 +132,7 @@
           <img class="city-features__icon" src="img/icon-house.svg" widht="39" alt="Домик">
           <h3 class="city-features__title">Жилье</h3>
           <p class="city-features__description">
-            Рекомендуем пожить<br> в настоящем мотеле, все<br> как в кино!
+            Рекомендуем пожить в настоящем<br class="hide-tab"> мотеле, все как в кино!
           </p>
         </li>
         <li class="city-features__item">
@@ -103,14 +140,14 @@
           <img class="city-features__icon" src="img/icon-gift.svg" width="32" height="37 alt=" Подарок">
           <h3 class="city-features__title">Сувениры</h3>
           <p class="city-features__description">
-            Не только китайского, но и<br> местного производства!
+            Не только китайского,<br class="hide-tab"> но и местного производства!
           </p>
         </li>
         <li class="city-features__item">
           <img class="city-features__icon" src="img/icon-burger.svg" width="40" height="35" alt="Гамбургер">
           <h3 class="city-features__title">Еда</h3>
           <p class="city-features__description">
-            Всегда заказывайте<br> фирменный бургер,<br> Вы не разочаруетесь!
+            Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!
           </p>
         </li>
       </ul>
@@ -119,14 +156,21 @@
           <h2 class="attractions__title">
             Там есть<br> мост дьявола
           </h2>
-          <span class="attractions__number">-№2-</span>
-          <p class="attractions__description">Да, по нему можно<br> пройти! Если вы <br>осмелитесь, конечно</p>
+          <span class="attractions__number">— №2 —</span>
+          <p class="attractions__description">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
         </div>
         <picture class="attriction-picture-image">
+
+          <source type="image/webp" media="(min-width: 1200px)"
+          srcset="img/webp/photo-bridge-desktop.webp 1x, img/webp/photo-bridge-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/webp/photo-bridge-tablet.webp 1x, img/webp/photo-bridge-tablet@2x.webp 2x">
+        <source type="image/webp" src="img/webp/photo-bridge-mobile.webp 1x" srcset="img/webp/photo-bridge-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg">
           <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x">
-          <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
-            alt="Фото мост дьявола">
+          <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.jpg"
+            srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото мост дьявола">
         </picture>
       </section>
       <ul class="other-places">
@@ -134,37 +178,38 @@
           <h2 class="other-places__title">
             Небольшая <br>площадь
           </h2>
-          <span class="other-places__number">-№3-</span>
-          <p class="other-places__description">Все интересные места находятся очень близко</p>
+          <span class="other-places__number">— №3 —</span>
+          <p class="other-places__description">Все интересные места находятся очень<br class="hide-tab"> близко</p>
         </li>
         <li class="other-places__items">
           <h2 class="other-places__title">
             Красивая <br>дорога
           </h2>
-          <span class="other-places__number">-№4-</span>
-          <p class="other-places__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+          <span class="other-places__number">— №4 —</span>
+          <p class="other-places__description">Ехать в седону из лас-вегаса совсем<br class="hide-tab"> не скучно!</p>
         </li>
         <li class="other-places__items">
           <h2 class="other-places__title">
             Мало <br>туристов
           </h2>
-          <span class="other-places__number">-№5-</span>
+          <span class="other-places__number">— №5 —</span>
           <p class="other-places__description">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
       <section class="hotel-search">
         <div class="hotel-search__wrapper">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
-          <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
-            гостиниц
-            в седоне</p>
-          <button href="search.html" class="button hotel-search__form">Найти гостиницу</button>
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br class="hide-mob"> и мы покажем вам лучшие предложения
+            гостиниц в седоне</p>
+          <a href="search.html" class="button hotel-search__form">Найти гостиницу</a>
         </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта аризоны</h2>
         <div class="map__image">
-          <img class="map__map-marker" src="img/map-marker.png" alt="маркер">
+          <iframe class="map-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
+          allowfullscreen aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </div>

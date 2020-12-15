@@ -3,18 +3,18 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.87fr 0.5fr;
   grid-template-columns: 1fr;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
-    grid-template-columns: 1fr 2fr;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 400px 800px;
     grid-template-rows: 1fr;
   }
 }
@@ -22,11 +22,16 @@
 .city__header {
   display: grid;
   align-items: center;
-  grid-template-rows: 1fr 0.7fr 1fr;
+  grid-template-rows: 1fr 0.2fr 1fr;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: 1fr 0.5fr 1fr;
-    padding: 0 35px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 55px;
+    grid-template-rows: 1fr 0.6fr 1fr;
   }
 }
 
@@ -34,9 +39,22 @@
   text-align: center;
   background-color: $blue;
   color: #ffffff;
-  background-image: url("../img/white.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      background-image: url("../img/white.svg");
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-size: 100%, cover;
+      height: 15vh;
+      background-repeat: no-repeat;
+    }
+  }
+
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -49,11 +67,47 @@
   line-height: 26px;
   text-transform: uppercase;
   align-self: end;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 25px;
+    padding-bottom: 0;
+  }
 }
 
 .city__description {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
-  align-self: start;
+  align-self: stretch;
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+    margin-top: -1px;
+  }
+}
+
+.city__number {
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+  }
 }

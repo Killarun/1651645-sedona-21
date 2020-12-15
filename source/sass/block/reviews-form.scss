@@ -2,19 +2,53 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 25px;
   text-align: center;
+
+  &--personal {
+    margin-bottom: 19px;
+  }
+
+  &--contacts {
+    margin-bottom: 17px;
+  }
+
+  &--impressions {
+    margin-bottom: 38px;
+  }
+
+  &--landmarks {
+    margin-bottom: 36px;
+    padding-right: 2px;
+  }
+
+  &--emotions {
+    margin-bottom: 16px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
 
     &--impressions {
       text-align: left;
+      margin-bottom: 72px;
     }
 
     &--personal {
       text-align: left;
       padding-left: 58px;
+      margin-bottom: 54px;
+    }
+
+    &--contacts {
+      margin: 0 auto 20px auto;
+    }
+
+    &--landmarks {
+      margin: 0 auto 59px auto;
+    }
+
+    &--emotions {
+      margin: 0 auto 54px auto;
     }
   }
 
@@ -27,6 +61,11 @@
 
     &--personal {
       padding-left: 80px;
+    }
+
+    &--contacts {
+      margin-bottom: 73px;
+      padding-right: 2px;
     }
   }
 }
@@ -46,7 +85,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     padding: 0 60px;
 
     &::before {
@@ -72,9 +111,13 @@
 .reviews-form__wrapper {
   &-personal,
   &-contacts,
-  &-impressions,
   &-landmarks {
     margin-bottom: 20px;
+    border-bottom: solid 1px #e5e5e5;
+  }
+
+  &-impressions {
+    margin-bottom: 16px;
     border-bottom: solid 1px #e5e5e5;
   }
 
@@ -82,6 +125,7 @@
     &-personal {
       grid-row-start: 1;
       grid-column-start: 2;
+      border: none;
     }
 
     &-contacts {
@@ -89,32 +133,129 @@
       grid-row-end: 2;
       grid-column-start: -1;
       grid-column-end: 1;
-      align-self: stretch;
+      align-self: baseline;
+      border: none;
+      position: relative;
+      margin-bottom: 25px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 10px;
+        transform: translateX(0%);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 10px;
+        transform: translateX(0%);
+      }
     }
 
     &-impressions {
       grid-row-start: 1;
       grid-column-start: 1;
-      justify-self: flex-start;
-      width: 100%;
+      border: none;
     }
 
     &-landmarks {
       grid-row-start: 3;
       grid-column-start: -1;
       grid-column-end: 1;
+      border: none;
+      align-self: baseline;
+      position: relative;
+      margin-bottom: 32px;
+
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 25px;
+        transform: translateX(0%);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 25px;
+        transform: translateX(0%);
+      }
     }
 
     &-emotions {
       grid-row-start: 4;
       grid-column-start: -1;
       grid-column-end: 1;
+      border: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 9px;
+        transform: translateX(0%);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        width: 123px;
+        height: 1px;
+        background-color: #da2020;
+        top: 9px;
+        transform: translateX(0%);
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     &-emotions {
       margin-bottom: 58px;
+    }
+
+    &-impressions {
+      margin-bottom: 14px;
+    }
+
+    &-landmarks {
+      margin-bottom: 81px;
+
+      &::before,
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &-contacts {
+      margin-bottom: 53px;
+
+      &::before,
+      &::after {
+        width: 280px;
+      }
     }
   }
 }
@@ -174,11 +315,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 

@@ -1,17 +1,16 @@
 .site-list a {
   @media (max-width: $mobile-width-only) {
-    position: relative;
     display: block;
-    padding: 12px 21px;
+    padding: 16px 21px;
     padding-bottom: 13px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 25px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     background-color: $blue;
-    border-top: 1px solid rgba(1, 1, 1, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
   }
 
@@ -29,29 +28,53 @@
   border-top: none;
 }
 
+.site-list li:nth-child(5) a {
+  @media (max-width: $mobile-width-only) {
+    box-shadow: 1px -21px 29px -35px #000000 inset;
+  }
+}
+
 .site-list {
   width: 100%;
   display: block;
 
   @media (min-width: $tablet-width) {
-    width: 680px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-items: start;
+    justify-items: center;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    width: 1200px;
     display: grid;
-    justify-content: space-between;
+
     justify-items: center;
   }
 }
 
 .site-list__item {
   align-self: center;
+  padding-right: 1px;
 
   &:nth-child(3) {
     align-self: start;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 1px;
+
+    &:nth-child(4) {
+      padding-left: 7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 1px;
+
+    &:nth-child(4) {
+      padding-left: 4px;
+    }
   }
 }

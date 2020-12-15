@@ -1,3 +1,11 @@
+.gallery {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+}
+
 .gallery__wrapper {
   display: flex;
   flex-wrap: wrap;

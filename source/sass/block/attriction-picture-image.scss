@@ -2,18 +2,14 @@
   height: 260px;
   overflow: hidden;
   width: 100%;
-  order: -1;
+  order: 1;
 
-  @media (max-width: $desktop-width) {
-    order: -1;
+  @media (min-width: $tablet-width) {
+    order: 2;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $mobile-width-only) {
+    height: 256px;
     order: -1;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    order: 0;
-    height: 260px;
   }
 }
