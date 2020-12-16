@@ -38,7 +38,7 @@
 .city__colored-background {
   text-align: center;
   background-color: $blue;
-  color: #ffffff;
+  color: $white;
   position: relative;
 
   @media (max-width: $mobile-width-only) {

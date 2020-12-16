@@ -1,35 +1,34 @@
 .map {
   width: 100%;
-  margin-bottom: 38.5px;
+  margin-bottom: 31.5px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30.5px;
+    margin-bottom: 23.5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30.5px;
+    margin-bottom: 23.5px;
   }
-}
-
-.map__image {
-  background: url("../img/map.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 350px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .map__map-marker {
+  position: absolute;
+  left: 45.5%;
+  bottom: 47.6%;
+
   @media (min-width: $tablet-width) {
-    padding-right: 1px;
-    padding-top: 3px;
+    left: 48.2%;
+    bottom: 46.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 48.9%;
+    bottom: 46.7%;
   }
 }
 
-.hotels-map {
+.map__map {
   width: 100%;
   height: 350px;
   border: none;

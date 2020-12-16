@@ -9,18 +9,18 @@
 </head>
 
 <body class="page__body">
-  <style>
+  <!-- <style>
     @media (min-width: 1200px) {
       html {
-        background: url("img/desktop.png");
+        background: url("img/pixel/desktop.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
     }
 
-    @media (min-width: 768px) and (max-width: 1199px) {
+    @media (max-width: 768px) {
       html {
-        background: url("img/tablet.png");
+        background: url("img/pixel/tablet.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -28,17 +28,16 @@
 
     @media (max-width: 767px) {
       html {
-        background: url("img/mobile.png");
+        background: url("img/pixel/mobile.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
     }
 
     body {
-      opacity: 0.5;
+      opacity: 1;
     }
-
-  </style>
+    </style> -->
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="header__logo hide-pc">
@@ -119,7 +118,7 @@
           srcset="img/webp/photo-city-desktop.webp 1x, img/webp/photo-city-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/webp/photo-city-tablet.webp 1x, img/webp/photo-city-tablet@2x.webp 2x">
-        <source type="image/webp" src="img/webp/city-mobile.webp 1x" srcset="img/webp/city-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/webp/city-mobile.webp 1x, img/webp/city-mobile@2x.webp 2x">
 
           <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
@@ -129,7 +128,7 @@
       </section>
       <ul class="city-features">
         <li class="city-features__item">
-          <img class="city-features__icon" src="img/icon-house.svg" widht="39" alt="Домик">
+          <img class="city-features__icon" src="img/icon-house.svg" width="39" alt="Домик">
           <h3 class="city-features__title">Жилье</h3>
           <p class="city-features__description">
             Рекомендуем пожить в настоящем<br class="hide-tab"> мотеле, все как в кино!
@@ -137,7 +136,7 @@
         </li>
         <li class="city-features__item">
 
-          <img class="city-features__icon" src="img/icon-gift.svg" width="32" height="37 alt=" Подарок">
+          <img class="city-features__icon" src="img/icon-gift.svg" width="32" height="37" alt="Подарок">
           <h3 class="city-features__title">Сувениры</h3>
           <p class="city-features__description">
             Не только китайского,<br class="hide-tab"> но и местного производства!
@@ -165,10 +164,10 @@
           srcset="img/webp/photo-bridge-desktop.webp 1x, img/webp/photo-bridge-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/webp/photo-bridge-tablet.webp 1x, img/webp/photo-bridge-tablet@2x.webp 2x">
-        <source type="image/webp" src="img/webp/photo-bridge-mobile.webp 1x" srcset="img/webp/photo-bridge-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/webp/photo-bridge-mobile.webp 1x, img/webp/photo-bridge-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+          <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
           <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.jpg"
             srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото мост дьявола">
         </picture>
@@ -206,12 +205,11 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта аризоны</h2>
-        <div class="map__image">
-          <iframe class="map-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
-          allowfullscreen aria-hidden="false" tabindex="0"></iframe>
-        </div>
-      </section>
+        <img class="map__map-marker" src="img/map-marker.svg" alt="маркер">
+        <iframe class="map__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
+        allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+    </section>
     </div>
   </main>
   <footer class="page__footer page-footer">
@@ -220,13 +218,23 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Twitter</a>
+            <a class="social__link" href="https://twitter.com/htmlacademy">
+              <svg class="social__link-twitter" width="18" height="15" fill="white">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбуке</a>
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              <svg class="social__link-facebook" width="9" height="19" fill="white">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Youtube</a>
+            <a class="social__link" href="https://www.youtube.com/htmlacademy">
+              <svg class="social__link-youtube" width="20" height="14" fill="white">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>

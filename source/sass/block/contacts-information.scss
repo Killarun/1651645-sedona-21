@@ -59,12 +59,30 @@
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: #f2f2f2;
+  outline-offset: -4px;
+  outline: 4px solid $input-bacground;
+  background-color: $input-bacground;
   border: 0;
   padding: 18px 0 14px 22px;
 
+
+  &:hover {
+    background-color: $border-gallery-grey;
+    outline: 4px solid $border-gallery-grey;
+    outline-offset: -8px;
+  }
+
+  &:active,
+  :focus,
+  :valid {
+
+    outline: 4px solid $border-gallery-grey;
+    outline-offset: -4px;
+    background-color: $white;
+  }
+
   &::placeholder {
-    color: #000000;
+    color: $color-black;
     font-weight: bold;
   }
 

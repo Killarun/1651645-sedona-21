@@ -2,6 +2,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
+@import "global/mixins.scss";
 /*Blocks*/
 @import "block/page.scss";
 @import "block/main-head.scss";
@@ -23,7 +24,6 @@
 @import "block/attractions.scss";
 @import "block/attractions-picture.scss";
 @import "block/attriction-picture-image.scss";
-@import "block/attractions-features.scss";
 @import "block/other-places.scss";
 @import "block/hotel-search.scss";
 @import "block/map.scss";
