@@ -1,8 +1,5 @@
 .city-features__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
+  @include bold;
   justify-self: start;
   padding-top: 7px;
 
@@ -21,9 +18,7 @@
 }
 
 .city-features__description {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  @include size;
   grid-column: 2/2;
   justify-self: flex-start;
   padding: 0 19px 0 0;

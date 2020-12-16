@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-rows: 93px;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr 1fr;
     position: relative;
     margin-top: -93px;
     width: 648px;
@@ -22,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    grid-template-columns: 1fr 7.5fr 1fr 1fr;
   }
 }
 
@@ -33,7 +34,7 @@
   position: relative;
   width: 235px;
   padding: 0 22px 0 23px;
-  background-color: #f2f2f2;
+  background-color: $input-bacground;
 }
 
 .presentation-tools__bar {
@@ -47,7 +48,7 @@
 
   &::-webkit-slider-thumb {
     appearance: none;
-    background-color: #ffffff;
+    background-color: $white;
     border-radius: 50%;
     width: 9px;
     height: 9px;
@@ -75,9 +76,12 @@
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
-    fill: #ffffff;
-    padding-right: 2px;
-    padding-left: 0;
+    fill: $white;
+    padding-left: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 8px;
   }
 }
 
@@ -88,16 +92,15 @@
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
-    justify-self: end;
-    fill: #ffffff;
-    padding-right: 6px;
+    justify-self: center;
+    fill: $white;
     padding-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
     justify-self: end;
-    padding-right: 7px;
-    fill: #ffffff;
+    padding-right: 18px;
+    fill: $white;
   }
 }
 
@@ -109,16 +112,16 @@
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
-    justify-self: center;
-    fill: #ffffff;
-    padding-right: 15px;
+    justify-self: start;
+    fill: $white;
     padding-bottom: 2px;
+    padding-left: 11px;
   }
 
 
   @media (min-width: $desktop-width) {
     justify-self: center;
-    padding-right: 21px;
-    fill: #ffffff;
+    padding-right: 40px;
+    fill: $white;
   }
 }

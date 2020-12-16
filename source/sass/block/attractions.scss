@@ -35,14 +35,11 @@
 .attractions__colored-background {
   text-align: center;
   background-color: $blue;
-  color: #ffffff;
+  color: $white;
 }
 
 .attractions__title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  text-transform: uppercase;
+  @include bold;
   align-self: end;
   padding-bottom: 5px;
 
@@ -59,9 +56,7 @@
 }
 
 .attractions__description {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  @include size;
   align-self: start;
   margin-top: -6px;
 

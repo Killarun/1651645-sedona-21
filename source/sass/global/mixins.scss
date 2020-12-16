@@ -1,0 +1,12 @@
+@mixin size {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@mixin bold {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

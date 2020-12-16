@@ -25,15 +25,11 @@
 
       margin-bottom: 63px;
     }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop@2x.jpg");
-    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop.jpg");
-    background-position: bottom center;
+    background-position: 0 245px, 0 -56px;
     background-size: 100%, cover;
     background-repeat: no-repeat;
     min-height: 301px;
@@ -44,6 +40,10 @@
       min-height: 278px;
       margin-bottom: 123px;
     }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop@2x.jpg");
   }
 }
 
