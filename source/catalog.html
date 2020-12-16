@@ -9,6 +9,37 @@
 </head>
 
 <body class="page__body">
+    <!-- Стили для проверки Pixel Perfect. Начало -->
+<!--
+   <style>
+    @media (min-width: 1200px) {
+      html {
+        background: url("img/pixel/catalog-desk.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        background: url("img/pixel/catalog-tab.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background: url("img/pixel/cat-mob.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+    </style> -->
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="header__logo hide-pc">
@@ -243,7 +274,7 @@
         </div>
         <div class="presentation-tools hide-mobile">
           <div class="presentation-tools__panel">
-            <input class="presentation-tools__bar" type="range" min="1" max="10" step="1">
+            <input class="presentation-tools__bar" type="range" min="0" max="10" step="1">
             <svg class="presentation-tools__replay" width="16" height="20" role="img" aria-label="Повторить">
               <use xlink:href="img/sprite.svg#icon-replay"></use>
             </svg>

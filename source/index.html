@@ -9,6 +9,35 @@
 </head>
 
 <body class="page__body">
+  <style>
+    @media (min-width: 1200px) {
+      html {
+        background: url("img/pixel/desktop.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        background: url("img/pixel/tablet.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background: url("img/pixel/mobile.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+    </style>
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="header__logo hide-pc">
@@ -176,11 +205,11 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта аризоны</h2>
-        <div class="map__image">
-          <iframe class="map-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
-          allowfullscreen aria-hidden="false" tabindex="0"></iframe>
-        </div>
+        <img class="map__map-marker" src="img/map-marker.png">
+        <iframe class="map__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
+        allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+    </section>
       </section>
     </div>
   </main>

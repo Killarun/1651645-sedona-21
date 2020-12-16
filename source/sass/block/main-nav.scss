@@ -1,7 +1,7 @@
 .main-nav {
   width: auto;
   min-height: 56px;
-  background-color: #ffffff;
+  background-color: $white;
   display: grid;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +23,7 @@
   display: block;
   width: 60px;
   height: 48px;
-  background-color: #ffffff;
+  background-color: $white;
   cursor: pointer;
   border: none;
 
@@ -41,18 +41,16 @@
     left: 17px;
     width: 23px;
     height: 4px;
-    background-color: #81b3d2;
-    box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
-}
-}
+    background-color: $blue;
+    box-shadow: 0 9px 0 0 $blue, 0 18px 0 0 $blue;
   }
 
   &:active,
   ::before {
-    background-color: fade(#ffffff, 30%);
+    background-color: fade($white, 30%);
     box-shadow:
-      0 8px 0 0 fade(#ffffff, 30%),
-      0 16px 0 0 fade(#ffffff, 30%);
+      0 8px 0 0 fade($white, 30%),
+      0 16px 0 0 fade($white, 30%);
   }
 }
 
@@ -66,10 +64,10 @@
     content: "";
     position: absolute;
     top: 23px;
-    left: 8px;
+    left: 15px;
     width: 27px;
     height: 4px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   &::before {
@@ -83,7 +81,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    background-color: fade($white, 30%);
   }
 }
 
@@ -96,7 +94,7 @@
 
   @media (max-width: $mobile-width-only) {
     .main-nav__list a {
-      color: #ffffff;
+      color: $white;
       font-weight: bold;
       font-size: 18px;
     }

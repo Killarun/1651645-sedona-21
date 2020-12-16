@@ -95,7 +95,7 @@
       left: 50%;
       height: 292px;
       width: 1px;
-      background-color: #e5e5e5;
+      background-color: $border-gallery-grey;
     }
   }
 
@@ -113,12 +113,12 @@
   &-contacts,
   &-landmarks {
     margin-bottom: 20px;
-    border-bottom: solid 1px #e5e5e5;
+    border-bottom: solid 1px $border-gallery-grey;
   }
 
   &-impressions {
     margin-bottom: 16px;
-    border-bottom: solid 1px #e5e5e5;
+    border-bottom: solid 1px $border-gallery-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -144,7 +144,7 @@
         right: 0%;
         width: 123px;
         height: 1px;
-        background-color: #da2020;
+        background-color: $forms-grey-color;
         top: 10px;
         transform: translateX(0%);
       }
@@ -155,7 +155,7 @@
         left: 0%;
         width: 123px;
         height: 1px;
-        background-color: #da2020;
+        background-color: $forms-grey-color;
         top: 10px;
         transform: translateX(0%);
       }
@@ -183,7 +183,7 @@
         right: 0%;
         width: 123px;
         height: 1px;
-        background-color: #da2020;
+        background-color: $forms-grey-color;
         top: 25px;
         transform: translateX(0%);
       }
@@ -194,7 +194,7 @@
         left: 0%;
         width: 123px;
         height: 1px;
-        background-color: #da2020;
+        background-color: $forms-grey-color;
         top: 25px;
         transform: translateX(0%);
       }
@@ -213,7 +213,7 @@
         right: 0%;
         width: 123px;
         height: 1px;
-        background-color: #da2020;
+        background-color: $forms-grey-color;
         top: 9px;
         transform: translateX(0%);
       }
@@ -224,7 +224,7 @@
         left: 0%;
         width: 123px;
         height: 1px;
-        background-color: #da2020;
+        background-color: $forms-grey-color;
         top: 9px;
         transform: translateX(0%);
       }
@@ -234,6 +234,11 @@
   @media (min-width: $desktop-width) {
     &-emotions {
       margin-bottom: 58px;
+
+      &::before,
+      &::after {
+        width: 280px;
+      }
     }
 
     &-impressions {

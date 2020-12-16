@@ -59,12 +59,12 @@
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: #f2f2f2;
+  background-color: $input-bacground;
   border: 0;
   padding: 18px 0 14px 22px;
 
   &::placeholder {
-    color: #000000;
+    color: $color-black;
     font-weight: bold;
   }
 

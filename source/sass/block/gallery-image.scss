@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     left: 0%;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid $border-gallery-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -30,7 +30,7 @@
     grid-template-columns: 3fr 1fr;
     border: 0;
 
-    background-color: #f2f2f2;
+    background-color: $input-bacground;
     margin-top: -7px;
     padding: 16px 19px 14px 20px;
   }
@@ -39,7 +39,7 @@
     margin: 0;
     top: -86px;
     left: 0;
-    color: #ffffff;
+    color: $white;
     background-color: rgba(0, 0, 0, 0.35);
   }
 }
