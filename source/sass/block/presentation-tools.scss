@@ -73,11 +73,30 @@
   padding-bottom: 3px;
   fill: #5c6870;
 
+  &:hover {
+    fill: $color-black;
+  }
+
+  &:active,
+  :focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
     fill: $white;
     padding-left: 14px;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active,
+    :focus {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -90,11 +109,30 @@
   justify-self: end;
   fill: #5c6870;
 
+  &:hover {
+    fill: $color-black;
+  }
+
+  &:active,
+  :focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: center;
     fill: $white;
     padding-bottom: 2px;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active,
+    :focus {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -110,12 +148,31 @@
   padding-right: 1px;
   fill: #5c6870;
 
+  &:hover {
+    fill: $color-black;
+  }
+
+  &:active,
+  :focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     justify-self: start;
     fill: $white;
     padding-bottom: 2px;
     padding-left: 11px;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active,
+    :focus {
+      opacity: 0.3;
+    }
   }
 
 

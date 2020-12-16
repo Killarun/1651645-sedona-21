@@ -1,5 +1,5 @@
 .page-footer__wrapper {
-  padding: 0 20px;
+  padding: 0 20px 20px;
   display: grid;
   justify-items: center;
   gap: 26px;
@@ -8,12 +8,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 59px;
+    padding: 0 59px 35px;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
+    padding: 0 120px 35px;
     justify-content: space-between;
   }
 }
