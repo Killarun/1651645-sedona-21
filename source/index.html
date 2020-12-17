@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="widht=device-width initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <link href="fonts/ptsans.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/ptsansbold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <title>Главная</title>
 </head>
 
@@ -115,10 +117,10 @@
         </div>
         <picture class="city-picture">
           <source type="image/webp" media="(min-width: 1200px)"
-          srcset="img/webp/photo-city-desktop.webp 1x, img/webp/photo-city-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/webp/photo-city-tablet.webp 1x, img/webp/photo-city-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/webp/city-mobile.webp 1x, img/webp/city-mobile@2x.webp 2x">
+            srcset="img/webp/photo-city-desktop.webp 1x, img/webp/photo-city-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/webp/photo-city-tablet.webp 1x, img/webp/photo-city-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/city-mobile.webp 1x, img/webp/city-mobile@2x.webp 2x">
 
           <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
@@ -161,12 +163,14 @@
         <picture class="attriction-picture-image">
 
           <source type="image/webp" media="(min-width: 1200px)"
-          srcset="img/webp/photo-bridge-desktop.webp 1x, img/webp/photo-bridge-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/webp/photo-bridge-tablet.webp 1x, img/webp/photo-bridge-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/webp/photo-bridge-mobile.webp 1x, img/webp/photo-bridge-mobile@2x.webp 2x">
+            srcset="img/webp/photo-bridge-desktop.webp 1x, img/webp/photo-bridge-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/webp/photo-bridge-tablet.webp 1x, img/webp/photo-bridge-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/webp/photo-bridge-mobile.webp 1x, img/webp/photo-bridge-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
           <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.jpg"
             srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото мост дьявола">
@@ -198,7 +202,8 @@
       <section class="hotel-search">
         <div class="hotel-search__wrapper">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
-          <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br class="hide-mob"> и мы покажем вам лучшие предложения
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br class="hide-mob"> и мы покажем вам
+            лучшие предложения
             гостиниц в седоне</p>
           <a href="search.html" class="button hotel-search__form">Найти гостиницу</a>
         </div>
@@ -207,14 +212,19 @@
         <h2 class="visually-hidden">Карта аризоны</h2>
         <img class="map__map-marker" src="img/map-marker.svg" alt="маркер">
         <iframe class="map__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
-        allowfullscreen aria-hidden="false" tabindex="0"></iframe>
-    </section>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
+          allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+      </section>
     </div>
   </main>
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__tag"><img src="img/visitSEDONA.svg" alt=""></div>
+      <div class="page-footer__tag">
+        <svg class="page-footer__tag-icon" width="136" height="16" viewBox="0 0 136 16" fill="none"
+        aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-tag"></use>
+        </svg>
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -241,10 +251,8 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
-            <path class="copyright__image-path"
-              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-              fill="black" />
+          <svg class="copyright__image-path" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>

@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="widht=device-width initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <link href="fonts/ptsans.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/ptsansbold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <title>Отправить отзыв</title>
 </head>
 
@@ -15,7 +17,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="hide-pc" src="img/logotype-mobile.svg"  alt="Логотип City of Sedona">
+          <img class="hide-pc" src="img/logotype-mobile.svg" alt="Логотип City of Sedona">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -61,16 +63,17 @@
 
     <section class="main-other-head">
       <h1 class="visually-hidden">Отзывы о Sedona</h1>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
-          <img class="main-other-head__image" src="img/sedona-mobile.svg" alt="Welcome to the gorgeous Sedona">
-        </picture>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+        <img class="main-other-head__image" src="img/sedona-mobile.svg" alt="Welcome to the gorgeous Sedona">
+      </picture>
     </section>
     <section class="main-intro main-intro--form">
       <div class="main-intro__wrapper main-intro__wrapper-form">
         <h2 class="main-intro__title main-intro__form-title">Оставьте свой отзыв</h2>
-        <p class="main-intro__description main-intro__form-description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных
+        <p class="main-intro__description main-intro__form-description">Помогите нашим отелям стать лучше! оставьте
+          отзыв о них,<br> а также о посещенных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -101,17 +104,33 @@
         <fieldset class="reviews-form__contacts">
           <legend class="reviews-form__legend reviews-form__legend--contacts">Контактная информация:</legend>
           <div class="contacts-information">
-            <label class="contacts-information__lable" for="field-contacts-phone"><span class="contacts-information__span">Контактный</span> телефон*:</label>
+            <label class="contacts-information__lable" for="field-contacts-phone"><span
+                class="contacts-information__span">Контактный</span> телефон*:</label>
             <input class="contacts-information__input" id="field-contacts-phone" name="contacts-information" type="tel"
               placeholder="Введите телефон" required>
-            <a class="contacts-information__image contacts-information__image--phone"></a>
+            <a class="contacts-information__image ">
+              <svg class="icon-phone" width="18" height="18" viewBox="0 0 18 18" fill="black" aria-hidden="true">
+
+                <path
+                  d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" />
+
+              </svg>
+            </a>
           </div>
           <div class="contacts-information">
             <label class="contacts-information__lable" for="field-contacts-email">Электронная
               почта*:</label>
             <input class="contacts-information__input" id="field-contacts-email" name="contacts-information"
               type="email" placeholder="Введите e-mail" required>
-            <a class="contacts-information__image contacts-information__image--email"></a>
+            <a class="contacts-information__image">
+              <svg class="icon-email" width="16" height="12" viewBox="0 0 16 12" fill="black" aria-hidden="true">
+
+                <path
+                  d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" />
+
+
+              </svg>
+            </a>
           </div>
 
         </fieldset>
@@ -122,28 +141,25 @@
             Ваше общее впечатление:
           </legend>
           <div>
-          <div class="impressions-select">
-            <label class="impressions-select__lable" >
-            <input class="impressions-select__input" type="radio" name="impressions-select"
-              value="good">
-              <span class="impressions-select__radio"></span>
-            Скорее положительное</label>
+            <div class="impressions-select">
+              <label class="impressions-select__lable">
+                <input class="impressions-select__input" type="radio" name="impressions-select" value="good">
+                <span class="impressions-select__radio"></span>
+                Скорее положительное</label>
+            </div>
+            <div class="impressions-select">
+              <label class="impressions-select__lable">
+                <input class="impressions-select__input" type="radio" name="impressions-select" value="bad">
+                <span class="impressions-select__radio"></span>
+                Скорее отрицательное</label>
+            </div>
+            <div class="impressions-select">
+              <label class="impressions-select__lable">
+                <input class="impressions-select__input" type="radio" name="impressions-select" value="soso">
+                <span class="impressions-select__radio"></span>
+                Затрудняюсь ответить</label>
+            </div>
           </div>
-          <div class="impressions-select">
-            <label class="impressions-select__lable">
-            <input class="impressions-select__input" type="radio"
-              name="impressions-select" value="bad">
-              <span class="impressions-select__radio"></span>
-            Скорее отрицательное</label>
-          </div>
-          <div class="impressions-select">
-            <label class="impressions-select__lable">
-            <input class="impressions-select__input" type="radio" name="impressions-select"
-              value="soso">
-              <span class="impressions-select__radio"></span>
-              Затрудняюсь ответить</label>
-          </div>
-        </div>
         </fieldset>
       </div>
       <div class="reviews-form__wrapper-landmarks">
@@ -151,50 +167,46 @@
           <legend class="reviews-form__legend reviews-form__legend--landmarks">
             Посещенные<br> достопримечательности:
           </legend>
-        <div class="landmarks-select-wrapper">
-          <div class="landmarks-select">
-            <label class="landmarks-select__lable">
-            <input class="landmarks-select__input" type="checkbox" name="landmarks"
-              value="devils_bridge">
-              <span class="landmarks-select__check-box"></span>
-            Мост Дьявола</label>
+          <div class="landmarks-select-wrapper">
+            <div class="landmarks-select">
+              <label class="landmarks-select__lable">
+                <input class="landmarks-select__input" type="checkbox" name="landmarks" value="devils_bridge">
+                <span class="landmarks-select__check-box"></span>
+                Мост Дьявола</label>
+            </div>
+            <div class="landmarks-select">
+              <label class="landmarks-select__lable">
+                <input class="landmarks-select__input" type="checkbox" name="landmarks" value="bell_mountain">
+                <span class="landmarks-select__check-box"></span>
+                Гора-Колокол</label>
+            </div>
+            <div class="landmarks-select">
+              <label class="landmarks-select__lable">
+                <input class="landmarks-select__input" type="checkbox" name="landmarks" value="slide-park">
+                <span class="landmarks-select__check-box"></span>
+                Слайд-парк</label>
+            </div>
+            <div class="landmarks-select">
+              <label class="landmarks-select__lable">
+                <input class="landmarks-select__input" type="checkbox" name="landmarks" value="red_rock">
+                <span class="landmarks-select__check-box"></span>
+                Красные скалы</label>
+            </div>
           </div>
-          <div class="landmarks-select">
-            <label class="landmarks-select__lable">
-            <input class="landmarks-select__input" type="checkbox" name="landmarks"
-              value="bell_mountain">
-              <span class="landmarks-select__check-box"></span>
-            Гора-Колокол</label>
-          </div>
-          <div class="landmarks-select">
-            <label class="landmarks-select__lable">
-            <input class="landmarks-select__input" type="checkbox" name="landmarks"
-              value="slide-park">
-              <span class="landmarks-select__check-box"></span>
-            Слайд-парк</label>
-          </div>
-          <div class="landmarks-select">
-            <label class="landmarks-select__lable">
-            <input class="landmarks-select__input" type="checkbox" name="landmarks"
-              value="red_rock">
-              <span class="landmarks-select__check-box"></span>
-            Красные скалы</label>
-          </div>
-        </div>
         </fieldset>
       </div>
       <div class="reviews-form__wrapper-emotions">
-      <fieldset class="reviews-form__emotions">
-        <legend class="reviews-form__legend reviews-form__legend--emotions">
-          Опишите свои эмоции:
-        </legend>
-        <div class="emotions-text">
-          <textarea rows="5" placeholder="Опишите подробно все свои восторги" class="emotions-text__field"
-            name="personal-comment" id="field-personal-comment"></textarea>
-        </div>
+        <fieldset class="reviews-form__emotions">
+          <legend class="reviews-form__legend reviews-form__legend--emotions">
+            Опишите свои эмоции:
+          </legend>
+          <div class="emotions-text">
+            <textarea rows="5" placeholder="Опишите подробно все свои восторги" class="emotions-text__field"
+              name="personal-comment" id="field-personal-comment"></textarea>
+          </div>
 
-      </fieldset>
-    </div>
+        </fieldset>
+      </div>
       <div class="form-submit">
         <input class="form-submit__button button" type="submit" name="send-request" value="отправить отзыв">
         <p class="form-submit__rule">* — обязательные поля</p>
@@ -203,7 +215,12 @@
   </main>
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__tag"><img src="img/visitSEDONA.svg" alt=""></div>
+      <div class="page-footer__tag">
+        <svg class="page-footer__tag-icon" width="136" height="16" viewBox="0 0 136 16" fill="none"
+        aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-tag"></use>
+        </svg>
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -230,10 +247,8 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
-            <path class="copyright__image-path"
-              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-              fill="black" />
+          <svg class="copyright__image-path" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
