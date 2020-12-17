@@ -100,14 +100,10 @@
   background-position: center;
   background-repeat: no-repeat;
   font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &--phone {
-    background-image: url("../img/phone.svg");
-  }
-
-  &--email {
-    background-image: url("../img/mail.svg");
-  }
 
   @media (min-width: $desktop-width) {
     grid-column-start: 3;

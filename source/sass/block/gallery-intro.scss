@@ -33,6 +33,12 @@
     font-size: 30px;
     margin-bottom: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    &--padding {
+      padding-right: 3px;
+    }
+  }
 }
 
 .gallery-intro__description {

@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 12px;
+    padding-right: 13px;
   }
 }
 
@@ -17,20 +17,25 @@
   padding-top: 8px;
   padding-right: 2px;
 
-  &:hover .copyright__image-path,
-  &:focus .copyright__image-path {
-    fill: $blue-hover;
-  }
-
-  &:active .copyright__image-path {
-    fill: $blue-hover;
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+  }
+}
+
+.copyright__image-path {
+  fill: $color-black;
+
+  &:hover {
+    fill: $blue-hover;
+  }
+
+  &:focus,
+  &:active {
+    fill: $color-black;
+    opacity: 0.3;
   }
 }
