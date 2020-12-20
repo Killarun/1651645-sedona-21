@@ -37,9 +37,7 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({
-      collapseWhitespace: false
-    }))
+    .pipe(htmlmin({collapseWhitespace: false}))
     .pipe(gulp.dest("build"))
 }
 
@@ -64,12 +62,8 @@ exports.scripts = scripts;
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({
-        progressive: true
-      }),
-      imagemin.optipng({
-        optimizationLevel: 3
-      }),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 7}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
@@ -81,9 +75,7 @@ exports.images = images;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({
-      quality: 90
-    }))
+    .pipe(webp({quality: 80}))
     .pipe(gulp.dest("build/img/webp"))
 }
 
