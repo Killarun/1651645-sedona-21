@@ -26,29 +26,11 @@ img {
   height: auto;
 }
 
-
-br {
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
-
 .hide-mobile {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
-  }
-}
-
-.hide-tab {
-  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
-    display: none;
   }
 }
 

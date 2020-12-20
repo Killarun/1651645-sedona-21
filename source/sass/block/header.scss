@@ -1,4 +1,4 @@
-.header__logo {
+.header-logo {
   height: 56px;
   order: 2;
   display: grid;
@@ -9,5 +9,14 @@
     display: grid;
     justify-content: center;
     height: 0;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    &--big {
+      width: 167px;
+      height: 94px;
+
+    }
   }
 }

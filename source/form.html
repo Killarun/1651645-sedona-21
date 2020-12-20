@@ -12,11 +12,40 @@
 </head>
 
 <body class="page__body">
+  <!-- <style>
+    @media (min-width: 1200px) {
+      html {
+        background: url("img/pixel/deskform.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        background: url("img/pixel/tabform.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background: url("img/pixel/mobform.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+    </style> -->
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <span class="header__logo hide-pc">
+      <span class="header-logo hide-pc">
         <picture>
-         <img class="hide-pc" src="img/logotype-mobile.svg"  width="102" height="84" alt="Логотип City of Sedona">
+         <img class="hide-pc header-logo--small" src="img/logotype-mobile.svg"  width="102" height="84" alt="Логотип City of Sedona">
         </picture>
       </span>
       <button class="main-nav__toggle" type="button">
@@ -35,10 +64,10 @@
             </a>
           </li>
           <li class="site-list__item hide-mobile">
-            <span class="header__logo hide-mobile">
+            <span class="header-logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img class="hide-mobile" src="img/logotype-tablet.svg" alt="Логотип City of Sedona">
+                <img class="hide-mobile header-logo--big" src="img/logotype-tablet.svg" width="102" height="84" alt="Логотип City of Sedona">
               </picture>
             </span>
           </li>
@@ -64,14 +93,14 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
-        <img class="main-other-head__image" src="img/sedona-mobile.svg" alt="Welcome to the gorgeous Sedona">
+        <img class="main-other-head__image" src="img/sedona-mobile.svg" width="229" height="39" alt="Welcome to the gorgeous Sedona">
       </picture>
     </section>
     <section class="main-intro main-intro--form">
       <div class="main-intro__wrapper main-intro__wrapper-form">
         <h2 class="main-intro__title main-intro__form-title">Оставьте свой отзыв</h2>
         <p class="main-intro__description main-intro__form-description">Помогите нашим отелям стать лучше! оставьте
-          отзыв о них,<br> а также о посещенных
+          отзыв о них,<br class="line-break line-break--medium line-break--big"> а также о посещенных
           вами достопримечательностях</p>
       </div>
     </section>

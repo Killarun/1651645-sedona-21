@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
 
+  &--catalog {margin-bottom: 32px;}
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-tablet.jpg");
     background-position: bottom center;
@@ -16,6 +18,8 @@
     background-repeat: no-repeat;
     min-height: 290px;
     margin-bottom: 61px;
+
+    &--catalog {margin-bottom: 63px;}
   }
 
   @media (min-width: $desktop-width) {
@@ -39,11 +43,15 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
     padding-right: 0;
+    width: 457px;
+    height: 78px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 13px;
     padding-right: 2px;
+    width: 460px;
+    height: 80px;
   }
 }
 

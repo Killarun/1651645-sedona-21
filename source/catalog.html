@@ -12,11 +12,40 @@
 </head>
 
 <body class="page__body">
+  <!-- <style>
+    @media (min-width: 1200px) {
+      html {
+        background: url("img/pixel/catdesk.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        background: url("img/pixel/cattab.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background: url("img/pixel/catmob.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+    </style> -->
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <span class="header__logo hide-pc">
+      <span class="header-logo hide-pc">
         <picture>
-          <img class="hide-pc" src="img/logotype-mobile.svg"  width="102" height="84" alt="Логотип City of Sedona">
+          <img class="hide-pc header-logo--small" src="img/logotype-mobile.svg"  width="102" height="84" alt="Логотип City of Sedona">
          </picture>
       </span>
       <button class="main-nav__toggle" type="button">
@@ -35,10 +64,10 @@
             </a>
           </li>
           <li class="site-list__item hide-mobile">
-            <span class="header__logo hide-mobile">
+            <span class="header-logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img class="hide-mobile" src="img/logotype-tablet.svg" alt="Логотип City of Sedona">
+                <img class="hide-mobile header-logo--big" src="img/logotype-tablet.svg" width="102" height="84" alt="Логотип City of Sedona">
               </picture>
             </span>
           </li>
@@ -64,14 +93,14 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
-        <img class="main-other-head__image main-other-head__image--catalog" src="img/sedona-mobile.svg"
+        <img class="main-other-head__image main-other-head__image--catalog" width="229" height="39" src="img/sedona-mobile.svg"
           alt="Welcome to the gorgeous Sedona">
       </picture>
     </section>
     <section class="gallery-intro">
       <div class="gallery-intro__wrapper">
         <h2 class="gallery-intro__title gallery-image__title--padding">Фото и видео</h2>
-        <p class="gallery-intro__description">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам
+        <p class="gallery-intro__description">Не можете решиться на путешествие из-за курса?<br class="line-break line-break--medium line-break--big"> Фотографии помогут вам
           забыть о политике и экономике.</p>
       </div>
     </section>
@@ -222,16 +251,16 @@
       <div class="presentation__wrapper">
         <div class="presentation__info">
           <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-          <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не
-            подорожали в
-            очередной раз!</p>
+          <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они
+            <br class="line-break line-break--medium line-break--big">
+            не подорожали в очередной раз!</p>
         </div>
         <div class="presentation-video">
 
         </div>
         <div class="presentation-tools hide-pc">
           <div class="presentation-tools__panel">
-            <label><input class="presentation-tools__bar" type="range" min="1" max="10" step="1"></label>
+            <input class="presentation-tools__bar" type="range" min="1" max="10" step="1">
           </div>
           <div class="presentation-tools__panel-buttoms">
             <svg class="presentation-tools__replay" width="16" height="20" role="img" aria-label="Повторить">
@@ -247,7 +276,7 @@
         </div>
         <div class="presentation-tools hide-mobile">
           <div class="presentation-tools__panel">
-            <label><input class="presentation-tools__bar" type="range" min="0" max="10" step="1"></label>
+            <input class="presentation-tools__bar" type="range" min="0" max="10" step="1">
             <svg class="presentation-tools__replay" width="16" height="20" role="img" aria-label="Повторить">
               <use xlink:href="img/sprite.svg#icon-replay"></use>
             </svg>

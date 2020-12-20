@@ -138,3 +138,15 @@
     display: none;
   }
 }
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+.main-nav--nojs .site-list__item:nth-child(3) {
+  display: none;
+}
