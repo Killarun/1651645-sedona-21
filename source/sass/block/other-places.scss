@@ -4,7 +4,7 @@
   display: grid;
   text-transform: uppercase;
   padding: 25px 20px 0 20px;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 
   li:nth-child(3) p {
     border: none;
@@ -64,7 +64,7 @@
   font-size: 14px;
   line-height: 21px;
   border-bottom: solid 1px $border-grey;
-  padding: 0 15px 24px 14px;
+  padding: 0 15px 23px 14px;
 
   @media (min-width: $tablet-width) {
     padding: 1px 3px 0 1px;

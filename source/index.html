@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Some description">
   <link href="css/style.min.css" rel="stylesheet">
   <link href="fonts/ptsans.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/ptsansbold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
@@ -14,20 +15,18 @@
 
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="header__logo hide-pc">
+      <span class="header__logo hide-pc">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="hide-pc" src="img/logotype-mobile.svg" alt="Логотип City of Sedona">
-        </picture>
-      </a>
+          <img class="hide-pc" src="img/logotype-mobile.svg"  width="102" height="84" alt="Логотип City of Sedona">
+         </picture>
+      </span>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="#!">
               Главная
             </a>
           </li>
@@ -37,13 +36,12 @@
             </a>
           </li>
           <li class="site-list__item hide-mobile">
-            <a class="header__logo hide-mobile">
+            <span class="header__logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-                <img class="hide-mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
+                <img class="hide-mobile" src="img/logotype-tablet.svg" alt="Логотип City of Sedona">
               </picture>
-            </a>
+            </span>
           </li>
           <li class="site-list__item">
             <a href="form.html">
@@ -68,7 +66,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/intro-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/intro-tablet.svg">
-            <img src="img/intro.svg" alt="Welcome to the gorgeous Sedona">
+            <img src="img/intro.svg"  alt="Welcome to the gorgeous Sedona">
           </picture>
 
         </div>
@@ -82,7 +80,9 @@
       <section class="city">
         <div class="city__header city__colored-background">
           <h2 class="city__title">
-            Настоящий<br> городок
+            Настоящий
+            <br>
+            городок
           </h2>
           <span class="city__number">— №1 —</span>
           <p class="city__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -96,13 +96,13 @@
 
           <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-          <img class="city-picture__image" src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x"
+          <img class="city-picture__image" src="img/city-mobile.jpg" width="320" height="260" srcset="img/city-mobile@2x.jpg 2x"
             alt="Фото города Седона">
         </picture>
       </section>
       <ul class="city-features">
         <li class="city-features__item">
-          <img class="city-features__icon" src="img/icon-house.svg" width="39" alt="Домик">
+          <img class="city-features__icon" src="img/icon-house.svg" width="39" height="36" alt="Домик">
           <h3 class="city-features__title">Жилье</h3>
           <p class="city-features__description">
             Рекомендуем пожить в настоящем<br class="hide-tab"> мотеле, все как в кино!
@@ -144,7 +144,7 @@
           <source media="(min-width: 1200px)"
             srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-          <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.jpg"
+          <img class="attractions-picture attractions-picture__image" width="320" height="260" src="img/photo-bridge-mobile.jpg"
             srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото мост дьявола">
         </picture>
       </section>
@@ -154,7 +154,7 @@
             Небольшая <br>площадь
           </h2>
           <span class="other-places__number">— №3 —</span>
-          <p class="other-places__description">Все интересные места находятся очень <br class="hide-tab">&nbsp;близко</p>
+          <p class="other-places__description">Все интересные места находятся очень<br class="hide-tab"> близко</p>
         </li>
         <li class="other-places__items">
           <h2 class="other-places__title">
@@ -185,7 +185,7 @@
         <img class="map__map-marker" src="img/map-marker.svg" alt="маркер">
         <iframe class="map__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
-          allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+          allowfullscreen aria-hidden="false" tabindex="0" title="Карта проезда к городку Седона"></iframe>
       </section>
     </div>
   </main>
@@ -200,19 +200,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com/htmlacademy">
+            <a class="social__link" href="https://twitter.com/htmlacademy" title="twitter">
               <svg class="social__link-twitter" width="18" height="15" fill="white">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" title="facebook">
               <svg class="social__link-facebook" width="9" height="19" fill="white">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/htmlacademy">
+            <a class="social__link" href="https://www.youtube.com/htmlacademy" title="youtube">
               <svg class="social__link-youtube" width="20" height="14" fill="white">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
@@ -222,7 +222,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="html академия">
           <svg class="copyright__image-path" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
@@ -230,23 +230,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
