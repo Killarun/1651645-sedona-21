@@ -17,7 +17,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="hide-pc" src="img/logotype-mobile.svg" alt="Логотип City of Sedona">
+          <img class="hide-pc" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип City of Sedona">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -40,7 +40,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-                <img class="hide-mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
+                <img class="hide-mobile" src="img/logotype.svg" width="187" height="96" alt="Логотип City of Sedona">
               </picture>
             </a>
           </li>
@@ -93,7 +93,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg 2x">
-                  <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                  <img src="img/photo-1-mobile.jpg" width="280" height="280" srcset="img/photo-1-mobile@2x.jpg 2x"
                     class="gallery-image__thumbnail" alt="Неродные просторы">
                 </picture>
               </a>
@@ -126,7 +126,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                  <img src="img/photo-2-mobile.jpg" width="280" height="280" srcset="img/photo-2-mobile@2x.jpg 2x"
                     class="gallery-image__thumbnail" alt="Местная растительность">
 
                 </picture>
@@ -161,7 +161,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                  <img src="img/photo-3-mobile.jpg" width="280" height="280" srcset="img/photo-3-mobile@2x.jpg 2x"
                     class="gallery-image__thumbnail" alt="Дорога на север">
 
                 </picture>
@@ -196,7 +196,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-desktop@2x.jpg 2x">
-                  <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                  <img src="img/photo-4-mobile.jpg" width="280" height="280" srcset="img/photo-4-mobile@2x.jpg 2x"
                     class="gallery-image__thumbnail" alt="Мост дьявола">
                 </picture>
               </a>
@@ -305,23 +305,8 @@
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
 
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
