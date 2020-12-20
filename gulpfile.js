@@ -4,14 +4,14 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const webp = require("gulp-webp");
 const del = require("del");
-const csso = require("postcss-csso");
 const sync = require("browser-sync").create();
 
 //Styles
@@ -47,15 +47,15 @@ exports.html = html;
 
 // Scripts
 
-// const scripts = () => {
-//   return gulp.src("source/js/scripts.js")
-//     .pipe(uglify)
-//     .pipe(rename("script.min.js"))
-//     .pipe("build/js")
-//     .pipe(sync.stream());
-// }
+const scripts = () => {
+  return gulp.src("source/js/scripts.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe("build/js")
+    .pipe(sync.stream());
+}
 
-// exports.scripts = scripts;
+exports.scripts = scripts;
 
 
 
@@ -81,7 +81,9 @@ exports.images = images;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({
+      quality: 90
+    }))
     .pipe(gulp.dest("build/img/webp"))
 }
 
@@ -143,11 +145,12 @@ const reload = done => {
   sync.reload();
   done();
 }
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.sass", gulp.series(styles));
-  // gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
