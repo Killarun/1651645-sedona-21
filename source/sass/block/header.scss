@@ -9,14 +9,12 @@
     display: grid;
     justify-content: center;
     height: 0;
-
   }
 
   @media (min-width: $desktop-width) {
     &--big {
       width: 167px;
       height: 94px;
-
     }
   }
 }

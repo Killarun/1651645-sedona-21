@@ -33,9 +33,11 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 2px;
+
     &:nth-child(1) .other-places__description {
       padding: 0;
     }
+
     // margin: 10px;
   }
 
@@ -45,6 +47,7 @@
     &:nth-child(1) .other-places__description {
       padding: 1px 4px 0 1px;
     }
+
     &:nth-child(2) .other-places__number {
       padding-bottom: 20px;
     }
@@ -58,7 +61,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
-    padding: 0px 19px 10px;
+    padding: 0 19px 10px;
   }
 
   @media (min-width: $desktop-width) {

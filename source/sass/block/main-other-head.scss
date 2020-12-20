@@ -9,7 +9,9 @@
   justify-content: center;
   align-items: center;
 
-  &--catalog {margin-bottom: 32px;}
+  &--catalog {
+    margin-bottom: 32px;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-tablet.jpg");
@@ -19,7 +21,9 @@
     min-height: 290px;
     margin-bottom: 61px;
 
-    &--catalog {margin-bottom: 63px;}
+    &--catalog {
+      margin-bottom: 63px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +33,10 @@
     background-repeat: no-repeat;
     min-height: 301px;
     margin-bottom: 113px;
+
+    &--catalog {
+      margin-bottom: 100px;
+    }
   }
 
   @media (min-resolution: 2dppx) {
@@ -52,11 +60,5 @@
     padding-right: 2px;
     width: 460px;
     height: 80px;
-  }
-}
-
-.main-other-head--catalog {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 100px;
   }
 }
