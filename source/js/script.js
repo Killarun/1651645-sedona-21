@@ -29,7 +29,7 @@ if (form) {
 
     modalCloseBtn = modalError.querySelector(".modal__button--check");
     modalCloseBtn.addEventListener("click", function (e) {
-     e.preventDefault();
+      e.preventDefault();
       modalError.classList.remove("modal-up--show");
       modalError.classList.add("modal-up--close");
     });
