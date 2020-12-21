@@ -256,7 +256,7 @@
   </footer>
 
   <!-- Всплывающие окна -->
-  <div class="modal modal--done pop-up">
+  <div class="modal modal--done modal-up--close">
     <div class="modal__text-box modal__text-box--done">
       <p class="modal__title">Ваш отзыв отправлен!</p>
       <p class="modal__subtitle modal__subtitle--done">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
@@ -267,7 +267,7 @@
     </div>
   </div>
 
-  <div class="modal modal--check pop-up--close">
+  <div class="modal modal--check modal-up--close">
     <div class="modal__text-box modal__text-box--check">
       <p class="modal__title">Что-то пошло<br class="line-break line-break--medium line-break--big"> не так!</p>
       <p class="modal__subtitle modal__subtitle--check">Проверьте поля, выделенные красным, скорее всего вы забыли их
@@ -277,7 +277,58 @@
       <button class="button modal__button modal__button--check">OK</button>
     </div>
   </div>
-  <script src="js/script.min.js"></script>
+  <script>
+    var form = document.querySelector(".reviews-form");
+var modalError = document.querySelector(".modal--check");
+var modalSuccess = document.querySelector(".modal--done");
+var modalCloseBtn;
+
+if (form) {
+  form.addEventListener("invalid", function () {
+    modalError.classList.remove("modal-up--close");
+    modalError.classList.add("modal-up--show");
+
+    modalCloseBtn = modalError.querySelector(".modal__button--check");
+    modalCloseBtn.addEventListener("click", function (e) {
+     e.preventDefault();
+      modalError.classList.remove("modal-up--show");
+      modalError.classList.add("modal-up--close");
+    });
+
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        modalError.classList.remove("modal-up--show");
+        modalError.classList.add("modal-up--close");
+      }
+    });
+  }, true);
+
+  form.addEventListener("submit", function () {
+    modalSuccess.classList.add("modal-up--show");
+
+
+    modalCloseBtn = modalSuccess.querySelector(".modal__button--done");
+    modalCloseBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      modalSuccess.classList.remove("modal-up--show");
+
+    });
+
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        modalSuccess.classList.remove("modal-up--show");
+
+      }
+    });
+  });
+}
+
+  </script>
+  <!-- <script src="js/script.min.js"></script> -->
+
+
 </body>
 
 </html>

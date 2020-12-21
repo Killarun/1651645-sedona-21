@@ -17,43 +17,49 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-// var form = document.querySelector(".form");
-// var modalError = document.querySelector(".modal--error");
-// var modalSuccess = document.querySelector(".modal--success");
-// var modalCloseBtn;
+var form = document.querySelector(".reviews-form");
+var modalError = document.querySelector(".modal--check");
+var modalSuccess = document.querySelector(".modal--done");
+var modalCloseBtn;
 
-// if (form) {
-//   form.addEventListener("invalid", function () {
-//     modalError.classList.add("modal--show");
+if (form) {
+  form.addEventListener("invalid", function () {
+    modalError.classList.remove("modal-up--close");
+    modalError.classList.add("modal-up--show");
 
-//     modalCloseBtn = modalError.querySelector(".modal__close");
-//     modalCloseBtn.addEventListener("click", function (e) {
-//       e.preventDefault();
-//       modalError.classList.remove("modal--show");
-//     });
+    modalCloseBtn = modalError.querySelector(".modal__button--check");
+    modalCloseBtn.addEventListener("click", function (e) {
+     e.preventDefault();
+      modalError.classList.remove("modal-up--show");
+      modalError.classList.add("modal-up--close");
+    });
 
-//     window.addEventListener("keydown", function (e) {
-//       if (e.key === "Escape") {
-//         e.preventDefault();
-//         modalError.classList.remove("modal--show");
-//       }
-//     });
-//   }, true);
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        modalError.classList.remove("modal-up--show");
+        modalError.classList.add("modal-up--close");
+      }
+    });
+  }, true);
 
-//   form.addEventListener("submit", function () {
-//     modalSuccess.classList.add("modal--show");
+  form.addEventListener("submit", function () {
+    modalSuccess.classList.add("modal-up--show");
 
-//     modalCloseBtn = modalSuccess.querySelector(".modal__close");
-//     modalCloseBtn.addEventListener("click", function (e) {
-//       e.preventDefault();
-//       modalSuccess.classList.remove("modal--show");
-//     });
 
-//     window.addEventListener("keydown", function (e) {
-//       if (e.key === "Escape") {
-//         e.preventDefault();
-//         modalSuccess.classList.remove("modal--show");
-//       }
-//     });
-//   });
-// }
+    modalCloseBtn = modalSuccess.querySelector(".modal__button--done");
+    modalCloseBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      modalSuccess.classList.remove("modal-up--show");
+
+    });
+
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        modalSuccess.classList.remove("modal-up--show");
+
+      }
+    });
+  });
+}
