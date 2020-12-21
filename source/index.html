@@ -3,59 +3,30 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="widht=device-width initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Some description">
+  <link href="css/style.min.css" rel="stylesheet">
   <link href="fonts/ptsans.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/ptsansbold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <title>Главная</title>
 </head>
 
 <body class="page__body">
-  <!-- <style>
-    @media (min-width: 1200px) {
-      html {
-        background: url("img/pixel/desktop.png");
-        background-position: center top;
-        background-repeat: no-repeat;
-      }
-    }
-
-    @media (max-width: 768px) {
-      html {
-        background: url("img/pixel/tablet.png");
-        background-position: center top;
-        background-repeat: no-repeat;
-      }
-    }
-
-    @media (max-width: 767px) {
-      html {
-        background: url("img/pixel/mobile.png");
-        background-position: center top;
-        background-repeat: no-repeat;
-      }
-    }
-
-    body {
-      opacity: 1;
-    }
-    </style> -->
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="header__logo hide-pc">
+      <span class="header-logo hide-pc">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="hide-pc" src="img/logotype-mobile.svg" alt="Логотип City of Sedona">
+          <img class="hide-pc header-logo--small" src="img/logotype-mobile.svg" width="102" height="84"
+            alt="Логотип City of Sedona">
         </picture>
-      </a>
+      </span>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="#!">
               Главная
             </a>
           </li>
@@ -65,13 +36,13 @@
             </a>
           </li>
           <li class="site-list__item hide-mobile">
-            <a class="header__logo hide-mobile">
+            <span class="header-logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-                <img class="hide-mobile" src="img/logotype.svg" alt="Логотип City of Sedona">
+                <img class="hide-mobile header-logo--big" src="img/logotype-tablet.svg" width="102" height="84"
+                  alt="Логотип City of Sedona">
               </picture>
-            </a>
+            </span>
           </li>
           <li class="site-list__item">
             <a href="form.html">
@@ -96,21 +67,25 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/intro-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/intro-tablet.svg">
-            <img src="img/intro.svg" alt="Welcome to the gorgeous Sedona">
+            <img class="main-head__image-logo" src="img/intro.svg" width="282" height="214"
+              alt="Welcome to the gorgeous Sedona">
           </picture>
 
         </div>
       </section>
       <section class="main-intro">
         <div class="main-intro__wrapper">
-          <h2 class="main-intro__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <h2 class="main-intro__title">Седона — небольшой городок в Аризоне,<br class="line-break line-break--big">
+            заслуживающий большего!</h2>
           <p class="main-intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
       <section class="city">
         <div class="city__header city__colored-background">
           <h2 class="city__title">
-            Настоящий<br> городок
+            Настоящий
+            <br class="line-break line-break--medium line-break--big">
+            городок
           </h2>
           <span class="city__number">— №1 —</span>
           <p class="city__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -124,16 +99,16 @@
 
           <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-          <img class="city-picture__image" src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x"
-            alt="Фото города Седона">
+          <img class="city-picture__image" src="img/city-mobile.jpg" width="320" height="260"
+            srcset="img/city-mobile@2x.jpg 2x" alt="Фото города Седона">
         </picture>
       </section>
       <ul class="city-features">
         <li class="city-features__item">
-          <img class="city-features__icon" src="img/icon-house.svg" width="39" alt="Домик">
+          <img class="city-features__icon" src="img/icon-house.svg" width="39" height="36" alt="Домик">
           <h3 class="city-features__title">Жилье</h3>
           <p class="city-features__description">
-            Рекомендуем пожить в настоящем<br class="hide-tab"> мотеле, все как в кино!
+            Рекомендуем пожить в настоящем<br class="line-break line-break--big"> мотеле, все как в кино!
           </p>
         </li>
         <li class="city-features__item">
@@ -141,24 +116,25 @@
           <img class="city-features__icon" src="img/icon-gift.svg" width="32" height="37" alt="Подарок">
           <h3 class="city-features__title">Сувениры</h3>
           <p class="city-features__description">
-            Не только китайского,<br class="hide-tab"> но и местного производства!
+            Не только китайского,<br class="line-break line-break--big"> но и местного производства!
           </p>
         </li>
         <li class="city-features__item">
           <img class="city-features__icon" src="img/icon-burger.svg" width="40" height="35" alt="Гамбургер">
           <h3 class="city-features__title">Еда</h3>
           <p class="city-features__description">
-            Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!
+            Всегда заказывайте фирменный бургер,<br class="line-break line-break--big"> Вы не разочаруетесь!
           </p>
         </li>
       </ul>
       <section class="attractions">
         <div class="attractions__header attractions__colored-background">
           <h2 class="attractions__title">
-            Там есть<br> мост дьявола
+            Там есть<br class="line-break line-break--medium line-break--big"> мост дьявола
           </h2>
           <span class="attractions__number">— №2 —</span>
-          <p class="attractions__description">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+          <p class="attractions__description">Да, по нему можно пройти!<br class="line-break line-break--big"> Если вы
+            осмелитесь, конечно</p>
         </div>
         <picture class="attriction-picture-image">
 
@@ -172,37 +148,41 @@
           <source media="(min-width: 1200px)"
             srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-          <img class="attractions-picture attractions-picture__image" src="img/photo-bridge-mobile.jpg"
-            srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото мост дьявола">
+          <img class="attractions-picture attractions-picture__image" width="320" height="260"
+            src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото мост дьявола">
         </picture>
       </section>
       <ul class="other-places">
         <li class="other-places__items">
           <h2 class="other-places__title">
-            Небольшая <br>площадь
+            Небольшая <br class="line-break line-break--medium line-break--big">площадь
           </h2>
           <span class="other-places__number">— №3 —</span>
-          <p class="other-places__description">Все интересные места находятся очень<br class="hide-tab"> близко</p>
+          <p class="other-places__description">Все интересные места находятся очень<br
+              class="line-break line-break--big"> близко</p>
         </li>
         <li class="other-places__items">
           <h2 class="other-places__title">
-            Красивая <br>дорога
+            Красивая <br class="line-break line-break--medium line-break--big">дорога
           </h2>
           <span class="other-places__number">— №4 —</span>
-          <p class="other-places__description">Ехать в седону из лас-вегаса совсем<br class="hide-tab"> не скучно!</p>
+          <p class="other-places__description">Ехать в седону из<br class="line-break line-break--medium"> лас-вегаса
+            совсем<br class="line-break line-break--medium line-break--big"> не скучно!</p>
         </li>
         <li class="other-places__items">
           <h2 class="other-places__title">
-            Мало <br>туристов
+            Мало <br class="line-break line-break--medium line-break--big">туристов
           </h2>
           <span class="other-places__number">— №5 —</span>
-          <p class="other-places__description">Большинство едет в гранд каньон и толпится там</p>
+          <p class="other-places__description">Большинство едет в гранд каньон и <br
+              class="line-break line-break--medium line-break--big"> толпится там</p>
         </li>
       </ul>
       <section class="hotel-search">
         <div class="hotel-search__wrapper">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
-          <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br class="hide-mob"> и мы покажем вам
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br
+              class="line-break line-break--medium line-break--big"> и мы покажем вам
             лучшие предложения
             гостиниц в седоне</p>
           <a href="search.html" class="button hotel-search__form">Найти гостиницу</a>
@@ -213,34 +193,33 @@
         <img class="map__map-marker" src="img/map-marker.svg" alt="маркер">
         <iframe class="map__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1607770313878!5m2!1sru!2sby"
-          allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+          allowfullscreen aria-hidden="false" tabindex="0" title="Карта проезда к городку Седона"></iframe>
       </section>
     </div>
   </main>
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__tag">
-        <svg class="page-footer__tag-icon" width="136" height="16" viewBox="0 0 136 16" fill="none"
-        aria-hidden="true">
+        <svg class="page-footer__tag-icon" width="136" height="16" viewBox="0 0 136 16" fill="none" aria-hidden="true">
           <use xlink:href="img/sprite.svg#icon-tag"></use>
         </svg>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com/htmlacademy">
+            <a class="social__link" href="https://twitter.com/htmlacademy" title="twitter">
               <svg class="social__link-twitter" width="18" height="15" fill="white">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" title="facebook">
               <svg class="social__link-facebook" width="9" height="19" fill="white">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/htmlacademy">
+            <a class="social__link" href="https://www.youtube.com/htmlacademy" title="youtube">
               <svg class="social__link-youtube" width="20" height="14" fill="white">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
@@ -250,7 +229,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="html академия">
           <svg class="copyright__image-path" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
@@ -258,23 +237,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

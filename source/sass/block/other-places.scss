@@ -4,24 +4,24 @@
   display: grid;
   text-transform: uppercase;
   padding: 25px 20px 0 20px;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 
-  li:nth-child(3) p {
+  li:nth-child(3) .other-places__description {
     border: none;
     padding: 0 15px 0 14px;
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 0.5fr 1fr;
-    padding: 39px 30px 40px;
-    gap: 0 83px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 42px 30px 40px;
+    gap: 0 63px;
     margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 22px 39px 23px;
+    padding: 44px 22px 39px 23px;
     gap: 0 44px;
-    margin-bottom: 57px;
+    margin-bottom: 60px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -31,16 +31,24 @@
   padding-bottom: 25px;
   grid-template-rows: 0.5fr 0.3fr 0.5fr;
 
-
   @media (min-width: $tablet-width) {
-
     padding-bottom: 2px;
+
+    &:nth-child(1) .other-places__description {
+      padding: 0;
+    }
+
+    // margin: 10px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-rows: 1fr 0.5fr 1fr;
 
-    &:nth-child(2) span {
+    &:nth-child(1) .other-places__description {
+      padding: 1px 4px 0 1px;
+    }
+
+    &:nth-child(2) .other-places__number {
       padding-bottom: 20px;
     }
   }
@@ -53,7 +61,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
-    padding: 3px 27px 9px;
+    padding: 0 19px 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,10 +73,10 @@
   font-size: 14px;
   line-height: 21px;
   border-bottom: solid 1px $border-grey;
-  padding: 0 15px 24px 14px;
+  padding: 0 15px 23px 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 1px 3px 0 1px;
+    padding: 1px 5px 0 1px;
     border: 0;
   }
 
@@ -82,7 +90,7 @@
   padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 21px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
