@@ -4,6 +4,7 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
+
   &--active {
     color: $menu-active;
 
@@ -28,8 +29,6 @@
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-
-
   }
 
   &:hover {
