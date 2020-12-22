@@ -26,12 +26,12 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__menu" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__menu" href="catalog.html">
               Фото и видео
             </a>
           </li>
@@ -45,12 +45,12 @@
             </span>
           </li>
           <li class="site-list__item">
-            <a href="#!">
+            <a class="site-list__menu site-list__menu--active" href="#!">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">
+            <a class="site-list__menu" href="https://htmlacademy.ru/">
               Html Academy
             </a>
           </li>
@@ -254,6 +254,29 @@
       </div>
     </div>
   </footer>
+
+  <!-- Всплывающие окна -->
+  <div class="modal modal--done modal-up--close">
+    <div class="modal__text-box modal__text-box--done">
+      <p class="modal__title">Ваш отзыв отправлен!</p>
+      <p class="modal__subtitle modal__subtitle--done">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В&nbsp;ближайшее время мы опубликуем его на сайте</p>
+    </div>
+    <div class="modal__button-box modal__button-box--done">
+      <button class="button modal__button modal__button--done">Закрыть окно</button>
+    </div>
+  </div>
+
+  <div class="modal modal--check modal-up--close">
+    <div class="modal__text-box modal__text-box--check">
+      <p class="modal__title">Что-то пошло<br class="line-break line-break--medium line-break--big"> не так!</p>
+      <p class="modal__subtitle modal__subtitle--check">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
+    </div>
+    <div class="modal__button-box modal__button-box--check">
+      <button class="button modal__button modal__button--check">OK</button>
+    </div>
+  </div>
   <script src="js/script.min.js"></script>
 </body>
 

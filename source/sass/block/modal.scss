@@ -1,0 +1,126 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background-color: $white;
+  text-align: center;
+  box-shadow: 0 7px 15px $box-shadow-modal;
+  z-index: 100;
+
+  @media (min-width: $tablet-width) {
+    &--done {
+      width: 640px;
+    }
+
+    &--check {
+      width: 400px;
+    }
+  }
+}
+
+.modal-up {
+  &--close {
+    display: none;
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__text-box {
+  padding: 27px 35px 26px;
+
+  &--check {
+    padding-top: 19px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+
+    &--check {
+      padding: 30px 60px 15px;
+    }
+  }
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 29px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.modal__subtitle {
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  &--check {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--check {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.modal__button-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+  &--done {
+    background-color: $input-bacground;
+  }
+
+  &--check {
+    background-color: $white;
+    padding-bottom: 35px;
+  }
+}
+
+
+.modal__button {
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #81b3d2;
+  border: none;
+
+
+  &--done {
+    min-width: 280px;
+  }
+
+  &--check {
+    width: 180px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--check {
+      width: 272px;
+      height: 58px;
+    }
+
+    &--done {
+      width: 460px;
+      padding: 13px 45px 13px;
+    }
+  }
+}
