@@ -6,7 +6,7 @@
     margin: 0 auto 52px auto;
 
     &--form {
-      margin-bottom: 87px;
+      margin-bottom: 88px;
     }
   }
 
@@ -14,7 +14,7 @@
     margin: 0 auto 42px auto;
 
     &--form {
-      margin-bottom: 58px;
+      margin-bottom: 59px;
     }
   }
 }
@@ -75,6 +75,8 @@
     font-size: 30px;
     padding-left: 50px;
     margin-bottom: 33px;
+    margin-top: -1px;
+    margin-left: -1px;
   }
 
   @media (min-width: $desktop-width) {

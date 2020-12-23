@@ -24,14 +24,14 @@ var modalCloseBtn;
 
 if (form) {
   form.addEventListener("invalid", function () {
-    modalError.classList.remove("modal-up--close");
-    modalError.classList.add("modal-up--show");
+    modalError.classList.remove("modal--close");
+    modalError.classList.add("modal--show");
 
     modalCloseBtn = modalError.querySelector(".modal__button--check");
     modalCloseBtn.addEventListener("click", function (e) {
       e.preventDefault();
-      modalError.classList.remove("modal-up--show");
-      modalError.classList.add("modal-up--close");
+      modalError.classList.remove("modal--show");
+      modalError.classList.add("modal--close");
     });
 
     window.addEventListener("keydown", function (e) {
@@ -44,20 +44,20 @@ if (form) {
   }, true);
 
   form.addEventListener("submit", function () {
-    modalSuccess.classList.add("modal-up--show");
+    modalSuccess.classList.add("modal--show");
 
 
     modalCloseBtn = modalSuccess.querySelector(".modal__button--done");
     modalCloseBtn.addEventListener("click", function (e) {
       e.preventDefault();
-      modalSuccess.classList.remove("modal-up--show");
+      modalSuccess.classList.remove("modal--show");
 
     });
 
     window.addEventListener("keydown", function (e) {
       if (e.key === "Escape") {
         e.preventDefault();
-        modalSuccess.classList.remove("modal-up--show");
+        modalSuccess.classList.remove("modal--show");
 
       }
     });

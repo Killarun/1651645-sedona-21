@@ -1,7 +1,7 @@
 .hotel-search {
   text-align: center;
-  width: 100%;
   margin-bottom: 66.5px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 73.5px;
@@ -10,10 +10,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 81.5px;
   }
-}
-
-.hotel-search__wrapper {
-  padding: 0 20px;
 }
 
 .hotel-search__title {

@@ -33,6 +33,10 @@
     background-color: $input-bacground;
     margin-top: -7px;
     padding: 16px 19px 14px 20px;
+
+    &--grey {
+      background-color: $gray-ea;
+    }
   }
 
   @media (min-width: $desktop-width) {

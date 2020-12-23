@@ -23,7 +23,7 @@
   display: flex;
 }
 
-.page-footer__tag {
+.page-footer-tag {
   padding-right: 5px;
   padding-top: 1px;
   text-align: center;
@@ -39,6 +39,13 @@
     padding-left: 2px;
     margin-left: -2px;
   }
+}
+
+.page-footer-tag__item {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .page-footer__social {

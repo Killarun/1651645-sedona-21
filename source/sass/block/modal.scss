@@ -9,6 +9,14 @@
   box-shadow: 0 7px 15px $box-shadow-modal;
   z-index: 100;
 
+  &--close {
+    display: none;
+  }
+
+  &--show {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     &--done {
       width: 640px;
@@ -17,16 +25,6 @@
     &--check {
       width: 400px;
     }
-  }
-}
-
-.modal-up {
-  &--close {
-    display: none;
-  }
-
-  &--show {
-    display: block;
   }
 }
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Some description">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="fonts/ptsans.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/ptsansbold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <title>Фото и видео</title>
@@ -16,7 +16,7 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <span class="header-logo hide-pc">
         <picture>
-          <img class="hide-pc header-logo--small" src="img/logotype-mobile.svg" width="102" height="84"
+          <img class="hide-pc image-logo" src="img/logotype-mobile.svg" width="102" height="84"
             alt="Логотип City of Sedona">
         </picture>
       </span>
@@ -39,7 +39,7 @@
             <span class="header-logo hide-mobile">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img class="hide-mobile header-logo--big" src="img/logotype-tablet.svg" width="102" height="84"
+                <img class="hide-mobile image-logo" src="img/logotype-tablet.svg" width="102" height="84"
                   alt="Логотип City of Sedona">
               </picture>
             </span>
@@ -55,7 +55,6 @@
             </a>
           </li>
         </ul>
-
       </div>
     </nav>
   </header>
@@ -72,7 +71,7 @@
     </section>
     <section class="gallery-intro">
       <div class="gallery-intro__wrapper">
-        <h2 class="gallery-intro__title gallery-image__title--padding">Фото и видео</h2>
+        <h2 class="gallery-intro__title gallery-intro__title--padding">Фото и видео</h2>
         <p class="gallery-intro__description">Не можете решиться на путешествие из-за курса?<br
             class="line-break line-break--medium line-break--big"> Фотографии помогут вам
           забыть о политике и экономике.</p>
@@ -139,7 +138,6 @@
                 Автор фото: Сергей
               </div>
               <div class="gallery-image-like">
-
                 <svg class="gallery-image-like__like" width="23" height="21" role="img" aria-label="Лайк">
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
@@ -150,7 +148,6 @@
           </li>
           <li class="gallery-image">
             <div class="gallery-image__size">
-
               <a class="gallery-image__full" href="img/photo-3-desktop.jpg">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -164,28 +161,24 @@
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
                   <img src="img/photo-3-mobile.jpg" width="280" height="280" srcset="img/photo-3-mobile@2x.jpg 2x"
                     class="gallery-image__thumbnail" alt="Дорога на север">
-
                 </picture>
               </a>
             </div>
-            <div class="gallery-image__descripton">
+            <div class="gallery-image__descripton gallery-image__descripton--grey">
               <h3 class="gallery-image__title">Дорога на север</h3>
               <div class="gallery-image__author">
                 Автор фото: Петр
               </div>
               <div class="gallery-image-like">
-
                 <svg class="gallery-image-like__like" width="23" height="21" role="img" aria-label="Лайк">
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="gallery-image-like__count">96</span>
-
               </div>
             </div>
           </li>
           <li class="gallery-image">
             <div class="gallery-image__size">
-
               <a class="gallery-image__full" href="img/photo-4-desktop.jpg">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -208,13 +201,10 @@
                 Автор фото: Антон
               </div>
               <div class="gallery-image-like">
-
                 <svg class="gallery-image-like__like" width="23" height="21" role="img" aria-label="Лайк">
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
-
                 <span class="gallery-image-like__count">254</span>
-
               </div>
             </div>
           </li>
@@ -222,7 +212,6 @@
       </div>
     </section>
     <section class="presentation">
-      <div class="presentation__wrapper">
         <div class="presentation__info">
           <h2 class="presentation__title">Все еще сомневаетесь?</h2>
           <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они
@@ -262,7 +251,7 @@
             </svg>
           </div>
         </div>
-      </div>
+
     </section>
   </main>
   <footer class="page__footer page-footer">
@@ -275,19 +264,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com/htmlacademy" title="twitter">
+            <a class="social__link" href="https://twitter.com/htmlacademy" aria-label="twitter">
               <svg class="social__link-twitter" width="18" height="15" fill="white">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy" title="facebook">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
               <svg class="social__link-facebook" width="9" height="19" fill="white">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/htmlacademy" title="youtube">
+            <a class="social__link" href="https://www.youtube.com/htmlacademy" aria-label="youtube">
               <svg class="social__link-youtube" width="20" height="14" fill="white">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
