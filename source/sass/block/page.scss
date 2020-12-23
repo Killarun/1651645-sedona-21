@@ -24,6 +24,11 @@
   background-color: $white;
   color: $white;
   outline-offset: -2px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 56px;
+  }
+
 }
 
 // Page footer

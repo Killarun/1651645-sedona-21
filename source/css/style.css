@@ -353,6 +353,9 @@ img {
   background-color: #ffffff;
   color: #ffffff;
   outline-offset: -2px; }
+  @media (max-width: 767px) {
+    .page__header {
+      margin-bottom: 56px; } }
 
 .page__footer {
   margin-top: auto; }
@@ -390,11 +393,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px; }
+  padding-top: 12px; }
   @media (min-width: 768px) {
     .main-head__image {
       padding-top: 0;
-      padding-bottom: 8px; } }
+      padding-bottom: 8px;
+      padding-right: 2px; } }
 
 .main-head__title {
   color: #000000;
@@ -420,12 +424,13 @@ img {
 
 .main-nav {
   width: auto;
-  min-height: 56px;
   background-color: #ffffff;
-  display: grid; }
+  display: grid;
+  position: relative; }
   @media (min-width: 768px) {
     .main-nav {
-      display: flex; } }
+      display: flex;
+      min-height: 56px; } }
   @media (min-width: 1200px) {
     .main-nav {
       display: flex;
@@ -454,6 +459,12 @@ img {
   background-color: #81b3d2;
   box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2; }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  opacity: 0.6; }
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3; }
+
 .main-nav--opened .main-nav__toggle {
   top: 19px;
   right: 18px; }
@@ -470,8 +481,10 @@ img {
     box-shadow: none; }
   .main-nav--opened .main-nav__toggle::after {
     transform: rotate(-45deg); }
+  .main-nav--opened .main-nav__toggle:hover::before, .main-nav--opened .main-nav__toggle:hover::after {
+    opacity: 0.6; }
   .main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
-    background-color: fade(#ffffff, 30%); }
+    opacity: 0.3; }
 
 @media (min-width: 768px) {
   .main-nav__wrapper {
@@ -1004,20 +1017,17 @@ img {
       height: 256px; } }
 
 .header-logo {
-  height: 56px;
-  order: 2;
-  display: grid;
-  justify-content: center; }
+  position: absolute;
+  bottom: -91px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10; }
   @media (min-width: 768px) {
     .header-logo {
-      order: 2;
-      display: grid;
-      justify-content: center;
-      height: 0; } }
+      bottom: -35px; } }
   @media (min-width: 1200px) {
-    .header-logo--big {
-      width: 187px;
-      height: 97px; } }
+    .header-logo {
+      bottom: -48px; } }
 
 .city-features__title {
   font-size: 18px;
@@ -1479,12 +1489,6 @@ img {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none; }
-  .site-list__menu--active {
-    color: #766357; }
-    .site-list__menu--active:hover {
-      color: #604e43; }
-    .site-list__menu--active:active {
-      opacity: 0.3; }
   @media (max-width: 767px) {
     .site-list__menu {
       display: flex;
@@ -1497,11 +1501,24 @@ img {
       background-color: #81b3d2;
       border-bottom: 1px solid rgba(1, 1, 1, 0.2);
       border-top: 1px solid rgba(255, 255, 255, 0.2);
-      text-align: center; } }
-  .site-list__menu:hover {
-    color: #669ec0; }
-  .site-list__menu:active:focus {
-    color: rgba(0, 0, 0, 0.3); }
+      text-align: center; }
+      .site-list__menu:hover {
+        color: #ffffff;
+        background-color: #669ec0; }
+      .site-list__menu:focus, .site-list__menu:active {
+        background-color: #5496bd;
+        color: rgba(255, 255, 255, 0.3); } }
+  @media (min-width: 768px) {
+    .site-list__menu:hover {
+      color: #669ec0; }
+    .site-list__menu:active:focus {
+      color: rgba(0, 0, 0, 0.3); }
+    .site-list__menu--active {
+      color: #766357; }
+      .site-list__menu--active:hover {
+        color: #604e43; }
+      .site-list__menu--active:active {
+        color: rgba(0, 0, 0, 0.3); } }
 
 .site-list li:nth-child(1) a {
   border-top: none; }
@@ -1536,13 +1553,19 @@ img {
   @media (min-width: 768px) {
     .site-list__item {
       padding-bottom: 1px; }
+      .site-list__item:nth-child(3) {
+        padding-left: 9px;
+        grid-column-start: 4;
+        align-self: center; }
       .site-list__item:nth-child(4) {
-        padding-left: 7px; } }
+        padding-left: 4px; } }
   @media (min-width: 1200px) {
     .site-list__item {
       padding-right: 4px; }
       .site-list__item:nth-child(3) {
-        padding-left: 3px; }
+        padding-left: 6px;
+        grid-column-start: 4;
+        align-self: center; }
       .site-list__item:nth-child(4) {
         padding-left: 6px; }
       .site-list__item:nth-child(5) {

@@ -1,20 +1,15 @@
 .header-logo {
-  height: 56px;
-  order: 2;
-  display: grid;
-  justify-content: center;
+  position: absolute;
+  bottom: -91px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
 
-  @media (min-width: $tablet-width) {
-    order: 2;
-    display: grid;
-    justify-content: center;
-    height: 0;
+  @media(min-width: $tablet-width) {
+    bottom: -35px;
   }
 
   @media (min-width: $desktop-width) {
-    &--big {
-      width: 187px;
-      height: 97px;
-    }
+    bottom: -48px;
   }
 }

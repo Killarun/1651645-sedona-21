@@ -36,11 +36,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 8px;
+    padding-right: 2px;
+
   }
 }
 

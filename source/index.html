@@ -43,12 +43,14 @@
   </style>
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <span class="header-logo hide-pc">
+      <a class="header-logo logo" href="index.html">
         <picture>
-          <img class="hide-pc image-logo" src="img/logotype-mobile.svg" width="102" height="84"
-            alt="Логотип City of Sedona">
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" alt="Логотип проект Седона">
         </picture>
-      </span>
+        <!-- <img class="logo__img" src="img/logotype-mobile.svg" width="101" height="84" alt="Логотип проект Седона"> -->
+      </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -63,15 +65,6 @@
             <a class="site-list__menu" href="catalog.html">
               Фото и видео
             </a>
-          </li>
-          <li class="site-list__item hide-mobile">
-            <span class="header-logo hide-mobile">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img class="hide-mobile image-logo" src="img/logotype-tablet.svg" width="102" height="84"
-                  alt="Логотип City of Sedona">
-              </picture>
-            </span>
           </li>
           <li class="site-list__item">
             <a class="site-list__menu" href="form.html">

@@ -1,11 +1,12 @@
 .main-nav {
   width: auto;
-  min-height: 56px;
   background-color: $white;
   display: grid;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    min-height: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +43,15 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
+}
+
+
 .main-nav--opened .main-nav__toggle {
   top: 19px;
   right: 18px;
@@ -66,9 +76,14 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+
   &:active::before,
   &:active::after {
-    background-color: fade($white, 30%);
+    opacity: 0.3;
   }
 }
 
