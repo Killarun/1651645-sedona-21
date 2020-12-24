@@ -70,12 +70,10 @@
     border: 4px solid $border-gallery-grey;
   }
 
-  &:active,
-  :focus,
-  :valid {
-
-    border: 4px solid $border-gallery-grey;
+  &:focus {
     background-color: $white;
+    border: 4px solid $border-gallery-grey;
+    outline: none;
   }
 
   &::placeholder {

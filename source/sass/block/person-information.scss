@@ -13,9 +13,7 @@
     border: 4px solid $border-gallery-grey;
   }
 
-  &:active,
-  :focus,
-  :valid {
+  &:focus {
     outline: none;
     border: 4px solid $border-gallery-grey;
     background-color: $white;

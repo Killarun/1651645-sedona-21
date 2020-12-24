@@ -29,9 +29,17 @@
   margin-bottom: 28px;
   text-transform: uppercase;
 
+  &--padding {
+    padding-left: 3px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-bottom: 34px;
+
+    &--padding {
+      padding-left: 1px;
+    }
   }
 
   @media (min-width: $desktop-width) {

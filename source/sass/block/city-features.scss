@@ -21,19 +21,29 @@
   @include size;
   grid-column: 2/2;
   justify-self: flex-start;
-  padding: 0 19px 0 0;
+
+  &--padding {
+    padding: 0 19px 0 0;
+  }
+
 
   @media (min-width: $tablet-width) {
     grid-column: 1/1;
     justify-self: center;
-    padding: 0 4px 0 0;
+
+    &--padding {
+      padding: 0 4px 0 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     align-self: baseline;
     justify-self: center;
     line-height: 21px;
-    padding: 11px 1px 0 0;
+
+    &--padding {
+      padding: 11px 1px 0 0;
+    }
   }
 }
 
@@ -147,7 +157,6 @@
   margin-bottom: 15px;
   gap: 14.3px 0;
 
-
   @media (min-width: $tablet-width) {
     display: grid;
     justify-items: center;
@@ -165,5 +174,23 @@
     grid-template-rows: 1fr 0.9fr 1fr;
     margin-top: 4px;
     padding-left: 0;
+  }
+}
+
+.city-features__item:nth-child(1) .city-features__description--padding {
+  @media (min-width: $desktop-width) {
+    padding: 12px 0 0 0;
+  }
+}
+
+.city-features__item:nth-child(2) .city-features__description--padding {
+  @media (min-width: $desktop-width) {
+    padding: 12px 4px 0 0;
+  }
+}
+
+.city-features__item:nth-child(3) .city-features__description--padding {
+  @media (min-width: $desktop-width) {
+    padding: 11px 0 0 0;
   }
 }

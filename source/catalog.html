@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Some description">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link href="fonts/ptsans.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/ptsansbold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <title>Фото и видео</title>
@@ -20,7 +20,6 @@
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
           <img src="img/logotype-mobile.svg" alt="Логотип проект Седона">
         </picture>
-        <!-- <img class="logo__img" src="img/logotype-mobile.svg" width="101" height="84" alt="Логотип проект Седона"> -->
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -52,7 +51,6 @@
     </nav>
   </header>
   <main class="page__main">
-
     <section class="main-other-head main-other-head--catalog">
       <h1 class="visually-hidden">Галерея путешествия Sedona</h1>
       <picture>
@@ -97,12 +95,10 @@
                 Автор фото: Борис
               </div>
               <div class="gallery-image-like">
-
                 <svg class="gallery-image-like__like" width="23" height="21" role="img" aria-label="Лайк">
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="gallery-image-like__count">1350</span>
-
               </div>
             </div>
           </li>
@@ -121,7 +117,6 @@
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
                   <img src="img/photo-2-mobile.jpg" width="280" height="280" srcset="img/photo-2-mobile@2x.jpg 2x"
                     class="gallery-image__thumbnail" alt="Местная растительность">
-
                 </picture>
               </a>
             </div>
@@ -135,7 +130,6 @@
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="gallery-image-like__count">143</span>
-
               </div>
             </div>
           </li>
@@ -205,54 +199,36 @@
       </div>
     </section>
     <section class="presentation">
-        <div class="presentation__info">
-          <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-          <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они
-            <br class="line-break line-break--medium line-break--big">
-            не подорожали в очередной раз!</p>
+      <div class="presentation__info">
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они
+          <br class="line-break line-break--medium line-break--big">
+          не подорожали в очередной раз!</p>
+      </div>
+      <div class="presentation-video">
+      </div>
+      <div class="presentation-tools">
+        <div class="presentation-tools__panel">
+          <input class="presentation-tools__bar" type="range" min="1" max="10" step="1">
         </div>
-        <div class="presentation-video">
-
+        <div class="presentation-tools__panel-buttoms">
+          <svg class="presentation-tools__replay" width="16" height="20" role="img" aria-label="Повторить">
+            <use xlink:href="img/sprite.svg#icon-replay"></use>
+          </svg>
+          <svg class="presentation-tools__subtitles" width="32" height="20" role="img" aria-label="Субтитры">
+            <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+          </svg>
+          <svg class="presentation-tools__fullscreen" width="20" height="20" role="img" aria-label="Во весь экран">
+            <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+          </svg>
         </div>
-        <div class="presentation-tools hide-pc">
-          <div class="presentation-tools__panel">
-            <input class="presentation-tools__bar" type="range" min="1" max="10" step="1">
-          </div>
-          <div class="presentation-tools__panel-buttoms">
-            <svg class="presentation-tools__replay" width="16" height="20" role="img" aria-label="Повторить">
-              <use xlink:href="img/sprite.svg#icon-replay"></use>
-            </svg>
-            <svg class="presentation-tools__subtitles" width="32" height="20" role="img" aria-label="Субтитры">
-              <use xlink:href="img/sprite.svg#icon-subtitles"></use>
-            </svg>
-            <svg class="presentation-tools__fullscreen" width="20" height="20" role="img" aria-label="Во весь экран">
-              <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="presentation-tools hide-mobile">
-          <div class="presentation-tools__panel">
-            <input class="presentation-tools__bar" type="range" min="0" max="10" step="1">
-            <svg class="presentation-tools__replay" width="16" height="20" role="img" aria-label="Повторить">
-              <use xlink:href="img/sprite.svg#icon-replay"></use>
-            </svg>
-            <svg class="presentation-tools__subtitles" width="32" height="20" role="img" aria-label="Субтитры">
-              <use xlink:href="img/sprite.svg#icon-subtitles"></use>
-            </svg>
-            <svg class="presentation-tools__fullscreen" width="20" height="20" role="img" aria-label="Во весь экран">
-              <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
-            </svg>
-          </div>
-        </div>
-
+      </div>
     </section>
   </main>
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__tag">
-        <svg class="page-footer__tag-icon" width="136" height="16" viewBox="0 0 136 16" fill="none" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#icon-tag"></use>
-        </svg>
+      <div class="page-footer-tag">
+        <p class="page-footer-tag__item">#VISITSEDONA</p>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -279,8 +255,8 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="html академия">
-          <svg class="copyright__image-path" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-hidden="true">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html академия">
+          <svg class="copyright__image-path" width="27" height="35" viewBox="0 0 27 35" aria-hidden="true">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
