@@ -2055,6 +2055,8 @@ img {
   @media (min-width: 768px) {
     .landmarks-select {
       margin-bottom: 53px; }
+      .landmarks-select--break {
+        display: none; }
       .landmarks-select:nth-child(4), .landmarks-select:nth-child(3) {
         margin-bottom: 53px; }
       .landmarks-select:nth-child(2) .landmarks-select__lable {
@@ -2066,6 +2068,7 @@ img {
       margin: 0;
       display: flex; }
       .landmarks-select--break {
+        display: block;
         flex-basis: 100%;
         height: 0;
         margin-top: 26px; }
