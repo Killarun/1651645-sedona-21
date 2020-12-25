@@ -12,6 +12,32 @@
 </head>
 
 <body class="page__body">
+  <style>
+    @media (min-width: 1200px) {
+      html {
+        background: url("img/pixel/deskform.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+    @media (max-width: 768px) {
+      html {
+        background: url("img/pixel/tabform.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+    @media (max-width: 767px) {
+      html {
+        background: url("img/pixel/mobform.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+    body {
+      opacity: 0.5;
+    }
+  </style>
   <header class="page__header header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="header-logo logo" href="index.html">
